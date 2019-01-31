@@ -1,0 +1,58 @@
+[
+  {
+    "uri": "_default",
+    "title": "Fond de carte"
+  },
+  {
+    "uri": "donneesqc",
+    "title": "Données en vedette"
+  },
+  {
+    "uri": "avp",
+    "title": "Vigilance multi-risque"
+  },
+  {
+    "uri": "dif",
+    "title": "Inventaire forestier"
+  },
+  {
+    "uri": "mtq",
+    "title": "Transports Québec"
+  },
+  {
+    "uri": "evenements",
+    "title": "Événements de sécurité civile"
+  },
+  {
+    "uri": "glace",
+    "title": "Suivi des glaces"
+  },
+  {
+    "uri": "crue",
+    "title": "Surveillance des crues"
+  },
+  {
+    "uri": "embacle",
+    "title": "Embâcle (analyse temporelle)"
+  },
+  {
+    "uri": "qc911",
+    "title": "Qc-911"
+  },
+  {
+    "uri": "inspq",
+    "title": "Santé publique"
+  },
+  {
+    "uri": "cptaq",
+    "title": "Agriculture"
+  },
+  {
+    "uri": "education",
+    "title": "Éducation"
+  },
+  {
+    "uri": "inondation",
+    "title": "Inondations 2017"
+  }
+]

@@ -1,0 +1,58 @@
+stages:
+  - copie
+  - deploy
+  
+variables:
+  ARCHIVE_NAME: ${CI_PROJECT_PATH_SLUG}
+    
+copie:
+  stage: copie
+  script:
+    - rm -f ./${ARCHIVE_NAME}.tar.gz
+    - touch ./${ARCHIVE_NAME}.tar.gz
+    - tar --exclude='./.git' --exclude='./.gitlab-ci.yml' --exclude=./${ARCHIVE_NAME}.tar.gz -czvf ./${ARCHIVE_NAME}.tar.gz ./
+    - scp -v ./${ARCHIVE_NAME}.tar.gz synchrogitlab@spssogl97d:/srv/majdata/synchrogitlab/ARCHIVES/
+  only:
+    - dev
+    - preprod
+    - tags
+  artifacts:
+    paths:
+        - ${ARCHIVE_NAME}.tar.gz
+    name: ${CI_COMMIT_REF_NAME}-${CI_PROJECT_PATH_SLUG}
+    when: on_success
+    expire_in: '1 mos'
+
+synchro:
+  stage: deploy
+  script:
+    - "ssh synchrogitlab@spssogl97d \"sh ~/bin/synchro_envgitlab.sh ${ARCHIVE_NAME} /srv/www/geomatique/apps/${CI_PROJECT_PATH} ${CI_COMMIT_REF_NAME} config\""
+  only:
+    - dev
+    - preprod
+  environment: ${CI_COMMIT_REF_NAME}
+  artifacts:
+    paths:
+        - ${ARCHIVE_NAME}.tar.gz
+    name: ${CI_COMMIT_REF_NAME}-${CI_PROJECT_PATH_SLUG}
+    when: on_success
+    expire_in: '1 mos'
+  dependencies:
+    - copie
+    
+synchro_prod:
+  stage: deploy
+  script:
+    - "ssh synchrogitlab@spssogl97d \"sh ~/bin/synchro_envgitlab.sh ${ARCHIVE_NAME} /srv/www/geomatique/apps/${CI_PROJECT_PATH} prod config\""
+  only:
+    - tags
+  environment: prod
+  artifacts:
+    paths:
+        - ${ARCHIVE_NAME}.tar.gz
+    name: ${CI_COMMIT_REF_NAME}-${CI_PROJECT_PATH_SLUG}
+    when: on_success
+    expire_in: '1 mos'
+  dependencies:
+    - copie
+

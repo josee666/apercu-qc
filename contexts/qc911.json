@@ -1,0 +1,131 @@
+{
+  "uri": "qc911",
+  "title": "Qc-911",
+  "map": {
+    "view": {
+      "projection": "EPSG:3857",
+      "center": [
+        -72,
+        52
+      ],
+      "zoom": 6
+    }
+  },
+  "layers": [
+    {
+      "name": "carte_gouv_qc_ro",
+      "title": "Fond de carte du gouvernement du Qc",
+      "baseLayer": true,
+      "visible": true,
+      "sourceOptions": {
+        "url": "/carto/wmts",
+        "matrixSet": "EPSG_3857",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "format": "image/jpeg",
+        "layer": "carte_gouv_qc_ro",
+        "type": "wmts"
+      }
+    },
+    {
+      "title": "Satellite",
+      "baseLayer": true,
+      "visible": false,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Téléphone d'urgence",
+      "optionsFromCapabilities": true,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "telephone_urg",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Desserte municipale 9-1-1",
+      "optionsFromCapabilities": true,
+      "metadata": {
+        "extern": true
+      },
+
+      "queryTitle": "Municipalite",
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "MSP_DESSERTE_MUN_911",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    }
+  ],
+  "toolbar": [
+   "searchResults",
+    "contextManager",
+    "mapDetails",
+    "shareMap",
+    "catalog",
+    "directions",
+    "timeAnalysis",
+    "importExport",
+    "ogcFilter",
+    "print"
+  ],
+  "tools": [
+    {
+      "name": "searchResults",
+      "title": "Recherche",
+	"options": {
+	"focusFirst": false
+	}
+    },
+    {
+      "name": "contextManager",
+      "title": "Vues"
+    },
+    {
+      "name": "mapDetails",
+      "title": "Couches",
+      "options": {
+        "toggleLegendOnVisibilityChange": false
+      }
+    },
+    {
+      "name": "shareMap"
+    },
+    {
+      "name": "directions"
+    },
+    {
+      "name": "catalog",
+      "title": "Catalogue"
+    },
+    {
+      "name": "catalogLayers",
+      "title": "Catalogue"
+    },
+    {
+      "name": "timeAnalysis"
+    },
+    {
+      "name": "importExport"
+    },
+    {
+      "name": "print"
+    }
+  ]
+}

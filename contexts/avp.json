@@ -1,0 +1,287 @@
+{
+  "uri": "avp",
+  "title": "Vigilance multi-risque",
+  "map": {
+    "view": {
+      "projection": "EPSG:3857",
+      "center": [
+        -72.066644,
+        47.844253
+      ],
+      "zoom": 7,
+      "geolocate": false,
+      "maxZoom": 19
+    }
+  },
+  "layers": [
+    {
+      "title": "OSM",
+      "visible": false,
+      "baseLayer": true,
+      "sourceOptions": {
+        "type": "osm"
+      }
+    },
+    {
+      "title": "Satellite",
+      "baseLayer": true,
+      "visible": false,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Route II",
+      "visible": true,
+      "baseLayer": false,
+      "view": {
+        "maxResolution": 10
+      },
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      },
+      "maxResolution": 10
+    },
+    {
+      "title": "Blanc",
+      "baseLayer": true,
+      "visible": false,
+      "sourceOptions": {
+        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Route",
+      "visible": true,
+      "baseLayer": true,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Couleur",
+      "baseLayer": true,
+      "visible": false,
+      "opacity": 0.8,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_adn@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Gris",
+      "baseLayer": true,
+      "visible": false,
+      "opacity": 0.8,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/fond_thematique@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Régions administratives",
+      "opacity": 0.4,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+      "optionsFromCapabilities": true,
+        "url": "/ws/bdga.fcgi",
+        "params": {
+          "layers": "bdga_regio_s_poly_1m",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Tracé des ouragans (NOAA)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/ws/adnInternetV2.fcgi",
+        "params": {
+          "layers": "OURAGAN",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Radar météo américain (NWS)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/adnInternetV2.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "nexrad_base_reflect",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Radar météo canadien (ECCC)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/adnInternetV2.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "RADAR.2KM_L1",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "masas_naad_adna_s_public",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Ruissellement – prochain 48 heures (MDDELCC)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/adnInternetV2.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "mps_cehq_apt_verticaux_fil_actu",
+          "version": "1.3.0"
+        },
+        "type": "wms",
+        "timeFilter": {
+          "range": true,
+          "style": "calendar",
+          "type": "datetime"
+        },
+        "timeFilterable": true
+      }
+    },
+    {
+      "title": "Point d’entrave routière (MTMDET)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "MTQ_511_P",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "msp_vigilance_crue_publique_v",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "msp_vigilance_crue_publique_v_type",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    }
+  ],
+  "toolbar": [
+   "searchResults",
+    "contextManager",
+    "mapDetails",
+    "shareMap",
+    "catalog",
+    "directions",
+    "timeAnalysis",
+    "importExport",
+    "ogcFilter",
+    "print"
+  ],
+  "tools": [
+    {
+      "name": "searchResults",
+      "title": "Recherche",
+	"options": {
+	"focusFirst": false
+	}
+    },
+    {
+      "name": "contextManager",
+      "title": "Vues"
+    },
+    {
+      "name": "mapDetails",
+      "title": "Couches",
+      "options": {
+        "toggleLegendOnVisibilityChange": false
+      }
+    },
+    {
+      "name": "shareMap"
+    },
+    {
+      "name": "directions"
+    },
+    {
+      "name": "catalog",
+      "title": "Catalogue"
+    },
+    {
+      "name": "catalogLayers",
+      "title": "Catalogue"
+    },
+    {
+      "name": "timeAnalysis"
+    },
+    {
+      "name": "importExport"
+    },
+    {
+      "name": "print"
+    }
+  ]
+}

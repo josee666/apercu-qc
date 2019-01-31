@@ -1,0 +1,310 @@
+{
+  "uri": "inondation",
+  "title": "Inondation 2017",
+  "map": {
+    "view": {
+      "projection": "EPSG:3857",
+      "center": [
+        -74.066644,
+        45.844253
+      ],
+      "zoom": 9,
+      "geolocate": false
+    }
+  },
+  "layers": [
+    {
+      "title": "OSM",
+      "visible": false,
+      "baseLayer": true,
+      "sourceOptions": {
+        "type": "osm"
+      }
+    },
+    {
+      "title": "Satellite",
+      "baseLayer": true,
+      "visible": false,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Route II",
+      "visible": true,
+      "baseLayer": false,
+      "view": {
+        "maxResolution": 10
+      },
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      },
+      "maxResolution": 10
+    },
+    {
+      "title": "Blanc",
+      "baseLayer": true,
+      "visible": false,
+      "sourceOptions": {
+        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Route",
+      "visible": true,
+      "baseLayer": true,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Couleur",
+      "baseLayer": true,
+      "visible": false,
+      "opacity": 0.8,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_adn@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Gris",
+      "baseLayer": true,
+      "visible": false,
+      "opacity": 0.8,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/fond_thematique@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+      "optionsFromCapabilities": true,
+        "attributions": "<font size='2'>© CNES (2017), Distribution AIRBUS DS</a> </font>",
+        "params": {
+          "layers": "PLEIADE_GATINEAU_10MAI_IMAGERIE_VIS",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+      "optionsFromCapabilities": true,
+        "attributions": "<font size='2'>© 2017 CNES, Licencié par Planet Labs Geomatics Corp., <a href='https://www.planet.com/'>www.planet.com</a> </font>",
+        "params": {
+          "layers": "SPOT6_LAC_STPIERRE_IMAGERIE_VIS",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "attributions": "<font size='2'>© 2017 CNES, Licencié par Planet Labs Geomatics Corp., <a href='https://www.planet.com/'>www.planet.com</a> </font>",
+        "params": {
+          "layers": "SPOT6_ARCHIPEL_OUEST_IMAGERIE_16MAI",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "optionsFromCapabilities": true,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "attributions": "<font size='2'>© CNES (2017), Distribution AIRBUS DS</a> </font>",
+        "params": {
+          "layers": "PLEIADE_RIGAUD_12MAI_IMAGERIE_VIS",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "9 mai (Deux-Montagnes) polygone d'eau libre ",
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "INONDATION_9MAI2017_DEUXMONTAGNE",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "6 mai (Lac St-Pierre) polygone d'eau libre",
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "INONDATION_6MAI2017_STPIERRE",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "7 mai (Gatineau) polygone d'eau libre",
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "INONDATION_7MAI2017_GATINEAU",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Événements depuis 15 avril 2017",
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+         "queryable": true,
+         "queryFormat": "gml2",
+        "params": {
+          "layers": "vg_observation_v_inondation23avril2017_wmst",
+          "version": "1.3.0"
+        },
+        "type": "wms",
+        "timeFilter": {
+          "min": "2012-01-01",
+          "max": "2018-01-01",
+          "range": true,
+          "type": "datetime"
+        },
+        "timeFilterable": true
+      }
+    },
+    {
+      "title": "Municipalité inondées (printemps 2017)",
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+         "queryable": true,
+         "queryFormat": "gml2",
+        "params": {
+          "layers": "vg_observation_inondation_23avril2017_mun_tout_v",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Point d'entrave routière (Québec-511)",
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+         "queryable": true,
+         "queryFormat": "gml2",
+        "params": {
+          "layers": "MTQ_511_P",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    }
+  ],
+  "toolbar": [
+   "searchResults",
+    "contextManager",
+    "mapDetails",
+    "shareMap",
+    "catalog",
+    "directions",
+    "timeAnalysis",
+    "importExport",
+    "ogcFilter",
+    "print"
+  ],
+  "tools": [
+    {
+      "name": "searchResults",
+      "title": "Recherche",
+	"options": {
+	"focusFirst": false
+	}
+    },
+    {
+      "name": "contextManager",
+      "title": "Vues"
+    },
+    {
+      "name": "mapDetails",
+      "title": "Couches",
+      "options": {
+        "toggleLegendOnVisibilityChange": false
+      }
+    },
+    {
+      "name": "shareMap"
+    },
+    {
+      "name": "directions"
+    },
+    {
+      "name": "catalog",
+      "title": "Catalogue"
+    },
+    {
+      "name": "catalogLayers",
+      "title": "Catalogue"
+    },
+    {
+      "name": "timeAnalysis"
+    },
+    {
+      "name": "importExport"
+    },
+    {
+      "name": "print"
+    }
+  ]
+}

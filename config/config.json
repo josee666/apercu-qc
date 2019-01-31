@@ -1,0 +1,68 @@
+{
+  "searchSources": {
+    "nominatim": {
+      "enabled": false
+    },
+    "icherche": {
+      "searchUrl":
+        "/icherche/geocode?type=adresse,route,municipalite,mrc,region_administrative,ancienne_municipalite",
+      "locateUrl": "/icherche/xy",
+      "zoomMaxOnSelect": 24
+    },
+    "reseautq": {
+      "enabled": true,
+      "searchUrl": "/apis/ws/swtq",
+      "locateUrl": "/apis/ws/swtq",
+      "zoomMaxOnSelect": 7
+    },
+    "datasource": {
+      "searchUrl": "/apis/layers/search"
+    },
+    "reseautq": {
+      "enabled": true,
+      "searchUrl": "/apis/ws/swtq",
+      "locateUrl": "/apis/ws/swtq",
+      "zoomMaxOnSelect": 7
+    }
+  },
+  "importExport": {
+    "url": "/apis/ogre"
+  },
+  "routingSources": {
+    "osrm": {
+      "url": "/services/itineraire/route/v1/driving/",
+      "enabled": true
+    }
+  },
+  "language": {
+    "prefix": "./locale/"
+  },
+  "catalog": {
+    "sources": [
+      {
+        "title": "Toutes les données",
+        "url": "/ws/igo_gouvouvert.fcgi"
+      },
+      {
+        "title": "Inventaire forestier",
+        "url": "/ws/mffpecofor.fcgi"
+      },
+      {
+        "title": "MERN DIF",
+        "url": "/apis/sw/merndif"
+      },
+      {
+        "title": "Carte de glace",
+        "url": "/ws/radarsat.fcgi"
+      },
+      {
+        "title": "Données géographiques et administratives (BDGA)",
+        "url": "/ws/bdga.fcgi"
+      },
+      {
+        "title": "Débit et niveau (ADN)",
+        "url": "/ws/adnInternetV2.fcgi"
+      }
+    ]
+  }
+}

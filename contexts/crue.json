@@ -1,0 +1,169 @@
+{
+  "uri": "crue",
+  "title": "Surveillance des crues",
+  "map": {
+    "view": {
+      "projection": "EPSG:3857",
+      "center": [
+        -74.066644,
+        47.844253
+      ],
+      "zoom": 7
+    }
+  },
+  "layers": [
+    {
+      "title": "OSM",
+      "visible": false,
+      "baseLayer": true,
+      "sourceOptions": {
+        "type": "osm"
+      }
+    },
+    {
+      "title": "Satellite",
+      "baseLayer": true,
+      "visible": false,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Route II",
+      "visible": true,
+      "baseLayer": false,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      },
+      "maxResolution": 10
+    },
+    {
+      "title": "Blanc",
+      "baseLayer": true,
+      "visible": false,
+      "sourceOptions": {
+        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Route",
+      "visible": true,
+      "baseLayer": true,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Couleur",
+      "baseLayer": true,
+      "visible": false,
+      "opacity": 0.8,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_adn@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Gris",
+      "baseLayer": true,
+      "visible": false,
+      "opacity": 0.8,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/fond_thematique@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "opacity": 0.6,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/adnInternetV2.fcgi",
+         "queryable": true,
+         "queryFormat": "gml2",
+        "params": {
+          "layers": "adn_reg_admin_public_v",
+          "version": "1.3.0"
+        },
+        "type": "wms",
+        "optionsFromCapabilities": true
+      }
+    },
+    {
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/adnInternetV2.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "adn_station_max_public_v",
+          "version": "1.3.0"
+        },
+        "type": "wms",
+        "optionsFromCapabilities": true
+      }
+    }
+  ],
+  "toolbar": [
+    "searchResults",
+    "contextManager",
+    "mapDetails",
+    "shareMap",
+    "catalog",
+    "timeAnalysis",
+    "importExport",
+    "print"
+  ],
+  "tools": [
+    {
+      "name": "searchResults",
+      "title": "Recherche",
+	"options": {
+	"focusFirst": false
+	}
+    },
+    {
+      "name": "contextManager",
+      "title": "Vues"
+    },
+    {
+      "name": "mapDetails",
+      "title": "Couches",
+      "options": {
+        "toggleLegendOnVisibilityChange": false
+      }
+    },
+    {
+      "name": "shareMap"
+    },
+    {
+      "name": "catalog",
+      "title": "Catalogue"
+    },
+    {
+      "name": "catalogLayers",
+      "title": "Catalogue"
+    },
+    {
+      "name": "timeAnalysis"
+    },
+    {
+      "name": "importExport"
+    },
+    {
+      "name": "print"
+    }
+  ]
+}

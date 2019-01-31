@@ -1,0 +1,562 @@
+{
+  "uri": "dif",
+  "title": "Inventaire forestier",
+  "map": {
+    "view": {
+      "projection": "EPSG:3857",
+      "center": [
+        -72,
+        52
+      ],
+      "zoom": 6,
+      "useCurrentView": true,
+      "geolocate": true
+    }
+  },
+  "layers": [
+    {
+      "title": "Route II",
+      "visible": true,
+      "baseLayer": false,
+      "view": {
+        "maxResolution": 10
+      },
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      },
+      "maxResolution": 10
+    },
+    {
+      "title": "Satellite",
+      "baseLayer": true,
+      "visible": false,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Blanc",
+      "baseLayer": true,
+      "visible": false,
+      "sourceOptions": {
+        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Route",
+      "visible": true,
+      "baseLayer": true,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Couleur",
+      "baseLayer": true,
+      "visible": false,
+      "opacity": 0.8,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_adn@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Gris",
+      "baseLayer": true,
+      "visible": false,
+      "opacity": 0.8,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/fond_thematique@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Mosaïque Landsat 1986",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/mosaique-landsat",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "params": {
+          "layers": "lsat_mos1986",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Mosaïque Landsat 2011",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/mosaique-landsat",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "params": {
+          "layers": "lsat_mos2011",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Mosaïque Landsat 2012",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/mosaique-landsat",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "params": {
+          "layers": "lsat_mos2012",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Mosaïque Landsat 2013",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/mosaique-landsat",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "params": {
+          "layers": "lsat_mos2013",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Mosaïque Landsat 2014",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/mosaique-landsat",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "params": {
+          "layers": "lsat_mos2014",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Mosaïque Landsat 2015",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/mosaique-landsat",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "params": {
+          "layers": "lsat_mos2015",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Mosaïque Landsat 2016",
+      "optionsFromCapabilities": true,
+      "visible": true,
+      "opacity": 0.75,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/mosaique-landsat",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "params": {
+          "layers": "lsat_mos2016",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Carte écoforestière à l'échelle 1 : 20 000 en format PDF (version mai 2015)",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/carte-ecoforestiere-pdf",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "pee_index_pdf_mai2015",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Banque de photos du Nord québecois",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/photographie-oblique-du-nord-quebecois",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "nord_photo_oblique",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Carte des dépôts de surface du Nord québecois",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/carte-des-depots-de-surface-du-nord-quebecois",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "nord_dep_sur",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Modèle numérique de terrain",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/produits-derives-de-base-du-lidar",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "lidar_mnt",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Modèle numérique de terrain relief ombré",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/produits-derives-de-base-du-lidar",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "lidar_ombre",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Modèle de hauteur de canopée",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/produits-derives-de-base-du-lidar",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "lidar_mhc",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Pentes LiDAR",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/produits-derives-de-base-du-lidar",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "lidar_pentes",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Carte dendrométrique LiDAR",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/ftp-ftp-mrn-gouv-qc-ca-public-dif-diffusion-lidar",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "lidar_dendro",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Zone de végétation",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/systeme-hierarchique-de-classification-ecologique-du-territoire",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "sh_zone_veg",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Sous-zone de végétation",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/systeme-hierarchique-de-classification-ecologique-du-territoire",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "sh_szone_veg",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Domaine bioclimatique",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/systeme-hierarchique-de-classification-ecologique-du-territoire",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "sh_dom_bio",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Sous-domaine bioclimatique",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/systeme-hierarchique-de-classification-ecologique-du-territoire",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "sh_sdom_bio",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Région écologique",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/systeme-hierarchique-de-classification-ecologique-du-territoire",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "sh_reg_eco",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Sous-région écologique",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/systeme-hierarchique-de-classification-ecologique-du-territoire",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "sh_sreg_eco",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "Paysage régional",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/systeme-hierarchique-de-classification-ecologique-du-territoire",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "sh_upays_reg",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "title": "District écologique",
+      "optionsFromCapabilities": true,
+      "visible": false,
+      "metadata": {
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/systeme-hierarchique-de-classification-ecologique-du-territoire",
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/mffpecofor.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "sh_dis_eco",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    }
+  ],
+  "toolbar": [
+   "searchResults",
+    "contextManager",
+    "mapDetails",
+    "shareMap",
+    "catalog",
+    "directions",
+    "timeAnalysis",
+    "importExport",
+    "ogcFilter",
+    "print"
+  ],
+  "tools": [
+    {
+      "name": "searchResults",
+      "title": "Recherche",
+	"options": {
+	"focusFirst": false
+	}
+    },
+    {
+      "name": "contextManager",
+      "title": "Vues"
+    },
+    {
+      "name": "mapDetails",
+      "title": "Couches",
+      "options": {
+        "toggleLegendOnVisibilityChange": false
+      }
+    },
+    {
+      "name": "shareMap"
+    },
+    {
+      "name": "directions"
+    },
+    {
+      "name": "catalog",
+      "title": "Catalogue"
+    },
+    {
+      "name": "catalogLayers",
+      "title": "Catalogue"
+    },
+    {
+      "name": "timeAnalysis"
+    },
+    {
+      "name": "importExport"
+    },
+    {
+      "name": "print"
+    }
+  ]
+}
