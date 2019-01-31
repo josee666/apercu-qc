@@ -16,7 +16,7 @@ test_ci_push:
     - git checkout preprod
     - git reset --hard origin/preprod
     - git merge origin/dev
-    - git push https://${usernamebot}:${tokenbot}@gitlab.forge.gouv.qc.ca/igo2/instances/apercu-qc.git HEAD:preprod
+    - git push https://${usernamebot1}:${tokenbot}@gitlab.forge.gouv.qc.ca/igo2/instances/apercu-qc.git HEAD:preprod
 
 copie:
   stage: copie
