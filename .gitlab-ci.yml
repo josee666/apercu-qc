@@ -15,7 +15,7 @@ test_ci_push:
     - git config --global user.email "${GITLAB_USER_EMAIL}"
     - git checkout preprod
     - git reset --hard origin/preprod
-    - git merge dev
+    - git merge origin/dev
     - git push https://${usernamebot}:${tokenbot}@gitlab.forge.gouv.qc.ca/igo2/instances/apercu-qc.git origin preprod
 
 copie:
