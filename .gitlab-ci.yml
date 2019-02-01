@@ -1,13 +1,13 @@
 stages:
   - copie
   - deploy
+  - test_integration
   - merge_preprod
 variables:
   ARCHIVE_NAME: ${CI_PROJECT_PATH_SLUG}
 
 test_ci_push:
   stage: merge_preprod
-  allow_failure: false
   only:
     - dev
   script:
@@ -17,6 +17,12 @@ test_ci_push:
     - git reset --hard origin/preprod
     - git merge origin/dev
     - git push https://${usernamebot1}:${tokenbot}@gitlab.forge.gouv.qc.ca/igo2/instances/apercu-qc.git HEAD:preprod
+test_integration_dev:
+  stage: test_integration
+  only:
+    - dev
+  script:
+    - newman run ./postman_collection/igo2-apercu-qc.postman_collection.json --environment ./postman_collection/testgeoegl.postman_environment.json
 
 copie:
   stage: copie

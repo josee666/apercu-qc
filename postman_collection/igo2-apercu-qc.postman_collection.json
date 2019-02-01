@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "95b6fdc5-5607-4eb2-bab3-2ef4e755c875",
+		"name": "igo2-apercu-qc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "index.html",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6f23f79e-808a-46b8-a28c-a81a9ad3317a",
+						"exec": [
+							"var parsedHTML = cheerio.load(responseBody);",
+							"",
+							"",
+							"parsedHTML('script').get().forEach(function(obj){",
+							"    console.log(obj.attribs['src']);",
+							"    switch(obj.attribs['src'].substring(0,4)){",
+							"        case 'poly':",
+							"            pm.globals.set(\"polyfills\", obj.attribs['src']);",
+							"            break;",
+							"        case 'runt':",
+							"            pm.globals.set(\"runtime\", obj.attribs['src']);",
+							"            break;",
+							"        case 'main':",
+							"            pm.globals.set(\"main\", obj.attribs['src']);",
+							"            break;",
+							"    }",
+							"})",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"HTML check\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<title>IGO2</title>\");",
+							"});",
+							"",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/igo2/apercu-qc/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"igo2",
+						"apercu-qc",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "conf",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bad5073b-701b-4d79-bf15-efe75c0df956",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Check conf\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.catalog.sources.length).be.above(0);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/igo2/apercu-qc/config/config.json",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"igo2",
+						"apercu-qc",
+						"config",
+						"config.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "igo_gouvouvert.fcgi - getCapabilities",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "68ee5917-98cd-488b-a621-1b67bdaced9c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Check EPSG\", function () {",
+							"    var jsonObject = xml2Json(responseBody);",
+							"    console.log(jsonObject);",
+							"",
+							"    pm.expect(jsonObject['WMS_Capabilities']['Capability']['Layer']['Layer'].length).to.above(0);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/ws/igo_gouvouvert.fcgi??VERSION=1.3.0&SERVICE=WMS&REQUEST=getcapabilities",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"ws",
+						"igo_gouvouvert.fcgi"
+					],
+					"query": [
+						{
+							"key": "?VERSION",
+							"value": "1.3.0"
+						},
+						{
+							"key": "SERVICE",
+							"value": "WMS"
+						},
+						{
+							"key": "REQUEST",
+							"value": "getcapabilities"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test main",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2361b0b4-af9b-4085-ad4d-6708064c5843",
+						"exec": [
+							"pm.test(\"Successful request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/igo2/apercu-qc/{{main}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"igo2",
+						"apercu-qc",
+						"{{main}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test runtime",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2361b0b4-af9b-4085-ad4d-6708064c5843",
+						"exec": [
+							"pm.test(\"Successful request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/igo2/apercu-qc/{{runtime}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"igo2",
+						"apercu-qc",
+						"{{runtime}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test polyfills",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2361b0b4-af9b-4085-ad4d-6708064c5843",
+						"exec": [
+							"pm.test(\"Successful request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/igo2/apercu-qc/{{polyfills}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"igo2",
+						"apercu-qc",
+						"{{polyfills}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
