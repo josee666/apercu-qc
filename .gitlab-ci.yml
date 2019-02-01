@@ -24,6 +24,13 @@ test_integration_dev:
   script:
     - newman run ./postman_collection/igo2-apercu-qc.postman_collection.json --environment ./postman_collection/testgeoegl.postman_environment.json
 
+test_integration_preprod:
+  stage: test_integration
+  only:
+    - preprod
+  script:
+    - newman run ./postman_collection/igo2-apercu-qc.postman_collection.json --environment ./postman_collection/pregeoegl.postman_environment.json
+
 copie:
   stage: copie
   script:
