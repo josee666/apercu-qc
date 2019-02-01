@@ -17,7 +17,6 @@
 							"",
 							"",
 							"parsedHTML('script').get().forEach(function(obj){",
-							"    console.log(obj.attribs['src']);",
 							"    switch(obj.attribs['src'].substring(0,4)){",
 							"        case 'poly':",
 							"            pm.globals.set(\"polyfills\", obj.attribs['src']);",
@@ -27,6 +26,14 @@
 							"            break;",
 							"        case 'main':",
 							"            pm.globals.set(\"main\", obj.attribs['src']);",
+							"            break;",
+							"    }",
+							"})",
+							"",
+							"parsedHTML('link').get().forEach(function(obj){",
+							"    switch(obj.attribs['href'].substring(0,4)){",
+							"        case 'styl':",
+							"            pm.globals.set(\"style\", obj.attribs['href']);",
 							"            break;",
 							"    }",
 							"})",
@@ -279,6 +286,44 @@
 						"igo2",
 						"apercu-qc",
 						"{{polyfills}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test style",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2361b0b4-af9b-4085-ad4d-6708064c5843",
+						"exec": [
+							"pm.test(\"Successful request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/igo2/apercu-qc/{{style}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"igo2",
+						"apercu-qc",
+						"{{style}}"
 					]
 				}
 			},

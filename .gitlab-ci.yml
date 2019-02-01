@@ -17,19 +17,14 @@ test_ci_push:
     - git reset --hard origin/preprod
     - git merge origin/dev
     - git push https://${usernamebot1}:${tokenbot}@gitlab.forge.gouv.qc.ca/igo2/instances/apercu-qc.git HEAD:preprod
-test_integration_dev:
-  stage: test_integration
-  only:
-    - dev
-  script:
-    - newman run ./postman_collection/igo2-apercu-qc.postman_collection.json --environment ./postman_collection/testgeoegl.postman_environment.json
 
-test_integration_preprod:
+test_integration:
   stage: test_integration
   only:
     - preprod
+    - dev
   script:
-    - newman run ./postman_collection/igo2-apercu-qc.postman_collection.json --environment ./postman_collection/pregeoegl.postman_environment.json
+    - newman run ./postman_collection/igo2-apercu-qc.postman_collection.json --environment ./postman_collection/${CI_COMMIT_REF_NAME}.postman_environment.json
 
 copie:
   stage: copie
