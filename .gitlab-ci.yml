@@ -31,7 +31,7 @@ copie:
   script:
     - rm -f ./${ARCHIVE_NAME}.tar.gz
     - touch ./${ARCHIVE_NAME}.tar.gz
-    - tar --exclude='./.git' --exclude='./.gitlab-ci.yml' --exclude=./${ARCHIVE_NAME}.tar.gz -czvf ./${ARCHIVE_NAME}.tar.gz ./
+    - tar --exclude='./.git' --exclude='./.gitlab-ci.yml' --exclude='./postman_collection' --exclude=./${ARCHIVE_NAME}.tar.gz -czvf ./${ARCHIVE_NAME}.tar.gz ./
     - scp -v ./${ARCHIVE_NAME}.tar.gz synchrogitlab@spssogl97d:/srv/majdata/synchrogitlab/ARCHIVES/
   only:
     - dev
