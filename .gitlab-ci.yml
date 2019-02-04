@@ -11,8 +11,8 @@ test_ci_push:
   only:
     - dev
   script:
-    - git config --global user.name "${GITLAB_USER_NAME}"
-    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - git config user.name "${GITLAB_USER_NAME}"
+    - git config user.email "${GITLAB_USER_EMAIL}"
     - git checkout preprod
     - git reset --hard origin/preprod
     - git merge origin/dev
