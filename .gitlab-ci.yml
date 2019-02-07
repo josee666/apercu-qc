@@ -1,16 +1,37 @@
 stages:
   - copie
   - deploy
-  
+  - test_integration
+  - merge_preprod
 variables:
   ARCHIVE_NAME: ${CI_PROJECT_PATH_SLUG}
-    
+
+test_ci_push:
+  stage: merge_preprod
+  only:
+    - dev
+  script:
+    - git config user.name "${GITLAB_USER_NAME}"
+    - git config user.email "${GITLAB_USER_EMAIL}"
+    - git checkout preprod
+    - git reset --hard origin/preprod
+    - git merge origin/dev
+    - git push https://${usernamebot1}:${tokenbot}@gitlab.forge.gouv.qc.ca/igo2/instances/apercu-qc.git HEAD:preprod
+
+test_integration:
+  stage: test_integration
+  only:
+    - preprod
+    - dev
+  script:
+    - newman run ./postman_collection/igo2-apercu-qc.postman_collection.json --environment ./postman_collection/${CI_COMMIT_REF_NAME}.postman_environment.json
+
 copie:
   stage: copie
   script:
     - rm -f ./${ARCHIVE_NAME}.tar.gz
     - touch ./${ARCHIVE_NAME}.tar.gz
-    - tar --exclude='./.git' --exclude='./.gitlab-ci.yml' --exclude=./${ARCHIVE_NAME}.tar.gz -czvf ./${ARCHIVE_NAME}.tar.gz ./
+    - tar --exclude='./.git' --exclude='./.gitlab-ci.yml' --exclude='./postman_collection' --exclude=./${ARCHIVE_NAME}.tar.gz -czvf ./${ARCHIVE_NAME}.tar.gz ./
     - scp -v ./${ARCHIVE_NAME}.tar.gz synchrogitlab@spssogl97d:/srv/majdata/synchrogitlab/ARCHIVES/
   only:
     - dev
