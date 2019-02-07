@@ -81,14 +81,15 @@
       "type": "xyz"
     }
   }, {
-    "title": "Sous-ministériat aux territoires",
     "id": "bgr_v_dirct_genrl_geomt_act",
     "zIndex": 99,
     "visible": false,
     "sourceOptions": {
+      "type": "wms",
       "optionsFromCapabilities": true,
       "url": "/apis/ws/swtq",
       "queryable": true,
+      "queryTitle": "nom_unit00",
       "queryFormat": "html",
       "queryHtmlTarget": "innerhtml",
       "params": {
@@ -96,10 +97,12 @@
         "version": "1.3.0",
         "feature_count": 365
       },
-      "type": "wms"
+      "sourceFields": [
+            {"alias":"Nom de la direction","name": "nom_unit00"},
+            {"alias":"Adresse","name": "val_adrs_u"}
+          ]
     }
   }, {
-    "title": "Direction générale",
     "id": "bgr_v_dirct_terrt_geomt_act",
     "zIndex": 98,
     "visible": false,
@@ -117,7 +120,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Centre de services",
     "id": "bgr_v_centr_servc_geomt_act",
     "zIndex": 97,
     "visible": false,
@@ -135,7 +137,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Établissement du MTQ",
     "id": "etablissement_mtq",
     "zIndex": 96,
     "visible": false,
@@ -153,7 +154,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Réseau routier - RTSS",
     "id": "bgr_v_sous_route_res_sup_act",
     "zIndex": 95,
     "visible": false,
@@ -171,7 +171,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Débit journalier moyen annuel",
     "id": "circulation_routier",
     "zIndex": 94,
     "visible": false,
@@ -189,7 +188,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Réseau de camionnage",
     "id": "aq_camion",
     "zIndex": 93,
     "visible": false,
@@ -207,7 +205,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Convivialité vélo",
     "id": "convi_velo_glv",
     "zIndex": 92,
     "visible": false,
@@ -225,7 +222,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Réseau ferroviaire",
     "id": "reseau_chfer_qc",
     "zIndex": 91,
     "visible": false,
@@ -243,7 +239,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Sortie d’autoroute",
     "id": "sortie_aut",
     "zIndex": 90,
     "visible": false,
@@ -261,7 +256,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Repère kilométrique",
     "id": "repere_km",
     "zIndex": 89,
     "visible": false,
@@ -279,7 +273,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Structure",
     "id": "gsq_v_desc_strct_tri",
     "zIndex": 88,
     "visible": false,
@@ -297,7 +290,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Limite de charge",
     "id": "pes_v_limtn_charg",
     "zIndex": 87,
     "visible": false,
@@ -315,7 +307,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Village-relais",
     "id": "villagerelais",
     "zIndex": 86,
     "visible": false,
@@ -333,7 +324,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Parc routier",
     "id": "parc_routier",
     "zIndex": 85,
     "visible": false,
@@ -351,7 +341,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Téléphone d’urgence",
     "id": "telephone_urg",
     "zIndex": 84,
     "visible": false,
@@ -369,7 +358,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Travaux routiers",
     "id": "chantiers_mtmdet",
     "zIndex": 83,
     "visible": false,
@@ -387,7 +375,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Avertissement routier",
     "id": "evenements",
     "zIndex": 82,
     "visible": false,
@@ -405,7 +392,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Radar photo",
     "id": "radars_photos",
     "zIndex": 81,
     "visible": false,
@@ -423,7 +409,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Investissement routier",
     "id": "investissement2018_2020",
     "zIndex": 80,
     "visible": false,
@@ -442,7 +427,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Station météoroutière - Année courante",
     "id": "station_meteoroutiere",
     "zIndex": 79,
     "visible": false,
@@ -459,7 +443,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Station météoroutière - Archive",
     "id": "histo_station_meteoroutiere",
     "zIndex": 78,
     "visible": false,
@@ -478,7 +461,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Aéroport",
     "id": "aeroport",
     "zIndex": 77,
     "visible": false,
@@ -496,7 +478,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Aéroport - Piste",
     "id": "aeroport_piste",
     "zIndex": 76,
     "visible": false,
@@ -514,7 +495,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Port - Liaison maritime",
     "id": "liaison_maritime",
     "zIndex": 75,
     "visible": false,
@@ -534,7 +514,6 @@
   },
 
   {
-    "title": "Port - Installation",
     "id": "port_installation",
     "zIndex": 74,
     "visible": false,
@@ -552,7 +531,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Lieu habité",
     "id": "lieuhabite",
     "zIndex": 73,
     "visible": false,
@@ -570,7 +548,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Potentiel de glissement - Index",
     "id": "zpegt_index_cgt_s",
     "zIndex": 72,
     "visible": false,
@@ -588,7 +565,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Potentiel de glissement – Ligne",
     "id": "zpegt_cgt_l",
     "zIndex": 71,
     "visible": false,
@@ -608,7 +584,6 @@
       "type": "wms"
     }
   }, {
-    "title": "Potentiel de glissement - Surface",
     "id": "zpegt_cgt_s",
     "zIndex": 70,
     "visible": false,
