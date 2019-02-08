@@ -88,16 +88,11 @@
       }
     },
     {
-      "title": "Directions régionales",
-      "opacity": 0.4,
-      "metadata": {
-        "extern": true
-      },
       "sourceOptions": {
       "optionsFromCapabilities": true,
-        "url": "/ws/bdga.fcgi",
+        "url": "/ws/igo_gouvouvert.fcgi",
         "params": {
-          "layers": "bdga_regio_s_poly_1m",
+          "layers": "mffp_dgpf_limites_regions_s",
           "version": "1.3.0"
         },
         "type": "wms"
@@ -108,7 +103,7 @@
         "url": "/ws/igo_gouvouvert.fcgi",
         "optionsFromCapabilities": true,
         "params": {
-          "layers": "msp_vigilance_crue_publique_v_type",
+          "layers": "mffp_dgpf_bureaux_locaux_p",
           "version": "1.3.0"
         },
         "type": "wms"
