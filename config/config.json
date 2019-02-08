@@ -1,4 +1,7 @@
 {
+  "title": "IGO2 - Données Québec",
+  "theme": "blue-theme",
+  "sidenavTitle": "IGO",
   "searchSources": {
     "nominatim": {
       "enabled": false
