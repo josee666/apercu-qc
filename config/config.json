@@ -38,7 +38,7 @@
     }
   },
   "language": {
-    "prefix": "./locale/"
+    "prefix": "./particular/locale/"
   },
   "catalog": {
     "sources": [
