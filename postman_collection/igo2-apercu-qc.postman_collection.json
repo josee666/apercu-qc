@@ -33,7 +33,6 @@
 							"})",
 							"",
 							"parsedHTML('link').get().forEach(function(obj){",
-							"    console.log(obj.attribs['src']);",
 							"    switch(obj.attribs['href'].substring(0,4)){",
 							"        case 'styl':",
 							"            pm.globals.set(\"style\", obj.attribs['href']);",
