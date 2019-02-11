@@ -639,7 +639,10 @@
     "title": "Couches",
     "options": {
       "toggleLegendOnVisibilityChange": false,
-      "excludeBaseLayers": true
+        "layerListControls": {
+          "excludeBaseLayers": true,
+          "showToolbar": "always"
+        }
 
     }
   }, {
