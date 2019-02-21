@@ -2,6 +2,11 @@
   "title": "IGO2 - Données Québec",
   "theme": "blue-theme",
   "sidenavTitle": "IGO",
+  "analytics": {
+    "provider": "matomo",
+    "url": "https://geoegl.msp.gouv.qc.ca/piwik/", 
+    "id": "31"
+  },
   "searchSources": {
     "nominatim": {
       "enabled": false
@@ -11,12 +16,6 @@
         "/icherche/geocode?type=adresse,route,municipalite,mrc,region_administrative,ancienne_municipalite",
       "locateUrl": "/icherche/xy",
       "zoomMaxOnSelect": 24
-    },
-    "reseautq": {
-      "enabled": true,
-      "searchUrl": "/apis/ws/swtq",
-      "locateUrl": "/apis/ws/swtq",
-      "zoomMaxOnSelect": 7
     },
     "datasource": {
       "searchUrl": "/apis/layers/search"
