@@ -28,7 +28,7 @@
       "visible": false,
       "sourceOptions": {
         "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
-        "attributions": "  © <a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "attributions": "<p align='right'>  <a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>© Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a></p>",
         "type": "xyz"
       }
     },
@@ -41,7 +41,7 @@
       },
       "sourceOptions": {
         "url": "/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": "  © <a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "attributions": "<p align='right'>  <a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>© Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a></p>",
         "type": "xyz"
       },
       "maxResolution": 10
@@ -61,7 +61,7 @@
       "baseLayer": true,
       "sourceOptions": {
         "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": "  © <a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "attributions": "<p align='right'>  <a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>© Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a></p>",
         "type": "xyz"
       }
     },
@@ -72,7 +72,7 @@
       "opacity": 0.8,
       "sourceOptions": {
         "url": "/carto/tms/1.0.0/carte_adn@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": " © <a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "attributions": "<p align='right'>  <a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>© Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a></p>",
         "type": "xyz"
       }
     },
@@ -83,7 +83,7 @@
       "opacity": 0.8,
       "sourceOptions": {
         "url": "/carto/tms/1.0.0/fond_thematique@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": "  © <a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "attributions": "<p align='right'>  <a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>© Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a></p>",
         "type": "xyz"
       }
     },
