@@ -89,7 +89,7 @@
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
-        "queryHtmlTarget": "innerhtml",
+        "queryHtmlTarget": "iframe",
         "params": {
           "layers": "MELS_CS_ANGLO_S",
           "version": "1.3.0"
@@ -108,7 +108,7 @@
         "queryable": true,
         "optionsFromCapabilities": true,
         "queryFormat": "html",
-        "queryHtmlTarget": "innerhtml",
+        "queryHtmlTarget": "iframe",
         "params": {
           "layers": "MELS_CS_FRANCO_S",
           "version": "1.3.0"
@@ -127,7 +127,7 @@
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
-        "queryHtmlTarget": "innerhtml",
+        "queryHtmlTarget": "iframe",
         "params": {
           "layers": "MELS_CS_PARTICULIER_S",
           "version": "1.3.0"
@@ -144,7 +144,7 @@
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
-        "queryHtmlTarget": "innerhtml",
+        "queryHtmlTarget": "iframe",
         "params": {
           "layers": "MELS_SCOL_UNIVERSITAIRE_P",
           "version": "1.3.0"
@@ -162,7 +162,7 @@
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
-        "queryHtmlTarget": "innerhtml",
+        "queryHtmlTarget": "iframe",
         "params": {
           "layers": "MELS_SCOL_COLLEGIAL_P",
           "version": "1.3.0"
@@ -180,7 +180,7 @@
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
-        "queryHtmlTarget": "innerhtml",
+        "queryHtmlTarget": "iframe",
         "params": {
           "layers": "INFRA_SCOL_GOUVERNEMENTAL_P",
           "version": "1.3.0"
@@ -198,7 +198,7 @@
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
-        "queryHtmlTarget": "innerhtml",
+        "queryHtmlTarget": "iframe",
         "params": {
           "layers": "INFRA_SCOL_PPS_PRIVE_P",
           "version": "1.3.0"
@@ -216,7 +216,7 @@
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
-        "queryHtmlTarget": "innerhtml",
+        "queryHtmlTarget": "iframe",
         "params": {
           "layers": "INFRA_SCOL_PPS_PUBLIC_P",
           "version": "1.3.0"
@@ -234,7 +234,7 @@
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
-        "queryHtmlTarget": "innerhtml",
+        "queryHtmlTarget": "iframe",
         "params": {
           "layers": "INFRA_SCOL_PPS_PUBLIC_P",
           "version": "1.3.0"
