@@ -1,0 +1,115 @@
+{
+  "uri": "mrif",
+  "title": "Solidarité internationale",
+  "map": {
+    "view": {
+      "projection": "EPSG:3857",
+      "center": [
+        0,
+        0
+      ],
+      "zoom": 2
+    }
+  },
+  "layers": [
+	{
+      "title": "Route",
+      "visible": false,
+      "baseLayer": true,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+    {
+      "title": "Satellite",
+      "baseLayer": true,
+      "visible": false,
+      "sourceOptions": {
+        "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
+        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
+        "type": "xyz"
+      }
+    },
+	{
+      "title": "OSM",
+      "visible": true,
+      "baseLayer": true,
+      "sourceOptions": {
+        "type": "osm"
+      }
+    },
+    {
+      "title": "Programmes de solidarité internationale",
+      "visible": true,
+      "optionsFromCapabilities": true,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "params": {
+          "layers": "MRIF_PROJETS_P",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    }
+  ],
+  "toolbar": [
+   "searchResults",
+    "contextManager",
+    "mapDetails",
+    "shareMap",
+    "catalog",
+    "directions",
+    "timeAnalysis",
+    "importExport",
+    "ogcFilter",
+    "print"
+  ],
+  "tools": [
+    {
+      "name": "searchResults",
+      "title": "Recherche",
+	"options": {
+	"focusFirst": false
+	}
+    },
+    {
+      "name": "contextManager",
+      "title": "Vues"
+    },
+    {
+      "name": "mapDetails",
+      "title": "Couches",
+      "options": {
+        "toggleLegendOnVisibilityChange": false
+      }
+    },
+    {
+      "name": "shareMap"
+    },
+    {
+      "name": "directions"
+    },
+    {
+      "name": "catalog",
+      "title": "Catalogue"
+    },
+    {
+      "name": "catalogLayers",
+      "title": "Catalogue"
+    },
+    {
+      "name": "timeAnalysis"
+    },
+    {
+      "name": "importExport"
+    },
+    {
+      "name": "print"
+    }
+  ]
+}
