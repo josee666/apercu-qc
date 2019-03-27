@@ -1,6 +1,14 @@
 {
   "uri": "mrif",
   "title": "Solidarité internationale",
+  "message": {
+	"title": "Avertissement",
+    "text": "La cartographie affichée ne correspond pas à la position du Québec quant au tracé de ses frontières. Elle ne peut être ni utilisée ni considérée comme une cartographie officielle du gouvernement du Québec.",
+    "type": "info",
+    "options": {
+      "timeOut": 20000
+    }
+  },
   "map": {
     "view": {
       "projection": "EPSG:3857",
