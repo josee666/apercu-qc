@@ -5,10 +5,10 @@
     "view": {
       "projection": "EPSG:3857",
       "center": [
-        -74.066644,
+        -73.0,
         45.844253
       ],
-      "zoom": 9,
+      "zoom": 8,
       "geolocate": false
     }
   },
