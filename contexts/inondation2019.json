@@ -121,6 +121,23 @@
         },
         "timeFilterable": true
       }
+    },
+	{
+      "title": "Point d'entrave routière (Québec-511)",
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+         "queryable": true,
+         "queryFormat": "gml2",
+        "params": {
+          "layers": "MTQ_511_P",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
     }
   ],
   "toolbar": [
