@@ -90,7 +90,7 @@
       }
     },
 	{
-	  "title": "2019/04/21 - Eau libre - Grand Montréal - Radarsat2",
+	  "title": "2019/04/21 - Eau libre - Grand Montréal - TerraSAR-X",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
@@ -124,7 +124,7 @@
       }
     },
 	{
-	  "title": "2019/04/22 - Eau libre - Gatineau - Radarsat2",
+	  "title": "2019/04/22 - Eau libre - Gatineau - Pleiades1A",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
@@ -141,7 +141,7 @@
       }
     },
 	{
-	  "title": "Municipalités touchées",
+	  "title": "Municipalités touchées depuis le 14 avril 2019",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
