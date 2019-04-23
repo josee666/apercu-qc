@@ -76,11 +76,11 @@
 	  "title": "2019/04/21 - Infrarouge - Lac Saint-Pierre - Sentinel2",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "20190421_Sentinel2_infrarouge_LacStPierre",
+          "layers": "20190421_infrarouge_LacStPierre_Sentinel2",
           "version": "1.3.0"
         },
         "metadata": {
@@ -93,11 +93,11 @@
 	  "title": "2019/04/20 - Eau libre - Lac des Deux Montagnes - Radarsat2",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "Inondation_20190420_Radarsat_LacDesDeuxMontagnes_EauLibre",
+          "layers": "20190420_EauLibre_LacDesDeuxMontagnes_Radarsat2",
           "version": "1.3.0"
         },
         "metadata": {
@@ -110,11 +110,11 @@
 	  "title": "2019/04/21 - Eau libre - Grand Montréal - TerraSAR-X",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "20190421_Radarsat_GrandMontreal_EauLibre",
+          "layers": "20190421_EauLibre_GrandMontreal_TerraSAR-X",
           "version": "1.3.0"
         },
         "metadata": {
@@ -127,11 +127,11 @@
 	  "title": "2019/04/22 - Eau libre - Gatineau - Pleiades1A",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "20190422_Radarsat_Gatineau_EauLibre",
+          "layers": "20190422_EauLibre_Gatineau_Pleiades1A",
           "version": "1.3.0"
         },
         "metadata": {
@@ -144,7 +144,7 @@
 	  "title": "Municipalités touchées depuis le 14 avril 2019",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -164,7 +164,7 @@
         "extern": true
       },
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -189,7 +189,7 @@
         "extern": true
       },
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
