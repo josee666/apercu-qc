@@ -72,74 +72,11 @@
         "type": "xyz"
       }
     },
-	{
-      "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
-        "optionsFromCapabilities": true,
-        "queryable": true,
-        "queryFormat": "gml2",
-        "params": {
-          "layers": "20190422_Radarsat_Gatineau_EauLibre",
-          "version": "1.3.0"
-        },
-        "metadata": {
-            "extern": true
-        },
-        "type": "wms"
-      }
-    },
-	{
-      "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
-        "optionsFromCapabilities": true,
-        "queryable": true,
-        "queryFormat": "gml2",
-        "params": {
-          "layers": "20190421_Sentinel2_infrarouge_LacStPierre",
-          "version": "1.3.0"
-        },
-        "metadata": {
-            "extern": true
-        },
-        "type": "wms"
-      }
-    },
-	{
-      "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
-        "optionsFromCapabilities": true,
-        "queryable": true,
-        "queryFormat": "gml2",
-        "params": {
-          "layers": "20190421_Radarsat_GrandMontreal_EauLibre",
-          "version": "1.3.0"
-        },
-        "metadata": {
-            "extern": true
-        },
-        "type": "wms"
-      }
-    },
-	{
-      "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
-        "optionsFromCapabilities": true,
-        "queryable": true,
-        "queryFormat": "gml2",
-        "params": {
-          "layers": "vg_observation_inondation_14avril2019_mun_tout_v",
-          "version": "1.3.0"
-        },
-        "metadata": {
-            "extern": true
-        },
-        "type": "wms"
-      }
-    },
     {
+	  "title": "2019/04/20 - Eau libre - Lac des Deux Montagnes - Radarsat2",
+	  "optionsFromCapabilities": true,
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
-        "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -153,13 +90,81 @@
       }
     },
 	{
-      "title": "Événements de glissement de terrain depuis 14 avril 2019",
+	  "title": "2019/04/21 - Eau libre - Grand Montréal - Radarsat2",
+	  "optionsFromCapabilities": true,
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "20190421_Radarsat_GrandMontreal_EauLibre",
+          "version": "1.3.0"
+        },
+        "metadata": {
+            "extern": true
+        },
+        "type": "wms"
+      }
+    },
+	{
+	  "title": "2019/04/21 - Infrarouge - Lac Saint-Pierre - Sentinel2",
+	  "optionsFromCapabilities": true,
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "20190421_Sentinel2_infrarouge_LacStPierre",
+          "version": "1.3.0"
+        },
+        "metadata": {
+            "extern": true
+        },
+        "type": "wms"
+      }
+    },
+	{
+	  "title": "2019/04/22 - Eau libre - Gatineau - Radarsat2",
+	  "optionsFromCapabilities": true,
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "20190422_Radarsat_Gatineau_EauLibre",
+          "version": "1.3.0"
+        },
+        "metadata": {
+            "extern": true
+        },
+        "type": "wms"
+      }
+    },
+	{
+	  "title": "Municipalités touchées",
+	  "optionsFromCapabilities": true,
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "vg_observation_inondation_14avril2019_mun_tout_v",
+          "version": "1.3.0"
+        },
+        "metadata": {
+            "extern": true
+        },
+        "type": "wms"
+      }
+    },
+	{
+      "title": "Mouvements de terrain depuis le 14 avril 2019",
+	  "optionsFromCapabilities": true,
       "metadata": {
         "extern": true
       },
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
-        "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -171,20 +176,20 @@
           "min": "2019-04-14",
           "max": "2019-05-31",
           "range": true,
-          "type": "datetime",
+          "type": "date",
 		  "style": "calendar"
         },
         "timeFilterable": true
       }
     },
     {
-      "title": "Événements d'inondation depuis 14 avril 2019",
+      "title": "Événements d'inondation depuis le 14 avril 2019",
+	  "optionsFromCapabilities": true,
       "metadata": {
         "extern": true
       },
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
-        "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -196,7 +201,7 @@
           "min": "2019-04-14",
           "max": "2019-05-31",
           "range": true,
-          "type": "datetime",
+          "type": "date",
 		  "style": "calendar"
         },
         "timeFilterable": true
