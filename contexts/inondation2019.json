@@ -76,7 +76,7 @@
 	  "title": "2019/04/21 - Infrarouge - Lac Saint-Pierre - Sentinel2",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -93,7 +93,7 @@
 	  "title": "2019/04/20 - Eau libre - Lac des Deux Montagnes - Radarsat2",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -110,7 +110,7 @@
 	  "title": "2019/04/21 - Eau libre - Grand Montréal - TerraSAR-X",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -127,7 +127,7 @@
 	  "title": "2019/04/22 - Eau libre - Gatineau - Pleiades1A",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -144,7 +144,7 @@
 	  "title": "Municipalités touchées depuis le 14 avril 2019",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -164,7 +164,7 @@
         "extern": true
       },
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -189,7 +189,7 @@
         "extern": true
       },
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
