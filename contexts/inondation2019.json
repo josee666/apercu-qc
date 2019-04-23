@@ -174,7 +174,7 @@
         "type": "wms",
         "timeFilter": {
           "min": "2019-04-14",
-          "max": "2019-05-31",
+          "max": "2019-06-01",
           "range": true,
           "type": "date",
 		  "style": "calendar"
@@ -199,7 +199,7 @@
         "type": "wms",
         "timeFilter": {
           "min": "2019-04-14",
-          "max": "2019-05-31",
+          "max": "2019-06-01",
           "range": true,
           "type": "date",
 		  "style": "calendar"
