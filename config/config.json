@@ -61,10 +61,6 @@
         "title": "Données géographiques et administratives (BDGA)",
         "url": "/ws/bdga.fcgi"
       },
-	  {
-        "title": "Cartes de glace (interne)",
-        "url": "/ws/carte_glace_validation.fcgi"
-      },
       {
         "title": "Débit et niveau (ADN)",
         "url": "/ws/adnInternetV2.fcgi"
