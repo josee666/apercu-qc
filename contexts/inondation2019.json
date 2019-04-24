@@ -141,14 +141,14 @@
       }
     },
 	{
-	  "title": "2019/04/22 - Eau libre - Gatineau - Pleiades1A",
+	  "title": "2019/04/22 - Eau libre - Gatineau - Radarsat2 et Pléiades1A",
 	  "optionsFromCapabilities": true,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "20190422_EauLibre_Gatineau_Pleiades1A",
+          "layers": "20190422_EauLibre_Gatineau_Radarsat2_Pleiades1A",
           "version": "1.3.0"
         },
         "metadata": {
