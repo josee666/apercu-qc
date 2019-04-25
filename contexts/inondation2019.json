@@ -119,7 +119,7 @@
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "20190420_EauLibre_LacDesDeuxMontagnes_Radarsat2",
+          "layers": "Inon2019_EauLibre_20190420_LacDeuxMontagnes_Radarsat2",
           "version": "1.3.0"
         },
         "metadata": {
@@ -139,7 +139,7 @@
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "20190421_EauLibre_GrandMontreal_TerraSAR-X",
+          "layers": "Inon2019_EauLibre_20190421_GranMontreal_TerraSar-X",
           "version": "1.3.0"
         },
         "type": "wms"
@@ -156,7 +156,7 @@
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "20190422_EauLibre_Gatineau_Radarsat2_Pleiades1A",
+          "layers": "Inon2019_EauLibre_20190422_Gatineau_Radarsat2_Pleiades1A",
           "version": "1.3.0"
         },
         "metadata": {
@@ -176,7 +176,67 @@
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "20190422_EauLibre_Chaudiere_Sentinel1",
+          "layers": "Inon2019_EauLibre_20190422_Chaudiere_Sentinel1",
+          "version": "1.3.0"
+        },
+        "metadata": {
+            "extern": true
+        },
+        "type": "wms"
+      },
+	  "metadata": {
+        "extern": true,
+		"url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
+      }
+    },
+	{
+	  "title": "2019/04/23 - Eau libre - Outaouais - Radarsat2",
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "Inon2019_EauLibre_20190423_Outaouais_Radarsat2",
+          "version": "1.3.0"
+        },
+        "metadata": {
+            "extern": true
+        },
+        "type": "wms"
+      },
+	  "metadata": {
+        "extern": true,
+		"url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
+      }
+    },
+	{
+	  "title": "2019/04/24 - Eau libre - Lac Saint-Pierre - Radarsat2",
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "Inon2019_EauLibre_20190424_LacSaintPierre_Radarsat2",
+          "version": "1.3.0"
+        },
+        "metadata": {
+            "extern": true
+        },
+        "type": "wms"
+      },
+	  "metadata": {
+        "extern": true,
+		"url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
+      }
+    },
+	{
+	  "title": "2019/04/24 - Eau libre - Lac des Deux Montagnes - Radarsat2",
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "Inon2019_EauLibre_20190424_LacDeuxMontagnes_Radarsat2",
           "version": "1.3.0"
         },
         "metadata": {
