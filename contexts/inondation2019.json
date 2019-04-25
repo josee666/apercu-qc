@@ -134,7 +134,7 @@
       }
     },
 	{
-	  "title": "2019/04/21 - Eau libre - Grand Montréal - TerraSAR-XYZ",
+	  "title": "2019/04/21 - Eau libre - Grand Montréal - TerraSAR-X",
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
