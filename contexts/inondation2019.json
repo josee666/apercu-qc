@@ -114,6 +114,7 @@
     },
     {
 	  "title": "2019/04/20 - Eau libre - Lac des Deux Montagnes - Radarsat2",
+	  "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
