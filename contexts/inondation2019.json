@@ -152,7 +152,8 @@
     },
 	{
 	  "title": "2019/04/22 - Eau libre - Gatineau - Radarsat2 et Pléiades1A",
-      "sourceOptions": {
+      "visible": false,
+	  "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
@@ -172,7 +173,6 @@
     },
 	{
 	  "title": "2019/04/22 - Eau libre - Chaudière - Sentinel1",
-	  "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
