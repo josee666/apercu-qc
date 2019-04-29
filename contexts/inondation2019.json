@@ -112,6 +112,46 @@
 		"url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/be4221e0-3d69-41f2-a42d-44f12c10cb85"
       }
     },
+	{
+	  "title": "Zones inondables",
+	  "visible": false,
+      "sourceOptions": {
+        "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/Themes_publics/MapServer/WMSServer",
+        "queryable": true,
+        "queryFormat": "geojson",
+        "params": {
+          "layers": "Polygones de zones inondables"
+        },
+        "metadata": {
+            "extern": true
+        },
+        "type": "wms"
+      },
+	  "metadata": {
+        "extern": true,
+		"url": "https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-des-zones-inondables"
+      }
+    },
+	{
+	  "title": "Ligne des hautes eaux",
+	  "visible": false,
+      "sourceOptions": {
+        "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/Themes_publics/MapServer/WMSServer",
+        "queryable": true,
+        "queryFormat": "geojson",
+        "params": {
+          "layers": "Limites des plaines inondables"
+        },
+        "metadata": {
+            "extern": true
+        },
+        "type": "wms"
+      },
+	  "metadata": {
+        "extern": true,
+		"url": "https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-des-zones-inondables"
+      }
+    },
     {
 	  "title": "2019/04/20 - Eau libre - Lac des Deux Montagnes - Radarsat2",
 	  "visible": false,
