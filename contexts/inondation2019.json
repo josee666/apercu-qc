@@ -397,6 +397,7 @@
     },
     {
         "title": "2019/04/29 - Eau libre - Gatineau - TerraSAR-X",
+        "visible": false,
         "sourceOptions": {
           "url": "/ws/inondation2019.fcgi",
           "queryable": true,
