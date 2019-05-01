@@ -74,6 +74,7 @@
     },
 	{
 	  "title": "2019/04/21 - Infrarouge - Lac Saint-Pierre - Sentinel2",
+    "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -92,6 +93,38 @@
 		"url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/be4221e0-3d69-41f2-a42d-44f12c10cb85"
       }
     },
+    {
+      "id":"WorldView_wmts_irrv",
+        "title": "2019/04/23 - IrRV - Lac Saint-Pierre",
+        "visible": false,
+        "baseLayer": false,
+        "sourceOptions": {
+            "url": "https://servicesmatriciels.mern.gouv.qc.ca/erdas-iws/ogc/wmts/Imagerie_MERN?",
+            "crossOrigin": "anonymous",
+            "matrixSet": "GoogleMapsCompatibleExt2:epsg:3857",
+            "layer": "Evenements-Securite-Civile_Inondation-Lac-StPierre-2019_Inondation-Lac-StPierre-20190423_WVIEW2-3_IrRV_50cm",
+            "style": "default",
+            "type": "wmts",
+            "format": "image/png",
+            "attributions": "© WorldView-2 et 3 © 2019 DigitalGlobe, Inc"
+        }
+      },
+        {
+          "id":"WorldView_wmts_rvb",
+            "title": "2019/04/23 - Visible - Lac Saint-Pierre",
+            "visible": true,
+            "baseLayer": false,
+            "sourceOptions": {
+                "url": "https://servicesmatriciels.mern.gouv.qc.ca/erdas-iws/ogc/wmts/Imagerie_MERN?",
+                "crossOrigin": "anonymous",
+                "matrixSet": "GoogleMapsCompatibleExt2:epsg:3857",
+                "layer": "Evenements-Securite-Civile_Inondation-Lac-StPierre-2019_Inondation-Lac-StPierre-20190423_WVIEW2-3_RVB_50cm",
+                "style": "default",
+                "type": "wmts",
+                "format": "image/png",
+                "attributions": "© WorldView-2 et 3 © 2019 DigitalGlobe, Inc"
+            }
+          },
 	{
 	  "title": "Municipalités touchées depuis le 14 avril 2019",
       "sourceOptions": {
