@@ -207,6 +207,7 @@
     },
     {
       "title": "2019/04/21 - Eau libre - Grand Montréal - TerraSAR-X",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -245,6 +246,7 @@
     },
     {
       "title": "2019/04/22 - Eau libre - Chaudière - Sentinel1",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -391,6 +393,7 @@
     },
     {
       "title": "2019/04/27 - Eau libre - Lac Saint-Pierre - Radarsat2",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -411,6 +414,7 @@
     },
     {
       "title": "2019/04/27 - Eau libre - Lac des Deux Montagnes - Radarsat2",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -431,6 +435,7 @@
     },
     {
       "title": "2019/04/29 - Eau libre - Gatineau - TerraSAR-X",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -472,6 +477,7 @@
     },
     {
       "title": "2019/04/29 - Eau libre - Lac des Deux Montagnes - Pléiade",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -532,6 +538,7 @@
     },
     {
       "title": "2019/04/30 - Eau libre - Gatineau - Radarsat",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
