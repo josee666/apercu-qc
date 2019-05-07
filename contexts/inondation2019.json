@@ -579,13 +579,13 @@
       }
     },
     {
-      "title": "2019/05/03 - Eau libre - Outaouais - Radarsat",
+      "title": "2019/05/03 - Eau libre - Lac des Deux Montagnes - Radarsat",
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "Inon2019_EauLibre_20190503_Outaouais_Radarsat2",
+          "layers": "Inon2019_EauLibre_20190503_LacDeuxMontagnes_Radarsat2",
           "version": "1.3.0"
         },
         "metadata": {
@@ -599,13 +599,13 @@
       }
     },
     {
-      "title": "2019/05/04 - Eau libre - Lac des Deux Montagnes - Radarsat",
+      "title": "2019/05/04 - Eau libre - Outaouais - Radarsat",
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "Inon2019_EauLibre_20190504_LacDeuxMontagnes_Radarsat2",
+          "layers": "Inon2019_EauLibre_20190504_Outaouais_Radarsat2",
           "version": "1.3.0"
         },
         "metadata": {
