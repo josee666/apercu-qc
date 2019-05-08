@@ -560,6 +560,7 @@
 
     {
       "title": "2019/05/01 - Eau libre - Gatineau - TerraSAR-X",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
