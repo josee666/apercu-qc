@@ -206,6 +206,27 @@
       }
     },
     {
+      "title": "2019/04/16 - Zone inondée Beauceville - Reconstitution à partir de photos héliportées",
+      "visible": false,
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "msp_inon2019_zone_inondee_chaudiere_dpp_beauceville",
+          "version": "1.3.0"
+        },
+        "metadata": {
+          "extern": true
+        },
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/a278a8ea-33b3-43e3-a204-429a0771ddac"
+      }
+    },
+    {
       "title": "2019/04/20 - Eau libre - Lac des Deux Montagnes - Radarsat2",
       "visible": false,
       "sourceOptions": {
@@ -224,6 +245,69 @@
       "metadata": {
         "extern": true,
         "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
+      }
+    },
+    {
+      "title": "2019/04/21 - Zone inondée Sainte-Marie - Reconstitution à partir de photos héliportées",
+      "visible": false,
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "msp_inon2019_zone_inondee_chaudiere_dpp_stemarie",
+          "version": "1.3.0"
+        },
+        "metadata": {
+          "extern": true
+        },
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/a278a8ea-33b3-43e3-a204-429a0771ddac"
+      }
+    },
+    {
+      "title": "2019/04/21 - Zone inondée Scott - Reconstitution à partir de photos héliportées",
+      "visible": false,
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "msp_inon2019_zone_inondee_chaudiere_dpp_scott",
+          "version": "1.3.0"
+        },
+        "metadata": {
+          "extern": true
+        },
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/a278a8ea-33b3-43e3-a204-429a0771ddac"
+      }
+    },
+    {
+      "title": "2019/04/21 - Zone inondée Vallée-jonction - Reconstitution à partir de photos héliportées",
+      "visible": false,
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "msp_inon2019_zone_inondee_chaudiere_dpp_vallee-jonction",
+          "version": "1.3.0"
+        },
+        "metadata": {
+          "extern": true
+        },
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/a278a8ea-33b3-43e3-a204-429a0771ddac"
       }
     },
     {
