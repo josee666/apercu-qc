@@ -206,7 +206,7 @@
       }
     },
     {
-      "title": "2019/04/16 - Zone inondée Beauceville - Reconstitution à partir de photos héliportées",
+      "title": "2019/04/16 - Zone inondée Beauceville - Construction à partir de photos héliportées",
       "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
@@ -248,7 +248,7 @@
       }
     },
     {
-      "title": "2019/04/21 - Zone inondée Sainte-Marie - Reconstitution à partir de photos héliportées",
+      "title": "2019/04/21 - Zone inondée Sainte-Marie - Construction à partir de photos héliportées",
       "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
@@ -269,7 +269,7 @@
       }
     },
     {
-      "title": "2019/04/21 - Zone inondée Scott - Reconstitution à partir de photos héliportées",
+      "title": "2019/04/21 - Zone inondée Scott - Construction à partir de photos héliportées",
       "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
@@ -290,7 +290,7 @@
       }
     },
     {
-      "title": "2019/04/21 - Zone inondée Vallée-jonction - Reconstitution à partir de photos héliportées",
+      "title": "2019/04/21 - Zone inondée Vallée-jonction - Construction à partir de photos héliportées",
       "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
@@ -603,6 +603,7 @@
     },
     {
       "title": "2019/04/29 - Eau libre - Lac Saint-Pierre - Pléiade",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -623,6 +624,7 @@
     },
     {
       "title": "2019/04/29 - Eau libre - Grand Montréal - GeoEye-1",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -686,6 +688,7 @@
     },
     {
       "title": "2019/05/03 - Eau libre - Lac des Deux Montagnes - Radarsat",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -792,6 +795,46 @@
         "queryFormat": "gml2",
         "params": {
           "layers": "Inon2019_EauLibre_20190510_gatineau_terrasarx",
+          "version": "1.3.0"
+        },
+        "metadata": {
+          "extern": true
+        },
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
+      }
+    },
+    {
+      "title": "2019/05/10 - Eau libre - Grand Montréal - Radarsat",
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "Inon2019_EauLibre_20190510_grandmontreal_radarsat2",
+          "version": "1.3.0"
+        },
+        "metadata": {
+          "extern": true
+        },
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
+      }
+    },
+    {
+      "title": "2019/05/11 - Eau libre - Lac Saint-Pierre - Radarsat",
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "Inon2019_EauLibre_20190511_lacstpierre_radarsat2",
           "version": "1.3.0"
         },
         "metadata": {
