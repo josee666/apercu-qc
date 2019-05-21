@@ -750,6 +750,7 @@
     },
     {
       "title": "2019/05/09 - Eau libre - Haut-Pontiac - Radarsat",
+	  "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -770,6 +771,7 @@
     },
     {
       "title": "2019/05/10 - Eau libre - Pontiac - Radarsat",
+	  "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -913,25 +915,45 @@
       }
     },
     {
-        "title": "2019/05/15 - Eau libre - Gatineau - TerraSAR-X",
-        "sourceOptions": {
-          "url": "/ws/inondation2019.fcgi",
-          "queryable": true,
-          "queryFormat": "gml2",
-          "params": {
-            "layers": "Inon2019_EauLibre_20190515_Gatineau_TerrasarX",
-            "version": "1.3.0"
-          },
-          "metadata": {
-            "extern": true
-          },
-          "type": "wms"
+      "title": "2019/05/15 - Eau libre - Gatineau - TerraSAR-X",
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "Inon2019_EauLibre_20190515_Gatineau_TerrasarX",
+          "version": "1.3.0"
         },
         "metadata": {
-          "extern": true,
-          "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
-        }
+          "extern": true
+        },
+        "type": "wms"
       },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
+      }
+    },
+	{
+      "title": "2019/05/16 - Eau libre - Pontiac - Radarsat",
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "Inon2019_EauLibre_20190516_Pontiac_Radarsat2",
+          "version": "1.3.0"
+        },
+        "metadata": {
+          "extern": true
+        },
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
+      }
+    },
     {
       "title": "Mouvements de terrain depuis le 14 avril 2019",
       "metadata": {
