@@ -146,7 +146,7 @@
       }
     },
     {
-      "title": "Municipalités touchées depuis le 14 avril 2019",
+      "title": "Municipalités touchées entre le 14 avril 2019 et le 28 mai 2019",
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -954,7 +954,7 @@
       }
     },
     {
-      "title": "Mouvements de terrain depuis le 14 avril 2019",
+      "title": "Mouvements de terrain entre le 14 avril 2019 et le 28 mai 2019",
       "metadata": {
         "extern": true
       },
@@ -969,7 +969,7 @@
         "type": "wms",
         "timeFilter": {
           "min": "2019-04-14",
-          "max": "2019-05-31",
+          "max": "2019-04-28",
           "range": true,
           "type": "date",
           "style": "calendar"
@@ -982,7 +982,7 @@
       }
     },
     {
-      "title": "Événements d'inondation depuis le 14 avril 2019",
+      "title": "Événements d'inondation entre le 14 avril 2019 et 28 mai 2019",
       "metadata": {
         "extern": true
       },
@@ -997,7 +997,7 @@
         "type": "wms",
         "timeFilter": {
           "min": "2019-04-14",
-          "max": "2019-05-31",
+          "max": "2019-05-28",
           "range": true,
           "type": "date",
           "style": "calendar"
