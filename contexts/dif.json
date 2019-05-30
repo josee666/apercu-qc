@@ -536,7 +536,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "lidar_mnt",
                   "version": "1.3.0"
@@ -557,7 +557,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "lidar_ombre",
                   "version": "1.3.0"
@@ -578,7 +578,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "lidar_pentes",
                   "version": "1.3.0"
@@ -598,7 +598,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "lidar_mhc",
                   "version": "1.3.0"
@@ -617,7 +617,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "lidar_index_planification",
                   "version": "1.3.0"
@@ -635,7 +635,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "lidar_dendro_fp_temp",
                   "version": "1.3.0"
@@ -656,7 +656,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "ori_pee_ori_prov",
                   "version": "1.3.0"
@@ -676,7 +676,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "ori_pee_ori_prov_transp",
                   "version": "1.3.0"
@@ -694,7 +694,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "ori_pee_ori_prov_etiquettes",
                   "version": "1.3.0"
@@ -713,7 +713,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "con_sensib",
                   "version": "1.3.0"
@@ -731,7 +731,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "con_erosio",
                   "version": "1.3.0"
@@ -749,7 +749,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "con_ornier",
                   "version": "1.3.0"
@@ -767,7 +767,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "con_rugos",
                   "version": "1.3.0"
@@ -785,7 +785,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "con_sol_tm",
                   "version": "1.3.0"
@@ -803,7 +803,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "con_solid",
                   "version": "1.3.0"
@@ -821,7 +821,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "iqs_pot_epn",
                   "version": "1.3.0"
@@ -839,7 +839,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "iqs_pot_epb",
                   "version": "1.3.0"
@@ -857,7 +857,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "iqs_pot_epr",
                   "version": "1.3.0"
@@ -875,7 +875,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "iqs_pot_sab",
                   "version": "1.3.0"
@@ -893,7 +893,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "iqs_pot_pib",
                   "version": "1.3.0"
@@ -911,7 +911,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "iqs_pot_pig",
                   "version": "1.3.0"
@@ -929,7 +929,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "iqs_pot_bop",
                   "version": "1.3.0"
@@ -947,7 +947,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "iqs_pot_pex",
                   "version": "1.3.0"
@@ -965,7 +965,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "iqs_pot_tho",
                   "version": "1.3.0"
@@ -983,7 +983,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "accr_st_ers",
                   "version": "1.3.0"
@@ -1001,7 +1001,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "accr_st_boj",
                   "version": "1.3.0"
@@ -1019,7 +1019,7 @@
           },
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "accr_st_err",
                   "version": "1.3.0"
@@ -1040,7 +1040,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "vmb_ha_tot",
                   "version": "1.3.0"
@@ -1060,7 +1060,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "ca_non_fores",
                   "version": "1.3.0"
@@ -1088,7 +1088,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "ca_pertu_autre",
                   "version": "1.3.0"
@@ -1115,7 +1115,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "ca_feux",
                   "version": "1.3.0"
@@ -1144,7 +1144,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "ca_interv_fores",
                   "version": "1.3.0"
@@ -1174,7 +1174,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "sond_pet2",
                   "version": "1.3.0"
@@ -1194,7 +1194,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "sond_pet3",
                   "version": "1.3.0"
@@ -1214,7 +1214,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                       "layers": "sond_pet4",
                       "version": "1.3.0"
@@ -1234,7 +1234,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "nord_photo_oblique",
                   "version": "1.3.0"
@@ -1256,7 +1256,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "pee_index_pdf_mai2015",
                   "version": "1.3.0"
@@ -1276,7 +1276,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "telecharge_index_250k",
                   "version": "1.3.0"
@@ -1296,7 +1296,7 @@
               "crossOrigin": "anonymous",
               "queryFormat": "html",
               "queryHtmlTarget": "iframe",
-              "url": "@host/ws/mffpecofor.fcgi",
+              "url": "/ws/mffpecofor.fcgi",
               "params": {
                   "layers": "lidar_index_extraction",
                   "version": "1.3.0"
