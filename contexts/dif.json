@@ -177,7 +177,7 @@
           "baseLayer": true,
           "sourceOptions": {
               "crossOrigin": "anonymous",
-              "url": "@host/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png",
+              "url": "/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png",
               "type": "xyz"
           }
       },
