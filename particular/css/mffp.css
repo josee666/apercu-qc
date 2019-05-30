@@ -1,0 +1,172 @@
+
+
+.test{
+    color:purple;
+    
+}
+
+.test2_jo{
+    color:red;   
+}
+
+
+body {
+    font-family: "Lucida Sans Unicode", sans-serif;
+
+}
+
+
+@media (max-width: 980px) {
+    body {
+        padding-top: 0;
+    }
+}
+
+
+.tbl_difStyle {
+    width: 100%;
+    box-shadow: 6px 6px 5px #898386;
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding-top: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+    /* margin:10px; */
+
+}
+
+.tbl_difStyle, .th_difStyle, .td_difStyle {
+
+    padding: 4px;
+
+}
+.headTr_difStyle{
+    /* font-family: "Lucida Sans Unicode", sans-serif; */
+    vertical-align:middle;
+    background-color:#00897B;
+    color:whitesmoke;
+    font-size: large;
+    text-align: left;
+}
+
+/* .th_difStyle { */
+
+    /* font-family: "Lucida Sans Unicode", sans-serif; */
+    /* height: 30px; */
+    /* color:whitesmoke;
+    font-size: large;
+    text-align: left; */
+    /* vertical-align:middle; */
+/* } */
+
+/* .th_right_difStyle{ */
+    /* font-family: "Lucida Sans Unicode", sans-serif;
+    height: 30px;
+    font-size: large;
+    text-align: left;
+    vertical-align:middle; */
+
+    /* background-color:#00897B */
+    /* background-image: url(https://spssogl97d.sso.msp.gouv.qc.ca/igo/mffpecofor/modules/mffpecofor/public/images/logoDif_Mffp.png);
+    background-repeat:no-repeat;
+    background-position: right top;
+    background-size: 60px 60px; */
+/* } */
+
+.th_right_difStyle_2col {
+    padding-right: 6px;
+    /* font-family: "Lucida Sans Unicode", sans-serif;
+    height: 30px;
+    font-size: large;
+    text-align: left;
+    vertical-align: middle; */
+
+    /* background-color:#00897B */
+    /* background-image: url(https://spssogl97d.sso.msp.gouv.qc.ca/igo/mffpecofor/modules/mffpecofor/public/images/logoDif_Mffp.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 60px 60px; */
+    /*2 colonne difference*/
+    /* padding-right: 80px; */
+}
+
+
+.tr_difStyle{
+    height: 20px;
+    font-size: medium;
+}
+
+.tr_difStyle:nth-child(even) {
+    background-color:#deefeb
+    /* background-color: #f2f2f2; */
+
+}
+
+
+.tr_difStyle:hover{   /* pour mettre en couleur la ligne sur laquel  la souris est...*/
+    background-color: #99cfca
+}
+
+
+.h1_difStyle{
+    margin: 10px;
+    font-size: large;
+    /* font-family: "Lucida Sans Unicode", sans-serif; */
+    font-weight: 600;
+
+}
+
+
+.h2_difStyle{
+    margin: 15px;
+    font-size: small;
+    /* font-family: "Lucida Sans Unicode", sans-serif; */
+    font-weight: 100;
+}
+
+/* .a_etiquette[aria-label=""]{
+    visibility: hidden;
+}
+.a_etiquette{
+    color:blue;
+} */
+
+.bouton_difStyle[title=""] {
+    visibility: hidden;
+    }
+
+.bouton_difStyle:hover{
+    background-color: #00897B;
+
+}
+.bouton_difStyle{
+    border-radius: 6px;
+    /*box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 0px 0px 0 rgba(0,0,0,0.19);*/
+    margin-left: 10px;
+    margin-right: 40px;
+    background-color: #BDB9BB;
+    color:white;
+    font-family: "Euphemia", sans-serif;
+    font-weight: bold;
+
+}
+
+#notice{
+    margin: 10px;
+    margin-top: 20px;
+    font-size: small;
+
+
+}
+#documentation{
+    margin-top: 30px;
+    margin: 10px;
+    font-size: small;
+}
+
+#list_difstyle{
+    list-style-type: circle;
+    list-style-position: outside;
+    margin: 0;
+
+}
