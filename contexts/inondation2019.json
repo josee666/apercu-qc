@@ -955,6 +955,7 @@
     },
 	{
       "title": "Zone d’intervention spéciale (ZIS) présentant les zones inondées de 2017 et de 2019",
+	  "opacity": 0.65,
       "visible": false,
       "sourceOptions": {
         "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/Themes_publics/MapServer/WMSServer",
