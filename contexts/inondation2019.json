@@ -953,6 +953,26 @@
         "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
       }
     },
+	{
+      "title": "Zone d’intervention spéciale (ZIS) présentant les zones inondées de 2017 et de 2019",
+      "visible": false,
+      "sourceOptions": {
+        "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/Themes_publics/MapServer/WMSServer",
+        "queryable": true,
+		"queryFormat": "geojson",
+        "params": {
+          "layers": "Délimitation du périmètre de la ZIS"
+        },
+        "metadata": {
+          "extern": true
+        },
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/delimitation-du-perimetre-de-la-zone-d-intervention-speciale-zis"
+      }
+    },
     {
       "title": "Mouvements de terrain entre le 14 avril 2019 et le 28 mai 2019",
       "metadata": {
