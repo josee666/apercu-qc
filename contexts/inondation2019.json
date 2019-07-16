@@ -954,15 +954,14 @@
       }
     },
 	{
-      "title": "Zone d’intervention spéciale (ZIS) présentant les zones inondées de 2017 et de 2019",
-	  "opacity": 0.65,
+      "title": "ZIS 2017-2019 Annexe 2, 10 juin au 15 juillet 2019 à 11h",
       "visible": false,
       "sourceOptions": {
-        "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/Themes_publics/MapServer/WMSServer",
+        "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/ZIS_Annexe_2/MapServer/WMSServer?",
         "queryable": true,
 		"queryFormat": "geojson",
         "params": {
-          "layers": "Délimitation du périmètre de la ZIS"
+          "layers": "0"
         },
         "metadata": {
           "extern": true
@@ -972,6 +971,26 @@
       "metadata": {
         "extern": true,
         "url": "https://www.donneesquebec.ca/recherche/fr/dataset/delimitation-du-perimetre-de-la-zone-d-intervention-speciale-zis"
+      }
+    },
+	{
+      "title": "ZIS 2017-2019 Annexe 2 modifiée, 15 juillet 2019 à 11h",
+      "visible": false,
+      "sourceOptions": {
+        "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/ZIS_Annexe2_modifiee/MapServer/WMSServer?",
+        "queryable": true,
+		"queryFormat": "geojson",
+        "params": {
+          "layers": "0"
+        },
+        "metadata": {
+          "extern": true
+        },
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/delimitation-du-perimetre-de-la-zone-d-intervention-speciale-zis-annexe2-modifie"
       }
     },
     {
