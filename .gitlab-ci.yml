@@ -29,7 +29,7 @@ copie:
         - ${ARCHIVE_NAME}.tar.gz
     name: ${CI_COMMIT_REF_NAME}-${CI_PROJECT_PATH_SLUG}
     when: on_success
-    expire_in: '1 mos'
+    expire_in: 1 week
 
 synchro:
   stage: deploy
@@ -44,7 +44,7 @@ synchro:
         - ${ARCHIVE_NAME}.tar.gz
     name: ${CI_COMMIT_REF_NAME}-${CI_PROJECT_PATH_SLUG}
     when: on_success
-    expire_in: '1 mos'
+    expire_in: 1 week
   dependencies:
     - copie
     
@@ -60,7 +60,7 @@ synchro_prod:
         - ${ARCHIVE_NAME}.tar.gz
     name: ${CI_COMMIT_REF_NAME}-${CI_PROJECT_PATH_SLUG}
     when: on_success
-    expire_in: '1 mos'
+    expire_in: 1 week
   dependencies:
     - copie
 
