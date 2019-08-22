@@ -78,14 +78,270 @@
         "type": "xyz"
       }
     },
-    {
-      "title": "Ilot de chaleur",
-      "optionsFromCapabilities": true,
+	{
+      "title": "Défavorisation materielle et sociale 2016 (combinée - Reg. 2 Sur. ISS INSPQ)",
+      "visible": false,
       "metadata": {
         "extern": true
       },
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "national_2016_combine_reg2",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+	},
+	{
+      "title": "Défavorisation materielle et sociale 2016 (combinée - Reg. 1 Gabarits régionaux)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "national_2016_combine",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+	},
+	{
+      "title": "Défavorisation matérielle 2016 - National",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "national_2016_materielle",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+	},
+	{
+      "title": "Défavorisation sociale 2016 - National",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "national_2016_sociale",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+	},
+	{
+      "title": "Défavorisation materielle et sociale 2016 (combinée - Reg. 2 Sur. ISS INSPQ)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "regional_2016_combine_reg2",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+	},
+	{
+      "title": "Défavorisation materielle et sociale 2016 (combinée - Reg. 1 Gabarits régionaux)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "regional_2016_combine",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+	},
+	{
+      "title": "Défavorisation matérielle 2016 - Régional",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "regional_2016_materielle",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+	},
+	{
+      "title": "Défavorisation sociale 2016 - Régional",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "regional_2016_sociale",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+	},
+	{
+      "title": "Défavorisation matérielle et sociale 2011 (combinee - Reg. 2 Sur. ISS INSPQ)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "national_2011_combine_reg2",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+		}
+	},
+	{
+      "title": "Défavorisation matérielle et sociale 2011 (combinée - Reg. 1 Gabarits régionaux)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "national_2011_combine",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+	},
+	{
+      "title": "Défavorisation matérielle 2011 - National",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		      "optionsFromCapabilities": true,
+        "params": {
+          "layers": "national_2011_materielle",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+        }
+	},
+	{
+      "title": "Défavorisation sociale 2011 - National",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "national_2011_sociale",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+        }
+	},
+	{
+      "title": "Défavorisation matérielle et sociale 2011 (combinée - Reg. 2 Sur. ISS INSPQ)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "regional_2011_combine_reg2",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+        }
+	},
+	{
+      "title": "Défavorisation matérielle et sociale 2011 (combinée - Reg. 1 Gabarits régionaux)",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "regional_2011_combine",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+        }
+	},
+	{
+      "title": "Défavorisation matérielle 2011 - Régional",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "regional_2011_materielle",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+        }
+	},
+	{
+      "title": "Défavorisation sociale 2011 - Régional",
+      "visible": false,
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
+        "params": {
+          "layers": "regional_2011_sociale",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+	},
+	{
+      "title": "Ilot de chaleur",
+      "metadata": {
+        "extern": true
+      },
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+		"optionsFromCapabilities": true,
         "params": {
           "layers": "inspq_ilot_chaleur",
           "version": "1.3.0"
@@ -93,7 +349,7 @@
         "type": "wms"
       }
     },
-    {
+	{
       "title": "Ilot de fraicheur",
       "metadata": {
         "extern": true
@@ -105,7 +361,7 @@
           "layers": "inspq_ilot_fraicheur",
           "version": "1.3.0"
         },
-        "type": "wms"
+       "type": "wms"
       }
     },
     {
