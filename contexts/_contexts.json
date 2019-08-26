@@ -4,10 +4,6 @@
     "title": "Fond de carte"
   },
   {
-    "uri": "donneesqc",
-    "title": "Données en vedette"
-  },
-  {
     "uri": "avp",
     "title": "Vigilance multi-risque"
   },
@@ -18,7 +14,7 @@
   {
     "uri": "mtq",
     "title": "Transports Québec"
-  },  
+  },
   {
     "uri": "protection",
     "title": "Protection de la faune"

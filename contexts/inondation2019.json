@@ -1,77 +1,8 @@
 {
   "uri": "inondation2019",
   "title": "Inondation 2019",
-  "map": {
-    "view": {
-      "projection": "EPSG:3857",
-      "center": [
-        -73.0,
-        45.844253
-      ],
-      "zoom": 8,
-      "geolocate": false
-    }
-  },
+  "base": "_base",
   "layers": [{
-      "title": "Blanc",
-      "baseLayer": true,
-      "visible": false,
-      "sourceOptions": {
-        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "OSM",
-      "visible": false,
-      "baseLayer": true,
-      "sourceOptions": {
-        "type": "osm"
-      }
-    },
-    {
-      "title": "Couleur",
-      "baseLayer": true,
-      "visible": false,
-      "opacity": 0.8,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/carte_adn@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Gris",
-      "baseLayer": true,
-      "visible": false,
-      "opacity": 0.8,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/fond_thematique@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Satellite",
-      "baseLayer": true,
-      "visible": false,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
-        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Route",
-      "visible": true,
-      "baseLayer": true,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-        "type": "xyz"
-      }
-    },
-    {
       "title": "2019/04/21 - Infrarouge - Lac Saint-Pierre - Sentinel2",
       "visible": false,
       "sourceOptions": {
@@ -81,9 +12,6 @@
         "params": {
           "layers": "20190421_infrarouge_LacStPierre_Sentinel2",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -124,7 +52,7 @@
         "attributions": "© WorldView-2 et 3 © 2019 DigitalGlobe, Inc"
       }
     },
-	{
+    {
       "title": "2019/05/06 - Infrarouge - Saint-Laurent et Outaouais - Sentinel2",
       "visible": false,
       "sourceOptions": {
@@ -134,9 +62,6 @@
         "params": {
           "layers": "20190506_infrarouge_StLaurent_Outaouais_Sentinel2",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -155,9 +80,6 @@
           "layers": "vg_observation_inondation_14avril2019_mun_tout_v",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -175,9 +97,6 @@
         "params": {
           "layers": "Polygones de zones inondables"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -194,9 +113,6 @@
         "queryFormat": "geojson",
         "params": {
           "layers": "Limites des plaines inondables"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -216,9 +132,6 @@
           "layers": "msp_inon2019_zone_inondee_chaudiere_dpp_beauceville",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -236,9 +149,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190420_LacDeuxMontagnes_Radarsat2",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -258,9 +168,6 @@
           "layers": "msp_inon2019_zone_inondee_chaudiere_dpp_stemarie",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -279,9 +186,6 @@
           "layers": "msp_inon2019_zone_inondee_chaudiere_dpp_scott",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -299,9 +203,6 @@
         "params": {
           "layers": "msp_inon2019_zone_inondee_chaudiere_dpp_vallee-jonction",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -339,9 +240,6 @@
           "layers": "Inon2019_EauLibre_20190422_Gatineau_Radarsat2_Pleiade",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -359,9 +257,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190422_Chaudiere_Sentinel1",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -381,9 +276,6 @@
           "layers": "Inon2019_EauLibre_20190423_Outaouais_Radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -401,9 +293,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190424_LacSaintPierre_Radarsat2",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -423,9 +312,6 @@
           "layers": "Inon2019_EauLibre_20190424_LacDeuxMontagnes_Radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -443,9 +329,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190425_lac2montagnes_Alos2Palsar",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -465,9 +348,6 @@
           "layers": "Inon2019_EauLibre_20190426_Gatineau_Radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -485,9 +365,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190426_Outaouais_Sentinel1B",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -507,9 +384,6 @@
           "layers": "Inon2019_EauLibre_20190427_LacSaintPierre_Radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -527,9 +401,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190427_LacDeuxMontagnes_Radarsat2",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -549,9 +420,6 @@
           "layers": "Inon2019_EauLibre_20190429_Gatineau_TerraSAR-X",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -569,9 +437,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190429_Gatineau_Radarsat2_Pleiade",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -591,9 +456,6 @@
           "layers": "Inon2019_EauLibre_20190429_LacDeuxMontagnes_Pleiade",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -611,9 +473,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190429_LacSaintPierre_Pleiade",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -633,9 +492,6 @@
           "layers": "Inon2019_EauLibre_20190429_grandmontreal_geoeye1",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -653,9 +509,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190430_Gatineau_Radarsat2",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -676,9 +529,6 @@
           "layers": "Inon2019_EauLibre_20190501_Gatineau_terrasarx",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -697,9 +547,6 @@
           "layers": "Inon2019_EauLibre_20190503_LacDeuxMontagnes_Radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -716,9 +563,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190504_Outaouais_Radarsat2",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -738,9 +582,6 @@
           "layers": "Inon2019_EauLibre_20190507_Gatineau_radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -750,7 +591,7 @@
     },
     {
       "title": "2019/05/09 - Eau libre - Haut-Pontiac - Radarsat",
-	  "visible": false,
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -758,9 +599,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190509_HautPontiac_radarsat2",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -779,9 +617,6 @@
           "layers": "Inon2019_EauLibre_20190510_Pontiac_radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -791,7 +626,7 @@
     },
     {
       "title": "2019/05/10 - Eau libre - Gatineau - TerraSAR-X",
-	    "visible": false,
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -799,9 +634,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190510_gatineau_terrasarx",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -821,9 +653,6 @@
           "layers": "Inon2019_EauLibre_20190510_grandmontreal_radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -833,7 +662,7 @@
     },
     {
       "title": "2019/05/11 - Eau libre - Lac Saint-Pierre - Radarsat",
-	  "visible": false,
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -842,9 +671,6 @@
           "layers": "Inon2019_EauLibre_20190511_lacstpierre_radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -852,7 +678,7 @@
         "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
       }
     },
-	{
+    {
       "title": "2019/05/13 - Eau libre - Gatineau - Radarsat",
       "visible": false,
       "sourceOptions": {
@@ -862,9 +688,6 @@
         "params": {
           "layers": "Inon2019_EauLibre_20190513_Gatineau_Radarsat2",
           "version": "1.3.0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -883,9 +706,6 @@
           "layers": "Inon2019_EauLibre_20190514_LacDeuxMontagnes_Radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -893,7 +713,7 @@
         "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
       }
     },
-	{
+    {
       "title": "2019/05/14 - Eau libre - Lac Saint-Pierre - Radarsat",
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
@@ -903,8 +723,22 @@
           "layers": "Inon2019_EauLibre_20190514_lacstpierre_Radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
+      }
+    },
+    {
+      "title": "2019/05/15 - Eau libre - Gatineau - TerraSAR-X",
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "Inon2019_EauLibre_20190515_Gatineau_TerrasarX",
+          "version": "1.3.0"
         },
         "type": "wms"
       },
@@ -914,26 +748,6 @@
       }
     },
     {
-        "title": "2019/05/15 - Eau libre - Gatineau - TerraSAR-X",
-        "sourceOptions": {
-          "url": "/ws/inondation2019.fcgi",
-          "queryable": true,
-          "queryFormat": "gml2",
-          "params": {
-            "layers": "Inon2019_EauLibre_20190515_Gatineau_TerrasarX",
-            "version": "1.3.0"
-          },
-          "metadata": {
-            "extern": true
-          },
-          "type": "wms"
-        },
-        "metadata": {
-          "extern": true,
-          "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
-        }
-    },
-	{
       "title": "2019/05/16 - Eau libre - Haut-Pontiac - Radarsat",
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
@@ -943,9 +757,6 @@
           "layers": "Inon2019_EauLibre_20190516_HautPontiac_Radarsat2",
           "version": "1.3.0"
         },
-        "metadata": {
-          "extern": true
-        },
         "type": "wms"
       },
       "metadata": {
@@ -953,18 +764,15 @@
         "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
       }
     },
-	{
+    {
       "title": "ZIS 2017-2019 Annexe 2, 10 juin au 15 juillet 2019 à 11h",
       "visible": false,
       "sourceOptions": {
         "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/ZIS_Annexe_2/MapServer/WMSServer?",
         "queryable": true,
-		"queryFormat": "geojson",
+        "queryFormat": "geojson",
         "params": {
           "layers": "0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -973,18 +781,15 @@
         "url": "https://www.donneesquebec.ca/recherche/fr/dataset/delimitation-du-perimetre-de-la-zone-d-intervention-speciale-zis"
       }
     },
-	{
+    {
       "title": "ZIS 2017-2019 Annexe 2 modifiée, 15 juillet 2019 à 11h",
       "visible": false,
       "sourceOptions": {
         "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/ZIS_Annexe2_modifiee/MapServer/WMSServer?",
         "queryable": true,
-		"queryFormat": "geojson",
+        "queryFormat": "geojson",
         "params": {
           "layers": "0"
-        },
-        "metadata": {
-          "extern": true
         },
         "type": "wms"
       },
@@ -995,9 +800,6 @@
     },
     {
       "title": "Mouvements de terrain entre le 14 avril 2019 et le 28 mai 2019",
-      "metadata": {
-        "extern": true
-      },
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -1023,9 +825,6 @@
     },
     {
       "title": "Événements d'inondation entre le 14 avril 2019 et 28 mai 2019",
-      "metadata": {
-        "extern": true
-      },
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -1051,9 +850,6 @@
     },
     {
       "title": "Point d'entrave routière (Québec-511)",
-      "metadata": {
-        "extern": true
-      },
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
         "optionsFromCapabilities": true,
@@ -1065,60 +861,6 @@
         },
         "type": "wms"
       }
-    }
-  ],
-  "toolbar": [
-    "searchResults",
-    "contextManager",
-    "mapDetails",
-    "shareMap",
-    "catalog",
-    "directions",
-    "timeAnalysis",
-    "importExport",
-    "ogcFilter",
-    "print"
-  ],
-  "tools": [{
-      "name": "searchResults",
-      "title": "Recherche",
-      "options": {
-        "focusFirst": false
-      }
-    },
-    {
-      "name": "contextManager",
-      "title": "Vues"
-    },
-    {
-      "name": "mapDetails",
-      "title": "Couches",
-      "options": {
-         "toggleLegendOnVisibilityChange": false
-      }
-    },
-    {
-      "name": "shareMap"
-    },
-    {
-      "name": "directions"
-    },
-    {
-      "name": "catalog",
-      "title": "Catalogue"
-    },
-    {
-      "name": "catalogLayers",
-      "title": "Catalogue"
-    },
-    {
-      "name": "timeAnalysis"
-    },
-    {
-      "name": "importExport"
-    },
-    {
-      "name": "print"
     }
   ]
 }

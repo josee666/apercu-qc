@@ -1,108 +1,19 @@
 {
   "uri": "evenements",
   "title": "Événements de sécurité civile",
-  "map": {
-    "view": {
-      "projection": "EPSG:3857",
-      "center": [-72, 48],
-      "zoom": 7
-    }
-  },
-  "layers": [
-    {
-      "title": "OSM",
+  "base": "_base",
+  "layers": [{
       "visible": false,
-      "baseLayer": true,
-      "sourceOptions": {
-        "type": "osm"
-      }
-    },
-    {
-      "title": "Satellite",
-      "baseLayer": true,
-      "visible": false,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
-        "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Route II",
-      "visible": true,
-      "baseLayer": false,
-      "view": {
-        "maxResolution": 10
-      },
-      "sourceOptions": {
-        "url":
-          "/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions":
-          "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-        "type": "xyz"
-      },
-      "maxResolution": 10
-    },
-    {
-      "title": "Blanc",
-      "baseLayer": true,
-      "visible": false,
-      "sourceOptions": {
-        "url":
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Route",
-      "visible": true,
-      "baseLayer": true,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions":
-          "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Couleur",
-      "baseLayer": true,
-      "visible": false,
-      "opacity": 0.8,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/carte_adn@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions":
-          "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Gris",
-      "baseLayer": true,
-      "visible": false,
-      "opacity": 0.8,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/fond_thematique@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions":
-          "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "visible": false,
-        "metadata": {
-        "extern": true
-      },
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
         "timeFilterable": true,
         "timeFilter": {
-        "min": "1990-01-01",
-        "max": "2020-03-28",
-        "style": "calendar",
-        "range": true,
-        "type": "date"
-      },
+          "min": "1990-01-01",
+          "max": "2020-03-28",
+          "style": "calendar",
+          "range": true,
+          "type": "date"
+        },
         "queryable": true,
         "queryFormat": "gml2",
         "optionsFromCapabilities": true,
@@ -119,25 +30,25 @@
       "id": "vg",
       "title": "Filtre - Événements extrêmes",
       "sourceOptions": {
-      "params": {
-        "featureTypes": "vg_observation_v_autre_wmst",
-        "fieldNameGeometry": "geometry",
-        "maxFeatures": 10000,
-        "version": "2.0.0",
-        "outputFormat": "geojson_utf8",
-        "outputFormatDownload": "shp"
-      },
+        "params": {
+          "featureTypes": "vg_observation_v_autre_wmst",
+          "fieldNameGeometry": "geometry",
+          "maxFeatures": 10000,
+          "version": "2.0.0",
+          "outputFormat": "geojson_utf8",
+          "outputFormatDownload": "shp"
+        },
         "type": "wfs",
         "url": "/ws/igo_gouvouvert.fcgi",
         "ogcFilters": {
-	"enabled": true,
-	"editable": true,
-        "filters": {
-          "operator": "PropertyIsEqualTo",
-          "propertyName": "severite",
-          "expression": "Extrême"
+          "enabled": true,
+          "editable": true,
+          "filters": {
+            "operator": "PropertyIsEqualTo",
+            "propertyName": "severite",
+            "expression": "Extrême"
+          }
         }
-      }
       }
     },
     {
@@ -146,76 +57,21 @@
       "id": "filtre_evenement",
       "title": "Filtre - Événements",
       "sourceOptions": {
-      "params": {
-        "featureTypes": "vg_observation_v_autre_wmst",
-        "fieldNameGeometry": "geometry",
-        "maxFeatures": 10000,
-        "version": "2.0.0",
-        "outputFormat": "geojson_utf8",
-        "outputFormatDownload": "shp"
+        "params": {
+          "featureTypes": "vg_observation_v_autre_wmst",
+          "fieldNameGeometry": "geometry",
+          "maxFeatures": 10000,
+          "version": "2.0.0",
+          "outputFormat": "geojson_utf8",
+          "outputFormatDownload": "shp"
         },
         "type": "wfs",
         "url": "/ws/igo_gouvouvert.fcgi",
         "ogcFilters": {
-	"enabled": true,
-	"editable": true
-	}
+          "enabled": true,
+          "editable": true
+        }
       }
-    }
-  ],
-  "toolbar": [
-    "searchResults",
-    "contextManager",
-    "mapDetails",
-    "shareMap",
-    "catalog",
-    "directions",
-    "timeAnalysis",
-    "importExport",
-    "ogcFilter",
-    "print"
-  ],
-  "tools": [
-    {
-      "name": "searchResults",
-      "title": "Recherche",
-	"options": {
-	"focusFirst": false
-	}
-    },
-    {
-      "name": "contextManager",
-      "title": "Vues"
-    },
-    {
-      "name": "mapDetails",
-      "title": "Couches",
-      "options": {
-        "toggleLegendOnVisibilityChange": false
-      }
-    },
-    {
-      "name": "shareMap"
-    },
-    {
-      "name": "directions"
-    },
-    {
-      "name": "catalog",
-      "title": "Catalogue"
-    },
-    {
-      "name": "catalogLayers",
-      "title": "Catalogue"
-    },
-    {
-      "name": "timeAnalysis"
-    },
-    {
-      "name": "importExport"
-    },
-    {
-      "name": "print"
     }
   ]
 }

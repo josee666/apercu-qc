@@ -1,675 +1,580 @@
 {
   "uri": "mtq",
   "title": "Transports Québec",
-  "map": {
-    "view": {
-      "projection": "EPSG:3857",
-      "center": [-72, 48],
-      "zoom": 7,
-      "maxZoom": 17,
-      "geolocate": false
-    }
-  },
+  "base": "_base",
   "layers": [{
-    "title": "Route II",
-    "zIndex": 4,
-    "id": "routeii",
-    "visible": true,
-    "baseLayer": true,
-    "view": {
-      "maxResolution": 10
+      "id": "bgr_v_dirct_genrl_geomt_act",
+      "zIndex": 99,
+      "visible": false,
+      "sourceOptions": {
+        "type": "wms",
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryTitle": "nom_unit00",
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "bgr_v_dirct_genrl_geomt_act",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "sourceFields": [{
+            "alias": "Nom de la direction",
+            "name": "nom_unit00"
+          },
+          {
+            "alias": "Adresse",
+            "name": "val_adrs_u"
+          }
+        ]
+      }
+    }, {
+      "id": "bgr_v_dirct_terrt_geomt_act",
+      "zIndex": 98,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "bgr_v_dirct_terrt_geomt_act",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "bgr_v_centr_servc_geomt_act",
+      "zIndex": 97,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "bgr_v_centr_servc_geomt_act",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "etablissement_mtq",
+      "zIndex": 96,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "etablissement_mtq",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "bgr_v_sous_route_res_sup_act",
+      "zIndex": 95,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "bgr_v_sous_route_res_sup_act",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "circulation_routier",
+      "zIndex": 94,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "circulation_routier",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "aq_camion",
+      "zIndex": 93,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "aq_camion",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "convi_velo_glv",
+      "zIndex": 92,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "convi_velo_glv",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "reseau_chfer_qc",
+      "zIndex": 91,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "reseau_chfer_qc",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "sortie_aut",
+      "zIndex": 90,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "sortie_aut",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "repere_km",
+      "zIndex": 89,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "repere_km",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "gsq_v_desc_strct_tri",
+      "zIndex": 88,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "gsq_v_desc_strct_tri",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "pes_v_limtn_charg",
+      "zIndex": 87,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "pes_v_limtn_charg",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "villagerelais",
+      "zIndex": 86,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "villagerelais",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "parc_routier",
+      "zIndex": 85,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "parc_routier",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "telephone_urg",
+      "zIndex": 84,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "telephone_urg",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "conditions_routieres",
+      "zIndex": 82,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "conditions_routieres",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "chantiers_mtmdet",
+      "zIndex": 82,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "chantiers_mtmdet",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "evenements",
+      "zIndex": 81,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "evenements",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "radars_photos",
+      "zIndex": 80,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "radars_photos",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "investissement2018_2020",
+      "zIndex": 79,
+      "visible": false,
+      "queryFormat": "html",
+      "queryHtmlTarget": "iframe",
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "investissement2018_2020",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "station_meteoroutiere",
+      "zIndex": 78,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "json",
+        "params": {
+          "layers": "stations_meteoroutieres",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "histo_station_meteoroutiere",
+      "zIndex": 77,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "json",
+        "params": {
+          "layers": "histo_stations_meteoroutieres",
+          "version": "1.3.0",
+          "feature_count": 3650,
+          "time": "2008-01-01/2018-10-31"
+
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "aeroport",
+      "zIndex": 76,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "aeroport",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "aeroport_piste",
+      "zIndex": 75,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "aeroport_piste",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "liaison_maritime",
+      "zIndex": 74,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "liaison_maritime",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
     },
-    "sourceOptions": {
-      "url": "/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png",
-      "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-      "type": "xyz"
+
+    {
+      "id": "port_installation",
+      "zIndex": 73,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "port_installation",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "lieuhabite",
+      "zIndex": 72,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "lieuhabite",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "zpegt_index_cgt_s",
+      "zIndex": 71,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "zpegt_index_cgt_s",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "zpegt_cgt_l",
+      "zIndex": 70,
+      "visible": false,
+      "queryFormat": "html",
+      "queryHtmlTarget": "iframe",
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "zpegt_cgt_l",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
+    }, {
+      "id": "zpegt_cgt_s",
+      "zIndex": 69,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryFormat": "html",
+        "queryHtmlTarget": "iframe",
+        "params": {
+          "layers": "zpegt_cgt_s",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
     },
-    "maxResolution": 10
-  }, {
-    "title": "Satellite",
-    "id": "satellite",
-    "baseLayer": true,
-    "visible": false,
-    "sourceOptions": {
-      "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
-      "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-      "type": "xyz"
+    {
+      "title": "Zone de dégel",
+      "id": "zones_degel",
+      "zIndex": 68,
+      "visible": false,
+      "sourceOptions": {
+        "optionsFromCapabilities": true,
+        "url": "/apis/ws/swtq",
+        "queryable": true,
+        "queryTitle": "zone",
+        "params": {
+          "layers": "zone_degel",
+          "version": "1.3.0",
+          "feature_count": 365
+        },
+        "type": "wms"
+      }
     }
-  }, {
-    "title": "Blanc",
-    "id": "empty",
-    "zIndex": 3,
-    "baseLayer": true,
-    "visible": false,
-    "sourceOptions": {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
-      "type": "xyz"
-    }
-  }, {
-    "title": "Route",
-    "zIndex": 2,
-    "id": "route",
-    "visible": true,
-    "baseLayer": true,
-    "sourceOptions": {
-      "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
-      "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> /  Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-      "type": "xyz"
-    }
-  }, {
-    "title": "Couleur",
-    "id": "couleur",
-    "zIndex": 1,
-    "baseLayer": true,
-    "visible": false,
-    "opacity": 0.8,
-    "sourceOptions": {
-      "url": "/carto/tms/1.0.0/carte_adn@EPSG_3857/{z}/{x}/{-y}.png",
-      "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
-      "type": "xyz"
-    }
-  }, {
-    "title": "Gris",
-    "id": "gris",
-    "zIndex": 0,
-    "baseLayer": true,
-    "visible": false,
-    "opacity": 0.8,
-    "sourceOptions": {
-      "url": "/carto/tms/1.0.0/fond_thematique@EPSG_3857/{z}/{x}/{-y}.png",
-      "attributions": "  © <a href='https://www.droitauteur.gouv.qc.ca/copyright.php'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a>",
-      "type": "xyz"
-    }
-  }, {
-    "id": "bgr_v_dirct_genrl_geomt_act",
-    "zIndex": 99,
-    "visible": false,
-    "sourceOptions": {
-      "type": "wms",
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryTitle": "nom_unit00",
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "bgr_v_dirct_genrl_geomt_act",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "sourceFields": [
-            {"alias":"Nom de la direction","name": "nom_unit00"},
-            {"alias":"Adresse","name": "val_adrs_u"}
-          ]
-    }
-  }, {
-    "id": "bgr_v_dirct_terrt_geomt_act",
-    "zIndex": 98,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "bgr_v_dirct_terrt_geomt_act",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "bgr_v_centr_servc_geomt_act",
-    "zIndex": 97,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "bgr_v_centr_servc_geomt_act",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "etablissement_mtq",
-    "zIndex": 96,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "etablissement_mtq",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "bgr_v_sous_route_res_sup_act",
-    "zIndex": 95,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "bgr_v_sous_route_res_sup_act",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "circulation_routier",
-    "zIndex": 94,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "circulation_routier",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "aq_camion",
-    "zIndex": 93,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "aq_camion",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "convi_velo_glv",
-    "zIndex": 92,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "convi_velo_glv",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "reseau_chfer_qc",
-    "zIndex": 91,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "reseau_chfer_qc",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "sortie_aut",
-    "zIndex": 90,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "sortie_aut",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "repere_km",
-    "zIndex": 89,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "repere_km",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "gsq_v_desc_strct_tri",
-    "zIndex": 88,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "gsq_v_desc_strct_tri",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "pes_v_limtn_charg",
-    "zIndex": 87,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "pes_v_limtn_charg",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "villagerelais",
-    "zIndex": 86,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "villagerelais",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "parc_routier",
-    "zIndex": 85,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "parc_routier",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "telephone_urg",
-    "zIndex": 84,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "telephone_urg",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "conditions_routieres",
-    "zIndex": 82,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "conditions_routieres",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "chantiers_mtmdet",
-    "zIndex": 82,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "chantiers_mtmdet",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "evenements",
-    "zIndex": 81,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "evenements",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "radars_photos",
-    "zIndex": 80,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "radars_photos",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "investissement2018_2020",
-    "zIndex": 79,
-    "visible": false,
-    "queryFormat": "html",
-    "queryHtmlTarget": "iframe",
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "investissement2018_2020",
-        "version": "1.3.0"
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "station_meteoroutiere",
-    "zIndex": 78,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "json",
-      "params": {
-        "layers": "stations_meteoroutieres",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "histo_station_meteoroutiere",
-    "zIndex": 77,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "json",
-      "params": {
-        "layers": "histo_stations_meteoroutieres",
-        "version": "1.3.0",
-        "feature_count": 3650,
-        "time": "2008-01-01/2018-10-31"
-
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "aeroport",
-    "zIndex": 76,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "aeroport",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "aeroport_piste",
-    "zIndex": 75,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "aeroport_piste",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "liaison_maritime",
-    "zIndex": 74,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "liaison_maritime",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  },
-
-  {
-    "id": "port_installation",
-    "zIndex": 73,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "port_installation",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "lieuhabite",
-    "zIndex": 72,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "lieuhabite",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "zpegt_index_cgt_s",
-    "zIndex": 71,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "zpegt_index_cgt_s",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "zpegt_cgt_l",
-    "zIndex": 70,
-    "visible": false,
-    "queryFormat": "html",
-    "queryHtmlTarget": "iframe",
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "zpegt_cgt_l",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }, {
-    "id": "zpegt_cgt_s",
-    "zIndex": 69,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
-      "params": {
-        "layers": "zpegt_cgt_s",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  },
-
-  {
-    "title": "Zone de dégel",
-    "id": "zones_degel",
-    "zIndex": 68,
-    "visible": false,
-    "sourceOptions": {
-      "optionsFromCapabilities": true,
-      "url": "/apis/ws/swtq",
-      "queryable": true,
-      "queryTitle": "zone",
-      "params": {
-        "layers": "zone_degel",
-        "version": "1.3.0",
-        "feature_count": 365
-      },
-      "type": "wms"
-    }
-  }
-
-
-
   ],
-  "toolbar": ["about", "searchResults", "contextManager", "mapDetails", "shareMap", "directions", "importExport", "ogcFilter", "print"],
   "tools": [{
-    "name": "searchResults",
-    "title": "Recherche",
-    "options": {
-      "focusFirst": false
-    }
-  }, {
-    "name": "contextManager",
-    "title": "Vues"
-  }, {
     "name": "mapDetails",
     "title": "Couches",
     "options": {
       "toggleLegendOnVisibilityChange": false,
-        "layerListControls": {
-          "excludeBaseLayers": true,
-          "showToolbar": "always"
-        }
+      "layerListControls": {
+        "excludeBaseLayers": true,
+        "showToolbar": "always"
+      }
 
     }
-  }, {
-    "name": "shareMap"
-  }, {
-    "name": "directions"
-  }, {
-    "name": "importExport"
-  }, {
-    "name": "print"
   }, {
     "name": "about",
     "options": {

@@ -1,95 +1,10 @@
 {
   "uri": "protection",
   "title": "Protection de la Faune",
-  "map": {
-    "view": {
-      "projection": "EPSG:3857",
-      "center": [
-        -72.066644,
-        47.844253
-      ],
-      "zoom": 7,
-      "geolocate": true,
-      "maxZoom": 19
-    }
-  },
-  "layers": [
-    {
-      "title": "OSM",
-      "visible": false,
-      "baseLayer": true,
+  "base": "_base",
+  "layers": [{
       "sourceOptions": {
-        "type": "osm"
-      }
-    },
-    {
-      "title": "Satellite",
-      "baseLayer": true,
-      "visible": false,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
-        "attributions": "<a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>© Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Route II",
-      "visible": true,
-      "baseLayer": false,
-      "view": {
-        "maxResolution": 10
-      },
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/carte_gouv_qc_public@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": "<a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>© Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-        "type": "xyz"
-      },
-      "maxResolution": 10
-    },
-    {
-      "title": "Blanc",
-      "baseLayer": true,
-      "visible": false,
-      "sourceOptions": {
-        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Route",
-      "visible": true,
-      "baseLayer": true,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": "<a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>© Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Couleur",
-      "baseLayer": true,
-      "visible": false,
-      "opacity": 0.8,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/carte_adn@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": "<a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>© Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "title": "Gris",
-      "baseLayer": true,
-      "visible": false,
-      "opacity": 0.8,
-      "sourceOptions": {
-        "url": "/carto/tms/1.0.0/fond_thematique@EPSG_3857/{z}/{x}/{-y}.png",
-        "attributions": "<a href='https://www.quebec.ca/'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'><br><a href='http://www.droitauteur.gouv.qc.ca/copyright.php'>© Gouvernement du Québec</a><br> <br> Fondé sur<a href='https://github.com/infra-geo-ouverte/igo2'> IGO2</a>",
-        "type": "xyz"
-      }
-    },
-    {
-      "sourceOptions": {
-      "optionsFromCapabilities": true,
+        "optionsFromCapabilities": true,
         "url": "/ws/igo_gouvouvert.fcgi",
         "params": {
           "layers": "mffp_dgpf_limites_regions_s",
@@ -108,61 +23,6 @@
         },
         "type": "wms"
       }
-    }
-  ],
-  "toolbar": [
-   "searchResults",
-    "contextManager",
-    "mapDetails",
-    "shareMap",
-    "catalog",
-    "directions",
-    "timeAnalysis",
-    "importExport",
-    "ogcFilter",
-    "print"
-  ],
-  "tools": [
-    {
-      "name": "searchResults",
-      "title": "Recherche",
-	"options": {
-	"focusFirst": false
-	}
-    },
-    {
-      "name": "contextManager",
-      "title": "Vues"
-    },
-    {
-      "name": "mapDetails",
-      "title": "Couches",
-      "options": {
-        "toggleLegendOnVisibilityChange": false
-      }
-    },
-    {
-      "name": "shareMap"
-    },
-    {
-      "name": "directions"
-    },
-    {
-      "name": "catalog",
-      "title": "Catalogue"
-    },
-    {
-      "name": "catalogLayers",
-      "title": "Catalogue"
-    },
-    {
-      "name": "timeAnalysis"
-    },
-    {
-      "name": "importExport"
-    },
-    {
-      "name": "print"
     }
   ]
 }
