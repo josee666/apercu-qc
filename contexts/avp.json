@@ -227,6 +227,28 @@
         },
         "type": "wms"
       }
+    },
+    {
+      "visible": true,
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "contours_feux"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "visible": true,
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "points_feux"
+        },
+        "type": "wms"
+      }
     }
   ],
   "toolbar": [
