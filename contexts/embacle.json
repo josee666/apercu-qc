@@ -5,6 +5,7 @@
   "layers": [{
       "visible": false,
       "sourceOptions": {
+        "type": "wms",
         "url": "/ws/igo_gouvouvert.fcgi",
         "timeFilterable": true,
         "timeFilter": {
@@ -17,7 +18,6 @@
           "layers": "vg_observation_v_inondation_embacle_wmst",
           "version": "1.3.0"
         },
-        "type": "wms",
         "optionsFromCapabilities": true
       }
     },
@@ -47,29 +47,6 @@
             "propertyName": "severite",
             "expression": "Extrême"
           }
-        }
-      }
-    },
-    {
-      "name": "Filtre - Événements",
-      "visible": false,
-      "id": "filtre_evenement",
-      "title": "Filtre - Événements",
-      "sourceOptions": {
-        "params": {
-          "featureTypes": "vg_observation_v_autre_wmst",
-          "fieldNameGeometry": "geometry",
-          "maxFeatures": 10000,
-          "version": "2.0.0",
-          "outputFormat": "geojson_utf8",
-          "outputFormatDownload": "shp"
-        },
-        "type": "wfs",
-        "url": "/ws/igo_gouvouvert.fcgi",
-        "queryable": true,
-        "queryFormat": "gml2",
-        "ogcFilters": {
-          "filtersAreEditable": true
         }
       }
     },
