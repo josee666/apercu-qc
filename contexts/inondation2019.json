@@ -709,6 +709,7 @@
     },
     {
       "title": "2019/05/04 - Eau libre - Outaouais - Radarsat",
+	  "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -771,6 +772,7 @@
     },
     {
       "title": "2019/05/10 - Eau libre - Pontiac - Radarsat",
+	  "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -791,7 +793,7 @@
     },
     {
       "title": "2019/05/10 - Eau libre - Gatineau - TerraSAR-X",
-	    "visible": false,
+	  "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -875,6 +877,7 @@
     },
     {
       "title": "2019/05/14 - Eau libre - Lac des Deux Montagnes  - Radarsat",
+	  "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -895,6 +898,7 @@
     },
 	{
       "title": "2019/05/14 - Eau libre - Lac Saint-Pierre - Radarsat",
+	  "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -914,27 +918,29 @@
       }
     },
     {
-        "title": "2019/05/15 - Eau libre - Gatineau - TerraSAR-X",
-        "sourceOptions": {
-          "url": "/ws/inondation2019.fcgi",
-          "queryable": true,
-          "queryFormat": "gml2",
-          "params": {
-            "layers": "Inon2019_EauLibre_20190515_Gatineau_TerrasarX",
-            "version": "1.3.0"
-          },
-          "metadata": {
-            "extern": true
-          },
-          "type": "wms"
+      "title": "2019/05/15 - Eau libre - Gatineau - TerraSAR-X",
+      "visible": false,
+      "sourceOptions": {
+        "url": "/ws/inondation2019.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "Inon2019_EauLibre_20190515_Gatineau_TerrasarX",
+          "version": "1.3.0"
         },
         "metadata": {
-          "extern": true,
-          "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
-        }
+          "extern": true
+        },
+        "type": "wms"
+      },
+      "metadata": {
+        "extern": true,
+        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
+      }
     },
 	{
       "title": "2019/05/16 - Eau libre - Haut-Pontiac - Radarsat",
+	  "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -951,46 +957,6 @@
       "metadata": {
         "extern": true,
         "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/53ecf495-9320-47b4-9c9f-7edb9cbba0c5"
-      }
-    },
-	{
-      "title": "ZIS 2017-2019 Annexe 2, 10 juin au 15 juillet 2019 à 11h",
-      "visible": false,
-      "sourceOptions": {
-        "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/ZIS_Annexe_2/MapServer/WMSServer?",
-        "queryable": true,
-		"queryFormat": "geojson",
-        "params": {
-          "layers": "0"
-        },
-        "metadata": {
-          "extern": true
-        },
-        "type": "wms"
-      },
-      "metadata": {
-        "extern": true,
-        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/delimitation-du-perimetre-de-la-zone-d-intervention-speciale-zis"
-      }
-    },
-	{
-      "title": "ZIS 2017-2019 Annexe 2 modifiée, 15 juillet 2019 à 11h",
-      "visible": false,
-      "sourceOptions": {
-        "url": "https://www.servicesgeo.enviroweb.gouv.qc.ca/donnees/services/Public/ZIS_Annexe2_modifiee/MapServer/WMSServer?",
-        "queryable": true,
-		"queryFormat": "geojson",
-        "params": {
-          "layers": "0"
-        },
-        "metadata": {
-          "extern": true
-        },
-        "type": "wms"
-      },
-      "metadata": {
-        "extern": true,
-        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/delimitation-du-perimetre-de-la-zone-d-intervention-speciale-zis-annexe2-modifie"
       }
     },
     {
