@@ -75,13 +75,14 @@
    "searchResults",
    "contextManager",
    "mapDetails",
-   "catalog",
    "timeAnalysis",
    "ogcFilter",
+   "measurer",
    "directions",
+   "catalog",
    "importExport",
-   "shareMap",
    "print",
+   "shareMap",
    "about"
  ],
  "tools": [
@@ -120,6 +121,9 @@
      }
    },
    {
+     "name": "measurer"
+   },
+   {
      "name": "directions"
    },
    {
@@ -132,6 +136,9 @@
    },
    {
      "name": "timeAnalysis"
+   },
+   {
+     "name": "ogcFilter"
    },
    {
      "name": "importExport"
