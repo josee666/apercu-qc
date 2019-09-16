@@ -22,8 +22,16 @@
   "catalog": {
     "sources": [
       {
+        "title": "Éducation",
+        "url": "/apis/wss/education.fcgi"
+      },
+      {
         "title": "Santé",
         "url": "/apis/wss/sante.fcgi"
+      },
+      {
+        "title": "Sécurité",
+        "url": "/apis/wss/securite.fcgi"
       },
       {
         "title": "Toutes les données",
