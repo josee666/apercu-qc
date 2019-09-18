@@ -3,7 +3,8 @@
     "view": {
       "projection": "EPSG:3857",
       "center": [-71.938087, 48.446975],
-      "zoom": 6
+      "zoom": 6,
+      "maxZoom": 17
     }
   },
   "layers": [
