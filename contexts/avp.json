@@ -2,8 +2,7 @@
   "uri": "avp",
   "title": "Vigilance multi-risque",
   "base": "_base",
-  "layers": [
-    {
+  "layers": [{
       "title": "Régions administratives",
       "opacity": 0.4,
       "sourceOptions": {
@@ -116,6 +115,28 @@
         "params": {
           "layers": "msp_vigilance_crue_publique_v_type",
           "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "visible": true,
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "contours_feux"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "visible": true,
+      "sourceOptions": {
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+          "layers": "points_feux"
         },
         "type": "wms"
       }

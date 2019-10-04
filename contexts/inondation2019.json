@@ -555,8 +555,8 @@
       }
     },
     {
-      "title": "2019/05/04 - Eau libre - Outaouais - Radarsat",
-	  "visible": false,
+      "title": "2019 / 05 / 04 - Eau libre - Outaouais - Radarsat",
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -610,7 +610,7 @@
     },
     {
       "title": "2019/05/10 - Eau libre - Pontiac - Radarsat",
-	  "visible": false,
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -700,7 +700,7 @@
     },
     {
       "title": "2019/05/14 - Eau libre - Lac des Deux Montagnes  - Radarsat",
-	  "visible": false,
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -718,7 +718,7 @@
     },
     {
       "title": "2019/05/14 - Eau libre - Lac Saint-Pierre - Radarsat",
-	  "visible": false,
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -736,7 +736,7 @@
     },
     {
       "title": "2019/05/15 - Eau libre - Gatineau - TerraSAR-X",
-	  "visible": false,
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
@@ -754,7 +754,7 @@
     },
     {
       "title": "2019/05/16 - Eau libre - Haut-Pontiac - Radarsat",
-	  "visible": false,
+      "visible": false,
       "sourceOptions": {
         "url": "/ws/inondation2019.fcgi",
         "queryable": true,
