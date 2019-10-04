@@ -4,7 +4,7 @@
   "sidenavTitle": "IGO",
   "analytics": {
     "provider": "matomo",
-    "url": "https://geoegl.msp.gouv.qc.ca/piwik/",
+    "url": "https://geoegl.msp.gouv.qc.ca/Visiteur",
     "id": "31"
   },
   "importExport": {
