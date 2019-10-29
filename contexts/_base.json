@@ -127,11 +127,12 @@
    },
    {
      "name": "catalog",
-     "title": "Catalogue"
    },
    {
      "name": "catalogBrowser",
-     "title": "Catalogue"
+     "options": {
+       "toggleCollapsedGroup": false
+     }
    },
    {
      "name": "timeAnalysis"
