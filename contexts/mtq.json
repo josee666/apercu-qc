@@ -399,7 +399,7 @@
           "layers": "histo_stations_meteoroutieres",
           "version": "1.3.0",
           "feature_count": 3650,
-          "time": "2008-01-01/2018-10-31"
+          "time": "2008-01-01/2019-10-31"
 
         },
         "type": "wms"
@@ -568,6 +568,7 @@
     "name": "mapDetails",
     "title": "Couches",
     "options": {
+      "expandLegendOfVisibleLayers": true,
       "toggleLegendOnVisibilityChange": false,
       "layerListControls": {
         "excludeBaseLayers": true,
