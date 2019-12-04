@@ -620,7 +620,41 @@
                 "queryHtmlTarget": "iframe",
                 "url": "/ws/mffpecofor.fcgi",
                 "params": {
-                    "layers": "lidar_dendro_fp_temp",
+                    "layers": "lidar_dendro",
+                    "version": "1.3.0"
+                },
+                "type": "wms",
+                "optionsFromCapabilities": true
+            }
+        },
+        {
+            "id":"lidar_index_planification",
+            "zIndex": 26,
+            "visible": false,
+            "sourceOptions": {
+                "crossOrigin": "anonymous",
+                "queryFormat": "htmlgml2",
+                "queryHtmlTarget": "iframe",
+                "url": "@host/ws/mffpecofor.fcgi",
+                "params": {
+                    "layers": "lidar_index_planification",
+                    "version": "1.3.0"
+                },
+                "type": "wms",
+                "optionsFromCapabilities": true
+            }
+        },
+        {
+            "id":"lidar_index_acquisition",
+            "zIndex": 27,
+            "visible": false,
+            "sourceOptions": {
+                "crossOrigin": "anonymous",
+                "queryFormat": "htmlgml2",
+                "queryHtmlTarget": "iframe",
+                "url": "@host/ws/mffpecofor.fcgi",
+                "params": {
+                    "layers": "lidar_index_acquisition",
                     "version": "1.3.0"
                 },
                 "type": "wms",
@@ -630,7 +664,7 @@
     
         {
             "id":"pee_ori_prov",
-            "zIndex": 26,
+            "zIndex": 28,
             "visible" : false,
             "metadata": {
                 "extern": true
@@ -651,7 +685,7 @@
          
         {
             "id":"con_sensib",
-            "zIndex": 27,
+            "zIndex": 29,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -671,7 +705,7 @@
         },
         {
             "id":"con_erosion",
-            "zIndex": 28,
+            "zIndex": 30,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -691,7 +725,7 @@
         },
         {
             "id":"con_ornier",
-            "zIndex": 29,
+            "zIndex": 31,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -711,7 +745,7 @@
         },
         {
             "id":"con_rugos",
-            "zIndex": 30,
+            "zIndex": 32,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -731,7 +765,7 @@
         },
         {
             "id":"con_sol_tm",
-            "zIndex": 31,
+            "zIndex": 33,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -751,7 +785,7 @@
         },
         {
             "id":"con_solid",
-            "zIndex": 32,
+            "zIndex": 34,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -771,7 +805,7 @@
         },
         {
             "id":"iqs_pot_epn",
-            "zIndex": 33,
+            "zIndex": 35,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -791,7 +825,7 @@
         },
         {
             "id":"iqs_pot_epb",
-            "zIndex": 34,
+            "zIndex": 36,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -811,7 +845,7 @@
         },
         {
             "id":"iqs_pot_epr",
-            "zIndex": 35,
+            "zIndex": 37,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -831,7 +865,7 @@
         },
         {
             "id":"iqs_pot_sab",
-            "zIndex": 36,
+            "zIndex": 38,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -851,7 +885,7 @@
         },
         {
             "id":"iqs_pot_pib",
-            "zIndex": 37,
+            "zIndex": 39,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -871,7 +905,7 @@
         },
         {
             "id":"iqs_pot_pig",
-            "zIndex": 38,
+            "zIndex": 40,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -891,7 +925,7 @@
         },
         {
             "id":"iqs_pot_bop",
-            "zIndex": 39,
+            "zIndex": 41,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -911,7 +945,7 @@
         },
         {
             "id":"iqs_pot_pex",
-            "zIndex": 40,
+            "zIndex": 42,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -931,7 +965,7 @@
         },
         {
             "id":"iqs_pot_tho",
-            "zIndex": 41,
+            "zIndex": 43,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -951,7 +985,7 @@
         },
         {
             "id":"accr_st_ers",
-            "zIndex": 42,
+            "zIndex": 44,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -971,7 +1005,7 @@
         },
         {
             "id":"accr_st_boj",
-            "zIndex": 43,
+            "zIndex": 45,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -991,7 +1025,7 @@
         },
         {
             "id":"accr_st_err",
-            "zIndex": 44,
+            "zIndex": 46,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -1012,7 +1046,7 @@
     
         {
             "id":"vmb_ha_tot",
-            "zIndex": 45,
+            "zIndex": 47,
             "visible" : false,
             "metadata": {
                 "extern": true
@@ -1032,7 +1066,8 @@
         },
         {
             "id":"ca_non_fores",
-            "zIndex": 46,
+            "title": "Infrastructures en milieu forestier ↺",
+            "zIndex": 48,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -1060,7 +1095,8 @@
         },
         {
             "id":"ca_pertu_autre",
-            "zIndex": 47,
+            "title": "Épidemies, chablis et verglas ↺",
+            "zIndex": 49,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -1087,7 +1123,8 @@
         },
         {
             "id":"ca_feux",
-            "zIndex": 48,
+            "title": "Feux de forêt ↺",
+            "zIndex": 50,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -1116,7 +1153,8 @@
         },
         {
             "id":"ca_interv_fores",
-            "zIndex": 49,
+            "title": "Récolte et reboisement ↺",
+            "zIndex": 51,
             "visible": false,
             "metadata": {
                 "extern": true
@@ -1146,7 +1184,7 @@
     
         {
             "id":"sond_pet2",
-            "zIndex": 50,
+            "zIndex": 52,
             "visible" : false,
             "metadata": {
             "extern": true
@@ -1166,7 +1204,7 @@
         },
         {
             "id":"sond_pet3",
-            "zIndex": 51,
+            "zIndex": 53,
             "visible" : false,
             "metadata": {
                 "extern": true
@@ -1186,7 +1224,7 @@
         },
         {
             "id":"sond_pet4",
-            "zIndex": 52,
+            "zIndex": 54,
             "visible" : false,
             "metadata": {
                 "extern": true
@@ -1206,7 +1244,7 @@
         },
         {
             "id":"sond_pet5",
-            "zIndex": 53,
+            "zIndex": 55,
             "visible" : false,
             "metadata": {
                 "extern": true
@@ -1226,7 +1264,7 @@
         },
         {
             "id":"nord_photo",
-            "zIndex": 54,
+            "zIndex": 56,
             "visible" : false,
             "metadata": {
                 "extern": true
@@ -1247,7 +1285,7 @@
     
         {
             "id":"pee_index_pdf_mai2015",
-            "zIndex": 55,
+            "zIndex": 57,
             "visible" : false,
             "metadata": {
                 "extern": true
@@ -1268,7 +1306,7 @@
         },
         {
             "id":"telecharge_index_250k",
-            "zIndex": 56,
+            "zIndex": 58,
             "visible" : true,
             "metadata": {
                 "extern": true
@@ -1288,7 +1326,7 @@
         },
         {
             "id":"lidar_index_extraction",
-            "zIndex": 57,
+            "zIndex": 59,
             "visible" : false,
             "metadata": {
                 "extern": true
@@ -1310,7 +1348,7 @@
     
         {
             "id":"Perimetre_UA_1M",
-            "zIndex": 58,
+            "zIndex": 60,
             "title": "Unités d’aménagement (1:1 000 000)",
             "minResolution": 10,
             "visible": false,
@@ -1332,7 +1370,7 @@
         },
         {
             "id":"Perimetre_UA_20K",
-            "zIndex": 59,
+            "zIndex": 61,
             "title": "Unités d’aménagement (1:20 000)",
             "maxResolution": 10,
             "visible": false,
@@ -1354,7 +1392,7 @@
         },
         {
             "id":"feuillets_20K",
-            "zIndex": 60,
+            "zIndex": 62,
             "title": "Feuillets (1:20 000)",
             "visible" : false,
             "metadata": {
@@ -1375,7 +1413,7 @@
         },
         {
             "id":"Chemin",
-            "zIndex": 61,
+            "zIndex": 63,
             "title": "Chemins",
             "visible" : false,
             "baseLayer": false,
@@ -1432,7 +1470,7 @@
             "toggleLegendOnVisibilityChange": true,
             "expandLegendOfVisibleLayers":true,
             "layerListControls": {
-              "excludeBaseLayers": true
+              "excludeBaseLayers": false
             }
           }
         },
@@ -1472,6 +1510,5 @@
         }
       ]
    
-
 }
 
