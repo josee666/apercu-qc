@@ -74,8 +74,6 @@
    "searchResults",
    "contextManager",
    "mapDetails",
-   "timeAnalysis",
-   "ogcFilter",
    "measurer",
    "directions",
    "catalog",
@@ -133,12 +131,6 @@
      "options": {
        "toggleCollapsedGroup": false
      }
-   },
-   {
-     "name": "timeAnalysis"
-   },
-   {
-     "name": "ogcFilter"
    },
    {
      "name": "importExport"

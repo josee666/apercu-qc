@@ -50,6 +50,28 @@
         }
       }
     },
+	{
+      "name": "Filtre - Événements",
+      "visible": false,
+      "id": "filtre_evenement",
+      "title": "Filtre - Événements",
+      "sourceOptions": {
+        "params": {
+          "featureTypes": "vg_observation_v_autre_wmst",
+          "fieldNameGeometry": "geometry",
+          "maxFeatures": 10000,
+          "version": "2.0.0",
+          "outputFormat": "geojson_utf8",
+          "outputFormatDownload": "shp"
+        },
+        "type": "wfs",
+        "url": "/ws/igo_gouvouvert.fcgi",
+        "ogcFilters": {
+          "enabled": true,
+          "editable": true
+        }
+      }
+    },
     {
       "visible": false,
       "sourceOptions": {
@@ -70,7 +92,10 @@
         },
         "type": "wms",
         "optionsFromCapabilities": true
-      }
+      },
+	  "legendOptions": {
+		"stylesAvailable": []
+	  }
     }
   ]
 }
