@@ -12,7 +12,7 @@
         "url": "/apis/ws/swtq",
         "queryable": true,
         "queryTitle": "nom_unit00",
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "bgr_v_dirct_genrl_geomt_act",
