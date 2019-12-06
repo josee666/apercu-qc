@@ -78,7 +78,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "bgr_v_sous_route_res_sup_act",
@@ -94,7 +94,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "circulation_routier",
@@ -110,7 +110,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "aq_camion",
@@ -126,7 +126,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "convi_velo_glv",
@@ -142,7 +142,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "reseau_chfer_qc",
@@ -158,7 +158,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "sortie_aut",
@@ -174,7 +174,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "repere_km",
@@ -190,7 +190,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "gsq_v_desc_strct_tri",
@@ -222,7 +222,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "villagerelais",
@@ -238,7 +238,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "parc_routier",
@@ -254,7 +254,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "telephone_urg",
@@ -270,7 +270,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "conditions_routieres",
@@ -286,7 +286,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "chantiers_mtmdet",
@@ -302,7 +302,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "evenements",
@@ -318,7 +318,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "radars_photos",
@@ -336,7 +336,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "investissement2018_2020"
@@ -383,7 +383,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "aeroport",
@@ -399,7 +399,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "aeroport_piste",
@@ -415,7 +415,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "liaison_maritime",
@@ -433,7 +433,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "port_installation",
@@ -449,7 +449,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "lieuhabite",
@@ -465,7 +465,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "zpegt_index_cgt_s",
@@ -483,7 +483,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "zpegt_cgt_l",
@@ -499,7 +499,7 @@
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "zpegt_cgt_s",
