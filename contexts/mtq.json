@@ -4,20 +4,16 @@
   "base": "_base",
   "layers": [{
       "id": "bgr_v_dirct_genrl_geomt_act",
-      "zIndex": 99,
       "visible": false,
       "sourceOptions": {
         "type": "wms",
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryTitle": "nom_unit00",
         "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
-          "layers": "bgr_v_dirct_genrl_geomt_act",
-          "version": "1.3.0",
-          "feature_count": 365
+          "layers": "bgr_v_dirct_genrl_geomt_act"
         },
         "sourceFields": [{
             "alias": "Nom de la direction",
@@ -31,51 +27,45 @@
       }
     }, {
       "id": "bgr_v_dirct_terrt_geomt_act",
-      "zIndex": 98,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "bgr_v_dirct_terrt_geomt_act",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
       }
     }, {
       "id": "bgr_v_centr_servc_geomt_act",
-      "zIndex": 97,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "bgr_v_centr_servc_geomt_act",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
       }
     }, {
       "id": "etablissement_mtq",
-      "zIndex": 96,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
         "queryable": true,
-        "queryFormat": "html",
+        "queryFormat": "htmlgml2",
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "etablissement_mtq",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
