@@ -635,7 +635,7 @@
                 "crossOrigin": "anonymous",
                 "queryFormat": "htmlgml2",
                 "queryHtmlTarget": "iframe",
-                "url": "@host/ws/mffpecofor.fcgi",
+                "url": "/ws/mffpecofor.fcgi",
                 "params": {
                     "layers": "lidar_index_planification",
                     "version": "1.3.0"
@@ -652,7 +652,7 @@
                 "crossOrigin": "anonymous",
                 "queryFormat": "htmlgml2",
                 "queryHtmlTarget": "iframe",
-                "url": "@host/ws/mffpecofor.fcgi",
+                "url": "/ws/mffpecofor.fcgi",
                 "params": {
                     "layers": "lidar_index_acquisition",
                     "version": "1.3.0"
