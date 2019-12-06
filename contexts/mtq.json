@@ -72,7 +72,6 @@
       }
     }, {
       "id": "bgr_v_sous_route_res_sup_act",
-      "zIndex": 95,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -88,7 +87,6 @@
       }
     }, {
       "id": "circulation_routier",
-      "zIndex": 94,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -104,7 +102,6 @@
       }
     }, {
       "id": "aq_camion",
-      "zIndex": 93,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -120,7 +117,6 @@
       }
     }, {
       "id": "convi_velo_glv",
-      "zIndex": 92,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -136,7 +132,6 @@
       }
     }, {
       "id": "reseau_chfer_qc",
-      "zIndex": 91,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -152,7 +147,6 @@
       }
     }, {
       "id": "sortie_aut",
-      "zIndex": 90,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -168,7 +162,6 @@
       }
     }, {
       "id": "repere_km",
-      "zIndex": 89,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -184,7 +177,6 @@
       }
     }, {
       "id": "gsq_v_desc_strct_tri",
-      "zIndex": 88,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -200,7 +192,6 @@
       }
     }, {
       "id": "pes_v_limtn_charg",
-      "zIndex": 87,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -216,7 +207,6 @@
       }
     }, {
       "id": "villagerelais",
-      "zIndex": 86,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -232,7 +222,6 @@
       }
     }, {
       "id": "parc_routier",
-      "zIndex": 85,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -248,7 +237,6 @@
       }
     }, {
       "id": "telephone_urg",
-      "zIndex": 84,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -264,7 +252,6 @@
       }
     }, {
       "id": "conditions_routieres",
-      "zIndex": 82,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -280,7 +267,6 @@
       }
     }, {
       "id": "chantiers_mtmdet",
-      "zIndex": 82,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -296,7 +282,6 @@
       }
     }, {
       "id": "evenements",
-      "zIndex": 81,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -312,7 +297,6 @@
       }
     }, {
       "id": "radars_photos",
-      "zIndex": 80,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -328,7 +312,6 @@
       }
     }, {
       "id": "investissement2018_2020",
-      "zIndex": 79,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -343,7 +326,6 @@
       }
     }, {
       "id": "station_meteoroutiere",
-      "zIndex": 78,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -358,7 +340,6 @@
       }
     }, {
       "id": "histo_station_meteoroutiere",
-      "zIndex": 77,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -375,7 +356,6 @@
       }
     }, {
       "id": "aeroport",
-      "zIndex": 76,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -391,7 +371,6 @@
       }
     }, {
       "id": "aeroport_piste",
-      "zIndex": 75,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -407,7 +386,6 @@
       }
     }, {
       "id": "liaison_maritime",
-      "zIndex": 74,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -425,7 +403,6 @@
 
     {
       "id": "port_installation",
-      "zIndex": 73,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -441,7 +418,6 @@
       }
     }, {
       "id": "lieuhabite",
-      "zIndex": 72,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -457,7 +433,6 @@
       }
     }, {
       "id": "zpegt_index_cgt_s",
-      "zIndex": 71,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -473,7 +448,6 @@
       }
     }, {
       "id": "zpegt_cgt_l",
-      "zIndex": 70,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -489,7 +463,6 @@
       }
     }, {
       "id": "zpegt_cgt_s",
-      "zIndex": 69,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
@@ -507,7 +480,6 @@
     {
       "title": "Zone de dégel",
       "id": "zones_degel",
-      "zIndex": 68,
       "visible": false,
       "sourceOptions": {
         "optionsFromCapabilities": true,
