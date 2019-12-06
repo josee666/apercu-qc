@@ -82,7 +82,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "bgr_v_sous_route_res_sup_act",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -99,7 +98,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "circulation_routier",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -116,7 +114,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "aq_camion",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -133,7 +130,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "convi_velo_glv",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -150,7 +146,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "reseau_chfer_qc",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -167,7 +162,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "sortie_aut",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -184,7 +178,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "repere_km",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -201,7 +194,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "gsq_v_desc_strct_tri",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -218,7 +210,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "pes_v_limtn_charg",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -235,7 +226,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "villagerelais",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -252,7 +242,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "parc_routier",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -269,7 +258,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "telephone_urg",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -286,7 +274,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "conditions_routieres",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -303,7 +290,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "chantiers_mtmdet",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -320,7 +306,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "evenements",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -337,7 +322,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "radars_photos",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -355,8 +339,7 @@
         "queryFormat": "html",
         "queryHtmlTarget": "iframe",
         "params": {
-          "layers": "investissement2018_2020",
-          "version": "1.3.0"
+          "layers": "investissement2018_2020"
         },
         "type": "wms"
       }
@@ -371,7 +354,6 @@
         "queryFormat": "json",
         "params": {
           "layers": "stations_meteoroutieres",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -387,7 +369,6 @@
         "queryFormat": "json",
         "params": {
           "layers": "histo_stations_meteoroutieres",
-          "version": "1.3.0",
           "feature_count": 3650,
           "time": "2008-01-01/2019-10-31"
 
@@ -406,7 +387,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "aeroport",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -423,7 +403,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "aeroport_piste",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -440,7 +419,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "liaison_maritime",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -459,7 +437,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "port_installation",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -476,7 +453,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "lieuhabite",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -493,7 +469,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "zpegt_index_cgt_s",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -512,7 +487,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "zpegt_cgt_l",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -529,7 +503,6 @@
         "queryHtmlTarget": "iframe",
         "params": {
           "layers": "zpegt_cgt_s",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
@@ -547,7 +520,6 @@
         "queryTitle": "zone",
         "params": {
           "layers": "zone_degel",
-          "version": "1.3.0",
           "feature_count": 365
         },
         "type": "wms"
