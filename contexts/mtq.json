@@ -330,8 +330,6 @@
       "id": "investissement2018_2020",
       "zIndex": 79,
       "visible": false,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
       "sourceOptions": {
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
@@ -477,8 +475,6 @@
       "id": "zpegt_cgt_l",
       "zIndex": 70,
       "visible": false,
-      "queryFormat": "html",
-      "queryHtmlTarget": "iframe",
       "sourceOptions": {
         "optionsFromCapabilities": true,
         "url": "/apis/ws/swtq",
