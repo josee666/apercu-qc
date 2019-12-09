@@ -533,7 +533,7 @@
                 "ogcFilters": {
                     "enabled": true,
                     "editable": true,
-                    "pushButtons": {
+                    "INACTIFCARRISQUEDECHANGEMENTDEVALEURSpushButtons": {
                       "groups": [
                         {"title": "Group 1 Title", "name": "2", "ids": ["id1"]}
                       ],
