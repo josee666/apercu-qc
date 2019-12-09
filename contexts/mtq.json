@@ -728,7 +728,7 @@
                     "outputFormatDownload": "shp"
                 },
                 "ogcFilters": {
-                    "enabled": false,
+                    "enabled": true,
                     "editable": true
                 },
                 "sourceFields": [
