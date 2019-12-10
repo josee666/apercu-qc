@@ -37,45 +37,104 @@
   "catalog": {
     "sources": [
       {
+        "title": "Aléas",
+        "url": "/apis/wss/aleas.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Aménagement du territoire",
+        "url": "/apis/wss/amenagement.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Économie",
+        "url": "/apis/wss/economie.fcgi",
+        "sortDirection": "asc"
+      },
+      {
         "title": "Éducation",
         "url": "/apis/wss/education.fcgi",
         "sortDirection": "asc"
       },
       {
+        "title": "Énergie",
+        "url": "/apis/wss/energie.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Environnement et ressources naturelles",
+        "url": "/apis/wss/environnement.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Historique en sécurité civile",
+        "url": "/apis/wss/historiquesc.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Imagerie",
+        "url": "/apis/wss/imagerie.fcgi",
+        "sortDirection": "asc"
+      },
+      {
         "title": "Santé",
-        "url": "/apis/wss/sante.fcgi"
+        "url": "/apis/wss/sante.fcgi",
+        "sortDirection": "asc"
       },
       {
         "title": "Sécurité",
-        "url": "/apis/wss/securite.fcgi"
+        "url": "/apis/wss/securite.fcgi",
+        "sortDirection": "asc"
       },
       {
-        "title": "Toutes les données",
-        "url": "/ws/igo_gouvouvert.fcgi"
+        "title": "Services gouvernementaux",
+        "url": "/apis/wss/servicesgouv.fcgi",
+        "sortDirection": "asc"
       },
       {
-        "title": "Inventaire forestier",
-        "url": "/ws/mffpecofor.fcgi"
+        "title": "Société, culture et patrimoine",
+        "url": "/apis/wss/societe.fcgi",
+        "sortDirection": "asc"
       },
       {
-        "title": "MERN DIF",
-        "url": "/apis/sw/merndif"
+        "title": "Télécommunication",
+        "url": "/apis/wss/telecommunication.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Tourisme, villégiature et plein air",
+        "url": "/apis/wss/tourisme.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Transport",
+        "url": "/apis/wss/transport.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Vigilance",
+        "url": "/apis/wss/vigilance.fcgi",
+        "sortDirection": "asc"
       },
       {
         "title": "Carte de glace",
         "url": "/ws/radarsat.fcgi"
       },
       {
-        "title": "Données géographiques et administratives (BDGA)",
-        "url": "/ws/bdga.fcgi"
-      },
-      {
         "title": "Débit et niveau (ADN)",
         "url": "/ws/adnInternetV2.fcgi"
       },
       {
+        "title": "Données géographiques et administratives (BDGA)",
+        "url": "/ws/bdga.fcgi"
+      },
+      {
         "title": "Inondations 2019",
         "url": "/ws/inondation2019.fcgi"
+      }
+      {
+        "title": "Inventaire forestier",
+        "url": "/ws/mffpecofor.fcgi"
       }
     ]
   }
