@@ -16,9 +16,6 @@
       "enabled": true
     }
   },
-  "language": {
-    "prefix": "./particular/locale/"
-  },
   "searchSources" : {
     "storedqueries": {
       "title": "Réseau routier Transports Québec",
