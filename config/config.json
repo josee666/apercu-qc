@@ -34,44 +34,50 @@
   "catalog": {
     "sources": [
       {
+        "title": "Économie",
+        "url": "/apis/wss/economie.fcgi",
+        "sortDirection": "asc"
+      },
+      {
         "title": "Éducation",
-        "url": "/apis/wss/education.fcgi"
+        "url": "/apis/wss/education.fcgi",
+        "sortDirection": "asc"
       },
       {
         "title": "Santé",
-        "url": "/apis/wss/sante.fcgi"
+        "url": "/apis/wss/sante.fcgi",
+        "sortDirection": "asc"
       },
       {
         "title": "Sécurité",
-        "url": "/apis/wss/securite.fcgi"
+        "url": "/apis/wss/securite.fcgi",
+        "sortDirection": "asc"
       },
       {
-        "title": "Toutes les données",
-        "url": "/ws/igo_gouvouvert.fcgi"
+        "title": "Transport",
+        "url": "/apis/wss/transport.fcgi",
+        "sortDirection": "asc"
       },
-      {
-        "title": "Inventaire forestier",
-        "url": "/ws/mffpecofor.fcgi"
-      },
-      {
-        "title": "MERN DIF",
-        "url": "/apis/sw/merndif"
-      },
+      
       {
         "title": "Carte de glace",
         "url": "/ws/radarsat.fcgi"
-      },
-      {
-        "title": "Données géographiques et administratives (BDGA)",
-        "url": "/ws/bdga.fcgi"
       },
       {
         "title": "Débit et niveau (ADN)",
         "url": "/ws/adnInternetV2.fcgi"
       },
       {
+        "title": "Données géographiques et administratives (BDGA)",
+        "url": "/ws/bdga.fcgi"
+      },
+      {
         "title": "Inondations 2019",
         "url": "/ws/inondation2019.fcgi"
+      }
+      {
+        "title": "Inventaire forestier",
+        "url": "/ws/mffpecofor.fcgi"
       }
     ]
   }
