@@ -57,7 +57,7 @@
         "sortDirection": "asc"
       },
       {
-        "title": "Historique en sécurité civile",
+        "title": "Historique de sécurité civile",
         "url": "/apis/wss/historiquesc.fcgi",
         "sortDirection": "asc"
       },
