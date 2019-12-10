@@ -31,7 +31,7 @@
         {"name": "rtss","defaultValue": "-99"},
         {"name": "chainage","defaultValue": "0","splitPrefix": "\\+"}
       ],
-      "resultTitle": "etiquette"
+      "resultTitle": "title"
     }
   },
   "catalog": {
