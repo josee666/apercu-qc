@@ -74,8 +74,6 @@
    "searchResults",
    "contextManager",
    "mapDetails",
-   "timeAnalysis",
-   "ogcFilter",
    "measurer",
    "directions",
    "catalog",
@@ -126,19 +124,13 @@
      "name": "directions"
    },
    {
-     "name": "catalog",
+     "name": "catalog"
    },
    {
      "name": "catalogBrowser",
      "options": {
        "toggleCollapsedGroup": false
      }
-   },
-   {
-     "name": "timeAnalysis"
-   },
-   {
-     "name": "ogcFilter"
    },
    {
      "name": "importExport"

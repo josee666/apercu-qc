@@ -19,6 +19,21 @@
   "language": {
     "prefix": "./particular/locale/"
   },
+  "searchSources" : {
+    "storedqueries": {
+      "title": "Réseau routier Transports Québec",
+      "searchUrl": "/apis/ws/swtq",
+      "enabled": true,
+      "available": true,
+      "storedquery_id": "rtss",
+      "srsname": "epsg:4326",
+      "fields": [
+        {"name": "rtss","defaultValue": "-99"},
+        {"name": "chainage","defaultValue": "0","splitPrefix": "\\+"}
+      ],
+      "resultTitle": "etiquette"
+    }
+  },
   "catalog": {
     "sources": [
       {

@@ -15,7 +15,10 @@
         },
         "type": "wms",
         "optionsFromCapabilities": true
-      }
+      },
+	  "legendOptions": {
+		"stylesAvailable": []
+	  }
     },
     {
       "sourceOptions": {
@@ -28,7 +31,10 @@
         },
         "type": "wms",
         "optionsFromCapabilities": true
-      }
+      },
+	  "legendOptions": {
+		"stylesAvailable": []
+	  }
     }
   ]
 }
