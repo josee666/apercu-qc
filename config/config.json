@@ -16,6 +16,9 @@
       "enabled": true
     }
   },
+  "language": {
+    "prefix": "./particular/locale/"
+  },
   "searchSources" : {
     "storedqueries": {
       "title": "Réseau routier Transports Québec",
@@ -34,13 +37,33 @@
   "catalog": {
     "sources": [
       {
-        "title": "Économie",
-        "url": "/apis/wss/economie.fcgi",
+        "title": "Aléas",
+        "url": "/apis/wss/aleas.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Aménagement du territoire",
+        "url": "/apis/wss/amenagement.fcgi",
         "sortDirection": "asc"
       },
       {
         "title": "Éducation",
         "url": "/apis/wss/education.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Environnement et ressources naturelles",
+        "url": "/apis/wss/environnement.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Historique en sécurité civile",
+        "url": "/apis/wss/historiquesc.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Imagerie",
+        "url": "/apis/wss/imagerie.fcgi",
         "sortDirection": "asc"
       },
       {
@@ -54,11 +77,20 @@
         "sortDirection": "asc"
       },
       {
+        "title": "Société, culture et patrimoine",
+        "url": "/apis/wss/societe.fcgi",
+        "sortDirection": "asc"
+      },
+      {
         "title": "Transport",
         "url": "/apis/wss/transport.fcgi",
         "sortDirection": "asc"
       },
-      
+      {
+      "title": "Vigilance",
+        "url": "/apis/wss/vigilance.fcgi",
+        "sortDirection": "asc"
+      },
       {
         "title": "Carte de glace",
         "url": "/ws/radarsat.fcgi"
@@ -74,10 +106,14 @@
       {
         "title": "Inondations 2019",
         "url": "/ws/inondation2019.fcgi"
-      }
+      },
       {
         "title": "Inventaire forestier",
         "url": "/ws/mffpecofor.fcgi"
+      },
+      {
+        "title": "Toutes les données",
+        "url": "/ws/igo_gouvouvert.fcgi"
       }
     ]
   }
