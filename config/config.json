@@ -17,7 +17,7 @@
     }
   },
   "language": {
-    "prefix": "./particular/locale/"
+    "prefix": "./locale/"
   },
   "searchSources" : {
     "storedqueries": {
