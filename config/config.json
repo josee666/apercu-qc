@@ -52,11 +52,6 @@
         "sortDirection": "asc"
       },
       {
-        "title": "Énergie",
-        "url": "/apis/wss/energie.fcgi",
-        "sortDirection": "asc"
-      },
-      {
         "title": "Environnement et ressources naturelles",
         "url": "/apis/wss/environnement.fcgi",
         "sortDirection": "asc"
@@ -82,23 +77,8 @@
         "sortDirection": "asc"
       },
       {
-        "title": "Services gouvernementaux",
-        "url": "/apis/wss/servicesgouv.fcgi",
-        "sortDirection": "asc"
-      },
-      {
         "title": "Société, culture et patrimoine",
         "url": "/apis/wss/societe.fcgi",
-        "sortDirection": "asc"
-      },
-      {
-        "title": "Télécommunication",
-        "url": "/apis/wss/telecommunication.fcgi",
-        "sortDirection": "asc"
-      },
-      {
-        "title": "Tourisme, villégiature et plein air",
-        "url": "/apis/wss/tourisme.fcgi",
         "sortDirection": "asc"
       },
       {
