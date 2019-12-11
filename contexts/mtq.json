@@ -854,7 +854,8 @@
                 "optionsFromCapabilities": true,
                 "url": "/apis/ws/swtq",
                 "queryable": true,
-                "queryTitle": "descclasse",
+                "queryTitle": "${drodoreclg} ( ${descclasse} )",
+                "mapLabel": "drodoreclg",
                 "params": {
                     "layers": "aq_camion",
                     "feature_count": 365
@@ -864,7 +865,8 @@
                     "editable": false
                 },
                 "sourceFields": [
-                    { "alias": "Classe", "name": "descclasse" },
+                    { "alias": "Nom de la route", "name": "drodoreclg" },
+                    { "alias": "Classification camionnage", "name": "descclasse" },
                     { "alias": "Classification fonctionnelle", "name": "clsrte" },
                     { "alias": "Gestion", "name": "gestion", "excludeFromOgcFilters": true },
                     { "alias": "Municipalité", "name": "drmunnom" },
