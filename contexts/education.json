@@ -117,20 +117,6 @@
         },
         "type": "wms"
       }
-    },
-    {
-      "sourceOptions": {
-        "url": "/apis/wss/education.fcgi",
-        "optionsFromCapabilities": true,
-        "queryable": true,
-        "queryFormat": "html",
-        "queryHtmlTarget": "iframe",
-        "params": {
-          "layers": "INFRA_SCOL_PPS_PUBLIC_P",
-          "version": "1.3.0"
-        },
-        "type": "wms"
-      }
     }
   ]
 }
