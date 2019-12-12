@@ -4,7 +4,7 @@
   "layers": [{
       "visible": false,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/education.fcgi",
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
@@ -20,7 +20,7 @@
       "visible": true,
       "opacity": 0.7,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/education.fcgi",
         "queryable": true,
         "optionsFromCapabilities": true,
         "queryFormat": "html",
@@ -36,7 +36,7 @@
       "visible": true,
       "opacity": 0.3,
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/education.fcgi",
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
@@ -50,7 +50,7 @@
     },
     {
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/education.fcgi",
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
@@ -64,7 +64,7 @@
     },
     {
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/education.fcgi",
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
@@ -78,7 +78,7 @@
     },
     {
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/education.fcgi",
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
@@ -92,7 +92,7 @@
     },
     {
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/education.fcgi",
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
@@ -106,7 +106,7 @@
     },
     {
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/education.fcgi",
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",
@@ -120,7 +120,7 @@
     },
     {
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/education.fcgi",
         "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "html",

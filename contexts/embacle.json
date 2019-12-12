@@ -6,7 +6,7 @@
       "visible": true,
       "sourceOptions": {
         "type": "wms",
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/historiquesc.fcgi",
         "timeFilterable": true,
         "timeFilter": {
           "step": 31536000000,

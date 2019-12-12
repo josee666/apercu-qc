@@ -6,7 +6,7 @@
     {
       "opacity": 0.6,
       "sourceOptions": {
-        "url": "/ws/adnInternetV2.fcgi",
+        "url": "/apis/wss/vigilance.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -22,7 +22,7 @@
     },
     {
       "sourceOptions": {
-        "url": "/ws/adnInternetV2.fcgi",
+        "url": "/apis/wss/vigilance.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {

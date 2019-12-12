@@ -5,7 +5,7 @@
   "layers": [{
       "sourceOptions": {
         "optionsFromCapabilities": true,
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/environnement.fcgi",
         "params": {
           "layers": "mffp_dgpf_limites_regions_s",
           "version": "1.3.0"
@@ -15,7 +15,7 @@
     },
     {
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/environnement.fcgi",
         "optionsFromCapabilities": true,
         "params": {
           "layers": "mffp_dgpf_bureaux_locaux_p",

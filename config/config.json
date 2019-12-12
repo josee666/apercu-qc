@@ -104,10 +104,6 @@
         "url": "/ws/bdga.fcgi"
       },
       {
-        "title": "Inondations 2019",
-        "url": "/ws/inondation2019.fcgi"
-      },
-      {
         "title": "Inventaire forestier",
         "url": "/ws/mffpecofor.fcgi"
       },

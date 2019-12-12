@@ -6,7 +6,7 @@
     {
       "title": "Téléphone d'urgence",
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/securite.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -20,7 +20,7 @@
       "title": "Desserte municipale 9-1-1",
       "queryTitle": "Municipalite",
       "sourceOptions": {
-        "url": "/ws/igo_gouvouvert.fcgi",
+        "url": "/apis/wss/securite.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
