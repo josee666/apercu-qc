@@ -29,7 +29,7 @@
     },
     {
       "name": "vg avec filtre",
-      "visible": true,
+      "visible": false,
       "id": "vg",
       "title": "Filtre - Événements extrêmes",
       "sourceOptions": {
@@ -56,7 +56,7 @@
     },
     {
       "name": "Filtre - Événements",
-      "visible": true,
+      "visible": false,
       "id": "filtre_evenement",
       "title": "Filtre - Événements",
       "sourceOptions": {
