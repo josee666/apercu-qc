@@ -689,23 +689,6 @@
             }
         },
         {
-            "id": "pes_v_limtn_charg",
-            "visible": false,
-            "removable": false,
-            "sourceOptions": {
-                "type": "wms",
-                "optionsFromCapabilities": true,
-                "url": "/apis/ws/swtq",
-                "queryable": true,
-                "queryFormat": "html",
-                "queryHtmlTarget": "iframe",
-                "params": {
-                    "layers": "pes_v_limtn_charg",
-                    "feature_count": 365
-                }
-            }
-        },
-        {
             "id": "gsq_v_desc_strct_tri",
             "visible": false,
             "removable": false,
@@ -879,6 +862,23 @@
             }
         },
         {
+            "id": "pes_v_limtn_charg",
+            "visible": false,
+            "removable": false,
+            "sourceOptions": {
+                "type": "wms",
+                "optionsFromCapabilities": true,
+                "url": "/apis/ws/swtq",
+                "queryable": true,
+                "queryFormat": "html",
+                "queryHtmlTarget": "iframe",
+                "params": {
+                    "layers": "pes_v_limtn_charg",
+                    "feature_count": 365
+                }
+            }
+        },
+        {
             "id": "circulation_routier",
             "visible": false,
             "removable": false,
@@ -918,6 +918,26 @@
                     { "alias": "RTSS fin ", "name": "RtssFin" }
                 ]
             }
+        },
+        {
+          "id": "bgr_reperage_metrique",
+          "visible": false,
+          "removable": false,
+          "sourceOptions": {
+            "type": "wms",
+            "optionsFromCapabilities": true,
+            "url": "/apis/ws/swtq",
+            "queryable": true,
+            "queryTitle": "etiquette",
+            "params": {
+              "layers": "bgr_reperage_metrique",
+              "feature_count": 1
+            },
+            "sourceFields": [
+              {"alias": "RTSS","name": "num_rts"},
+              {"alias": "Chainage","name": "chainage"}
+            ]
+          }
         },
         {
             "id": "bgr_v_sous_route_res_sup_act",
