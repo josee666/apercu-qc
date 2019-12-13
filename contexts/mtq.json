@@ -1,7 +1,14 @@
 {
     "uri": "mtq",
     "title": "Transports Québec",
-    "base": "_base",
+    "map": {
+    "view": {
+        "projection": "EPSG:3857",
+        "center": [-71.938087, 48.446975],
+        "zoom": 6,
+        "maxZoom": 20
+    }
+    },
     "layers": [
         {
             "title": "Zone de dégel",
@@ -920,26 +927,6 @@
             }
         },
         {
-          "id": "bgr_reperage_metrique",
-          "visible": false,
-          "removable": false,
-          "sourceOptions": {
-            "type": "wms",
-            "optionsFromCapabilities": true,
-            "url": "/apis/ws/swtq",
-            "queryable": true,
-            "queryTitle": "etiquette",
-            "params": {
-              "layers": "bgr_reperage_metrique",
-              "feature_count": 1
-            },
-            "sourceFields": [
-              {"alias": "RTSS","name": "num_rts"},
-              {"alias": "Chainage","name": "chainage"}
-            ]
-          }
-        },
-        {
             "id": "bgr_v_sous_route_res_sup_act",
             "visible": false,
             "removable": false,
@@ -967,6 +954,26 @@
                     { "alias": "Unité responsable de la route:", "name": "des_unite_" }
                 ]
             }
+        },
+        {
+          "id": "bgr_reperage_metrique",
+          "visible": false,
+          "removable": false,
+          "sourceOptions": {
+            "type": "wms",
+            "optionsFromCapabilities": true,
+            "url": "/apis/ws/swtq",
+            "queryable": true,
+            "queryTitle": "etiquette",
+            "params": {
+              "layers": "bgr_reperage_metrique",
+              "feature_count": 1
+            },
+            "sourceFields": [
+              {"alias": "RTSS","name": "num_rts"},
+              {"alias": "Chainage","name": "chainage"}
+            ]
+          }
         },
         {
             "id": "etablissement_mtq",
@@ -1055,7 +1062,34 @@
             }
         }
     ],
-    "tools": [
+    "toolbar": [
+        "searchResults",
+        "contextManager",
+        "mapDetails",
+        "measurer",
+        "directions",
+        "catalog",
+        "importExport",
+        "print",
+        "shareMap",
+        "about"
+      ],
+      "tools": [
+        {
+          "name": "searchResults",
+          "options": {
+            "focusFirst": false
+          }
+        },
+        {
+          "name": "contextManager"
+        },
+        {
+            "name": "about",
+            "options": {
+                "html": "<img src='https://www.transports.gouv.qc.ca/ImagesCommunesDTI/LogoMinistereGrand.gif'> <br> <br>La mission du ministère des Transports est d’assurer, sur tout le territoire, la mobilité durable des personnes et des marchandises par des systèmes de transport efficaces et sécuritaires qui contribuent au développement du Québec. <br><hr> <h3>Nous joindre:</h3><a href='mailto:geomatique@transports.gouv.qc.ca'>geomatique@transports.gouv.qc.ca</a><br><a href='https://www.donneesquebec.ca/recherche/fr/organization/mtq' target='_blank'>Transport Québec sur Données Québec</a>"
+            }
+        },
         {
             "name": "mapDetails",
             "title": "Couches",
@@ -1069,10 +1103,31 @@
             }
         },
         {
-            "name": "about",
-            "options": {
-                "html": "<img src='https://www.transports.gouv.qc.ca/ImagesCommunesDTI/LogoMinistereGrand.gif'> <br> <br>La mission du ministère des Transports est d’assurer, sur tout le territoire, la mobilité durable des personnes et des marchandises par des systèmes de transport efficaces et sécuritaires qui contribuent au développement du Québec. <br><hr> <h3>Nous joindre:</h3><a href='mailto:geomatique@transports.gouv.qc.ca'>geomatique@transports.gouv.qc.ca</a><br><a href='https://www.donneesquebec.ca/recherche/fr/organization/mtq' target='_blank'>Transport Québec sur Données Québec</a>"
-            }
+          "name": "shareMap"
+        },
+        {
+          "name": "measurer"
+        },
+        {
+          "name": "directions"
+        },
+        {
+          "name": "catalog"
+        },
+        {
+          "name": "catalogBrowser"
+        },
+        {
+          "name": "timeFilter"
+        },
+        {
+          "name": "ogcFilter"
+        },
+        {
+          "name": "importExport"
+        },
+        {
+          "name": "print"
         }
-    ]
-}
+      ]
+    }
