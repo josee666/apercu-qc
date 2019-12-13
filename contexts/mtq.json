@@ -1,8 +1,76 @@
 {
     "uri": "mtq",
     "title": "Transports Québec",
-    "base": "_base",
+    "map": {
+    "view": {
+        "projection": "EPSG:3857",
+        "center": [-71.938087, 48.446975],
+        "zoom": 6,
+        "maxZoom": 20
+    }
+    },
     "layers": [
+        {
+          "id": "fond_osm",
+          "title": "OSM",
+          "visible": false,
+          "baseLayer": true,
+          "sourceOptions": {
+            "type": "osm",
+            "attributions": "© les contributeurs <a href='https://www.openstreetmap.org/copyright' target='_blank'>d’OpenStreetMap</a> / <a href='http://www.igouverte.org/' target='_blank'>IGO2</a>"
+          }
+        },
+        {
+          "title": "Satellite",
+          "baseLayer": true,
+          "visible": false,
+          "sourceOptions": {
+            "url": "/carto/tms/1.0.0/orthos@EPSG_3857/{z}/{x}/{-y}.jpeg",
+            "attributions": "© <a href='http://www.droitauteur.gouv.qc.ca/copyright.php' target='_blank'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> / <a href='http://www.igouverte.org/' target='_blank'>IGO2</a>",
+            "type": "xyz"
+          }
+        },
+        {
+          "title": "Blanc",
+          "baseLayer": true,
+          "visible": false,
+          "sourceOptions": {
+            "attributions": "<a href='http://www.igouverte.org/' target='_blank'>IGO2</a>",
+            "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
+            "type": "xyz"
+          }
+        },
+        {
+          "id": "carte_gouv_qc",
+          "title": "Route",
+          "visible": true,
+          "baseLayer": true,
+          "sourceOptions": {
+            "url": "/carto/tms/1.0.0/carte_gouv_qc_ro@EPSG_3857/{z}/{x}/{-y}.png",
+            "attributions": "© <a href='http://www.droitauteur.gouv.qc.ca/copyright.php' target='_blank'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> / <a href='http://www.igouverte.org/' target='_blank'>IGO2</a>",
+            "type": "xyz"
+          }
+        },
+        {
+          "title": "Couleur",
+          "baseLayer": true,
+          "visible": false,
+          "sourceOptions": {
+            "url": "/carto/tms/1.0.0/carte_adn@EPSG_3857/{z}/{x}/{-y}.png",
+            "attributions": "© <a href='http://www.droitauteur.gouv.qc.ca/copyright.php' target='_blank'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> / <a href='http://www.igouverte.org/' target='_blank'>IGO2</a>",
+            "type": "xyz"
+          }
+        },
+        {
+          "title": "Gris",
+          "baseLayer": true,
+          "visible": false,
+          "sourceOptions": {
+            "url": "/carto/tms/1.0.0/fond_thematique@EPSG_3857/{z}/{x}/{-y}.png",
+            "attributions": "© <a href='http://www.droitauteur.gouv.qc.ca/copyright.php' target='_blank'><img src='/gouvouvert/public/images/quebec/gouv_qc_logo.png' width='64' height='14'>Gouvernement du Québec</a> / <a href='http://www.igouverte.org/' target='_blank'>IGO2</a>",
+            "type": "xyz"
+          }
+        },
         {
             "title": "Zone de dégel",
             "id": "zones_degel",
@@ -689,23 +757,6 @@
             }
         },
         {
-            "id": "pes_v_limtn_charg",
-            "visible": false,
-            "removable": false,
-            "sourceOptions": {
-                "type": "wms",
-                "optionsFromCapabilities": true,
-                "url": "/apis/ws/swtq",
-                "queryable": true,
-                "queryFormat": "html",
-                "queryHtmlTarget": "iframe",
-                "params": {
-                    "layers": "pes_v_limtn_charg",
-                    "feature_count": 365
-                }
-            }
-        },
-        {
             "id": "gsq_v_desc_strct_tri",
             "visible": false,
             "removable": false,
@@ -879,6 +930,23 @@
             }
         },
         {
+            "id": "pes_v_limtn_charg",
+            "visible": false,
+            "removable": false,
+            "sourceOptions": {
+                "type": "wms",
+                "optionsFromCapabilities": true,
+                "url": "/apis/ws/swtq",
+                "queryable": true,
+                "queryFormat": "html",
+                "queryHtmlTarget": "iframe",
+                "params": {
+                    "layers": "pes_v_limtn_charg",
+                    "feature_count": 365
+                }
+            }
+        },
+        {
             "id": "circulation_routier",
             "visible": false,
             "removable": false,
@@ -947,6 +1015,26 @@
                     { "alias": "Unité responsable de la route:", "name": "des_unite_" }
                 ]
             }
+        },
+        {
+          "id": "bgr_reperage_metrique",
+          "visible": false,
+          "removable": false,
+          "sourceOptions": {
+            "type": "wms",
+            "optionsFromCapabilities": true,
+            "url": "/apis/ws/swtq",
+            "queryable": true,
+            "queryTitle": "etiquette",
+            "params": {
+              "layers": "bgr_reperage_metrique",
+              "feature_count": 1
+            },
+            "sourceFields": [
+              {"alias": "RTSS","name": "num_rts"},
+              {"alias": "Chainage","name": "chainage"}
+            ]
+          }
         },
         {
             "id": "etablissement_mtq",
@@ -1035,7 +1123,34 @@
             }
         }
     ],
-    "tools": [
+    "toolbar": [
+        "searchResults",
+        "contextManager",
+        "mapDetails",
+        "measurer",
+        "directions",
+        "catalog",
+        "importExport",
+        "print",
+        "shareMap",
+        "about"
+      ],
+      "tools": [
+        {
+          "name": "searchResults",
+          "options": {
+            "focusFirst": false
+          }
+        },
+        {
+          "name": "contextManager"
+        },
+        {
+            "name": "about",
+            "options": {
+                "html": "<img src='https://www.transports.gouv.qc.ca/ImagesCommunesDTI/LogoMinistereGrand.gif'> <br> <br>La mission du ministère des Transports est d’assurer, sur tout le territoire, la mobilité durable des personnes et des marchandises par des systèmes de transport efficaces et sécuritaires qui contribuent au développement du Québec. <br><hr> <h3>Nous joindre:</h3><a href='mailto:geomatique@transports.gouv.qc.ca'>geomatique@transports.gouv.qc.ca</a><br><a href='https://www.donneesquebec.ca/recherche/fr/organization/mtq' target='_blank'>Transport Québec sur Données Québec</a>"
+            }
+        },
         {
             "name": "mapDetails",
             "title": "Couches",
@@ -1049,10 +1164,31 @@
             }
         },
         {
-            "name": "about",
-            "options": {
-                "html": "<img src='https://www.transports.gouv.qc.ca/ImagesCommunesDTI/LogoMinistereGrand.gif'> <br> <br>La mission du ministère des Transports est d’assurer, sur tout le territoire, la mobilité durable des personnes et des marchandises par des systèmes de transport efficaces et sécuritaires qui contribuent au développement du Québec. <br><hr> <h3>Nous joindre:</h3><a href='mailto:geomatique@transports.gouv.qc.ca'>geomatique@transports.gouv.qc.ca</a><br><a href='https://www.donneesquebec.ca/recherche/fr/organization/mtq' target='_blank'>Transport Québec sur Données Québec</a>"
-            }
+          "name": "shareMap"
+        },
+        {
+          "name": "measurer"
+        },
+        {
+          "name": "directions"
+        },
+        {
+          "name": "catalog"
+        },
+        {
+          "name": "catalogBrowser"
+        },
+        {
+          "name": "timeFilter"
+        },
+        {
+          "name": "ogcFilter"
+        },
+        {
+          "name": "importExport"
+        },
+        {
+          "name": "print"
         }
-    ]
-}
+      ]
+    }

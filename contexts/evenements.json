@@ -3,7 +3,7 @@
   "title": "Événements de sécurité civile",
   "base": "_base",
   "layers": [{
-      "visible": false,
+      "visible": true,
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
         "timeFilterable": true,
