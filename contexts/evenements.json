@@ -3,7 +3,7 @@
   "title": "Événements de sécurité civile",
   "base": "_base",
   "layers": [{
-      "visible": false,
+      "visible": true,
       "sourceOptions": {
         "url": "/ws/igo_gouvouvert.fcgi",
         "timeFilterable": true,
@@ -29,7 +29,7 @@
     },
     {
       "name": "vg avec filtre",
-      "visible": false,
+      "visible": true,
       "id": "vg",
       "title": "Filtre - Événements extrêmes",
       "sourceOptions": {
@@ -56,7 +56,7 @@
     },
     {
       "name": "Filtre - Événements",
-      "visible": false,
+      "visible": true,
       "id": "filtre_evenement",
       "title": "Filtre - Événements",
       "sourceOptions": {
