@@ -35,7 +35,7 @@
       "title": "Radar météo américain (NWS)",
       "visible": false,
       "sourceOptions": {
-        "url": "/ws/adnInternetV2.fcgi",
+        "url": "/apis/wss/vigilance.fcgi",
         "optionsFromCapabilities": true,
         "params": {
           "layers": "nexrad_base_reflect",
@@ -72,10 +72,10 @@
       "title": "Ruissellement – prochain 48 heures (MDDELCC)",
       "visible": false,
       "sourceOptions": {
-        "url": "/ws/adnInternetV2.fcgi",
+        "url": "/apis/wss/vigilance.fcgi",
         "optionsFromCapabilities": true,
         "params": {
-          "layers": "mps_cehq_apt_verticaux_fil_actu",
+          "layers": "msp_cehq_apt_verticaux_v",
           "version": "1.3.0"
         },
         "type": "wms",
