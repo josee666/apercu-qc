@@ -7,6 +7,7 @@
       "title": "Téléphone d'urgence",
       "sourceOptions": {
         "url": "/apis/wss/securite.fcgi",
+        "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -21,6 +22,7 @@
       "queryTitle": "Municipalite",
       "sourceOptions": {
         "url": "/apis/wss/securite.fcgi",
+        "optionsFromCapabilities": true,
         "queryable": true,
         "queryFormat": "gml2",
         "params": {

@@ -85,21 +85,18 @@
  "tools": [
    {
      "name": "searchResults",
-     "title": "Recherche",
      "options": {
        "focusFirst": false
      }
    },
    {
-     "name": "contextManager",
-     "title": "Vues"
+     "name": "contextManager"
    },
   {
      "name": "about"
    },
    {
      "name": "mapDetails",
-     "title": "Couches",
      "options": {
        "toggleLegendOnVisibilityChange": true,
        "layerListControls": {
