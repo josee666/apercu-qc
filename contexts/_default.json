@@ -5,7 +5,6 @@
   "tools": [
     {
       "name": "mapDetails",
-      "title": "Couches",
       "options": {
         "toggleLegendOnVisibilityChange": true,
         "layerListControls": {
