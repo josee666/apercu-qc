@@ -743,8 +743,8 @@
             }
         },
         {
-            "id": "localisation_ponceau",
-            "visible": true,
+            "id": "iit_v_drang_condu_permn_ligne",
+            "visible": false,
             "removable": false,
             "sourceOptions": {
                 "type": "wms",
