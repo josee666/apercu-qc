@@ -109,22 +109,15 @@
                     "layers": "zpegt_cgt_s",
                     "feature_count": 365
                 },               
-                "paramsWFS": {
-                    "featureTypes": "zpegt_cgt_s",
-                    "fieldNameGeometry": "geometry",
-                    "maxFeatures": 5000,
-                    "version": "2.0.0",
-                    "outputFormatDownload": "shp"
-                },
                 "ogcFilters": {
                     "enabled": true,
                     "editable": true
                 },
                 "sourceFields": [
-                    { "alias": "Contrainte", "name": "etq_contr" },
-                    { "alias": "Fam_gliss", "name": "fam_gliss" },
-                    { "alias": "Description", "name": "descriptio", "excludeFromOgcFilters": true },
-                    { "alias": "Date", "name": "date_prod" }]
+                    { "alias": "Contrainte", "name": "etq_contr", "values": ["E" ,"E-NA1" ,"E-NA2" ,"E-NH" ,"E-NHd" ,"E-NR" ,"E-NS1" ,"E-NS2" ,"E-RA1 Base" ,"NA1" ,"NA1 talus" ,"NA1L" ,"NA1L talus" ,"NA2" ,"NA2 talus" ,"NC" ,"NC talus" ,"NH" ,"NH talus" ,"NHL" ,"NHL talus" ,"NHd" ,"NI" ,"NI talus" ,"NR" ,"NR talus" ,"NS1" ,"NS1 talus" ,"NS1L" ,"NS1L talus" ,"NS2" ,"NS2 talus" ,"RA1 Base" ,"RA1 Sommet" ,"RA1-NA2"] },
+                    { "alias": "Fam_gliss", "name": "fam_gliss", "excludeFromOgcFilters": true, "values" : [""]},
+                    { "alias": "Description", "name": "descriptio", "excludeFromOgcFilters": true, "values" : [""]},
+                    { "alias": "Date", "name": "date_prod", "values" : ["2004", "2007-03", "2007-04", "2007-09", "2007-12", "2008-08", "2010-04", "2010-05", "2011-04", "2011-05", "2011-06", "2012-04", "2013-02", "2013-09", "2014-04", "2015-01", "2015-02", "2015-03", "2015-04", "2015-12", "2016-01", "2016-05", "2016-09", "2017-04", "2017-06", "2017-12", "2018-06", "2018-09", "2018-10"] }]
             }
         },
         {
@@ -141,22 +134,15 @@
                     "layers": "zpegt_cgt_l",
                     "feature_count": 365
                 },               
-                "paramsWFS": {
-                    "featureTypes": "zpegt_cgt_l",
-                    "fieldNameGeometry": "geometry",
-                    "maxFeatures": 5000,
-                    "version": "2.0.0",
-                    "outputFormatDownload": "shp"
-                },
                 "ogcFilters": {
                     "enabled": true,
                     "editable": true
                 },
                 "sourceFields": [
-                    { "alias": "Contrainte", "name": "etq_contr" },
-                    { "alias": "Fam_gliss", "name": "fam_gliss" },
+                    { "alias": "Contrainte", "name": "etq_contr", "values": ["BT Contr","LC Contr","RA2","ST Contr","ST2 Contr"] },
+                    { "alias": "Fam_gliss", "name": "fam_gliss", "excludeFromOgcFilters": true },
                     { "alias": "Description", "name": "descriptio", "excludeFromOgcFilters": true },
-                    { "alias": "Date", "name": "date_prod" }]
+                    { "alias": "Date", "name": "date_prod", "values": ["2004", "2007-03", "2007-04", "2007-09", "2007-12", "2008-08", "2010-04", "2010-05", "2011-04", "2011-05", "2011-06", "2012-04", "2013-02", "2013-09", "2014-04", "2015-01", "2015-02", "2015-03", "2015-04", "2015-12", "2016-01", "2016-05", "2016-09", "2017-04", "2017-06", "2017-12", "2018-06", "2018-09", "2018-10"] }]
             }
         },
         {
@@ -757,6 +743,37 @@
             }
         },
         {
+            "id": "localisation_ponceau",
+            "visible": true,
+            "removable": false,
+            "sourceOptions": {
+                "type": "wms",
+                "optionsFromCapabilities": true,
+                "url": "/apis/ws/swtq",
+                "queryable": true,
+                "queryTitle": "Ponceau # ${ide_drang_}",
+                "params": {
+                    "layers": "iit_v_drang_condu_permn_ligne",
+                    "feature_count": 365
+                },
+                "sourceFields": [
+                    { "alias": "Identifiant", "name": "ide_drang_" },
+                    { "alias": "Type", "name": "des_long_t" },
+                    { "alias": "Sous-type", "name": "des_long_s" },
+                    { "alias": "Longueur (m)", "name": "val_mesr" },
+                    { "alias": "Largeur/diamètre (mm)", "name": "val_larg_1" },
+                    { "alias": "Hauteur (mm)", "name": "val_hautr" },
+                    { "alias": "Année construction", "name": "val_annee_" },
+                    { "alias": "Année réhabilitation", "name": "val_anne_1" },
+                    { "alias": "Numéro route début", "name": "num_rts_de" },
+                    { "alias": "Chaînage début", "name": "val_chang_" },
+                    { "alias": "Numéro route fin", "name": "num_rts_fi" },
+                    { "alias": "Chaînage fin", "name": "val_chan_1" },
+                    { "alias": "Classe fonctionnelle", "name": "des_cour_6" }
+                ]
+            }
+        },
+        {
             "id": "gsq_v_desc_strct_tri",
             "visible": false,
             "removable": false,
@@ -771,13 +788,6 @@
                     "layers": "gsq_v_desc_strct_tri",
                     "feature_count": 365
                 },               
-                "paramsWFS": {
-                    "featureTypes": "gsq_v_desc_strct_tri",
-                    "fieldNameGeometry": "geometry",
-                    "maxFeatures": 5000,
-                    "version": "2.0.0",
-                    "outputFormatDownload": "shp"
-                },
                 "ogcFilters": {
                     "enabled": true,
                     "editable": true
@@ -786,10 +796,10 @@
                     { "alias": "Numéro de dossier", "name": "num_dossr" , "excludeFromOgcFilters": true },
                     { "alias": "Nom de la route", "name": "nom_route" , "excludeFromOgcFilters": true },
                     { "alias": "Nom de l'obstacle", "name": "nom_obstc" , "excludeFromOgcFilters": true },
-                    { "alias": "Année de construction", "name": "val_annee_" },
-                    { "alias": "Type de structure", "name": "code_des_t" },
-                    { "alias": "CS", "name": "des_cs" },
-                    { "alias": "DT", "name": "dirct_te00" }
+                    { "alias": "Année de construction", "name": "val_annee_", "values" : [""] },
+                    { "alias": "Type de structure", "name": "code_des_t", "values": ["11 - Ponceau à dalle en béton armé", "12 - Ponceau portique en béton armé", "13 - Ponceau rectang. en béton armé", "14 - Ponceau circul. en béton armé", "15 - Ponceau circulaire en acier", "16 - Ponceau circ. polyéthylène", "17 - Ponceau elliptique en acier", "18 - Ponceau arqué en acier", "19 - Ponceau voûté en béton armé", "20 - Ponceau voûté en acier", "21 - Ponceau rectangulaire en bois", "31 - Pont à dalle pleine en béton armé", "32 - Pont à dalle pleine en béton précont.", "33 - Pont à dalle évidée en béton armé", "34 - Pont à dalle évidée en béton précont.", "35 - Portique en béton armé", "36 - Port. béton armé, ss remblai", "37 - Portique en béton précontraint", "38 - Pont à béquilles, béton armé", "39 - Pont à béquil., béton précont.", "41 - Pont à poutres en béton armé", "42 - Pont à pout. béton précont., préfabr.", "43 - Pont à pout. béton préc., coul. place", "44 - Pont à poutres en acier", "45 - Pont acier-bois", "46 - Pont à poutres en bois", "47 - Portique en béton", "50 - Pont à béquilles en béton", "51 - Pont à béquilles, en acier", "52 - Pont à poutres en acier enr. de béton", "56 - Pont à poutres-caissons en béton armé", "57 - Pont à pout.-cais. en béton précont.", "58 - Pont à poutres-caissons en acier", "61 - Pont à tablier inférieur, en acier", "62 - Pont à tablier interméd., en acier", "63 - Pont de type Pony-Warren, en acier", "64 - Pont de type Bailey, en acier", "65 - Pont à tablier supérieur, en acier", "66 - Pont en bois", "67 - Pont couvert", "71 - Pont à tablier infér., béton armé", "72 - Pont à tablier inférieur, en acier", "73 - Pont à tablier interm., béton armé", "74 - Pont à tablier intermédiaire, acier", "75 - Pont à tablier supér., béton armé", "76 - Pont à tablier supérieur, en acier", "77 - Pont à tablier supérieur, en bois", "81 - Pont suspendu", "82 - Pont à haubans", "85 - Pont mobile", "94 - Tunnel", "97 - Mur", "98 - Station de pompage"] },
+                    { "alias": "CS", "name": "des_cs", "excludeFromOgcFilters": true },
+                    { "alias": "DT", "name": "dirct_te00", "excludeFromOgcFilters": true }
 
                 ]
             }
@@ -961,29 +971,22 @@
                     "layers": "circulation_routier",
                     "feature_count": 365
                 },               
-                "paramsWFS": {
-                    "featureTypes": "circulation_routier",
-                    "fieldNameGeometry": "geometry",
-                    "maxFeatures": 5000,
-                    "version": "2.0.0",
-                    "outputFormatDownload": "shp"
-                },
                 "ogcFilters": {
                     "enabled": true,
                     "editable": true,
                     "allowedOperatorsType": "basicnumeric"
                 },
                 "sourceFields": [
-                    { "alias": "Débit journalier moyen annuel ", "name": "Djma" },
-                    { "alias": "Débit journalier moyen estival ", "name": "Djme" },
-                    { "alias": "Débit journalier moyen hivernal ", "name": "Djmh" },
-                    { "alias": "Année des comptages ", "name": "Annee" },
-                    { "alias": "% véhicules lourds ", "name": "PrctCamion" },
-                    { "alias": "Année véhicules lourds ", "name": "AnCamion" },
-                    { "alias": "des début sous-route ", "name": "DebutRoute" },
-                    { "alias": "des fin sous-route ", "name": "FinRoute" },
-                    { "alias": "RTSS début ", "name": "RtssDebut" },
-                    { "alias": "RTSS fin ", "name": "RtssFin" }
+                    { "alias": "Débit journalier moyen annuel ", "name": "Djma", "values": [""] },
+                    { "alias": "Débit journalier moyen estival ", "name": "Djme", "values": [""] },
+                    { "alias": "Débit journalier moyen hivernal ", "name": "Djmh", "values": [""] },
+                    { "alias": "Année des comptages ", "name": "Annee", "values": [1990, 1993, 1995, 1996, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018] },
+                    { "alias": "% véhicules lourds ", "name": "PrctCamion", "values": [""] },
+                    { "alias": "Année véhicules lourds ", "name": "AnCamion", "values": [2013, 2014, 2015, 2016, 2017, 2018] },
+                    { "alias": "des début sous-route ", "name": "DebutRoute", "values": [""] },
+                    { "alias": "des fin sous-route ", "name": "FinRoute", "values": [""] },
+                    { "alias": "RTSS début ", "name": "RtssDebut", "values": ["Ex: 00005-01-010-000D"] },
+                    { "alias": "RTSS fin ", "name": "RtssFin", "values": ["Ex: 00005-01-010-000D"] }
                 ]
             }
         },
