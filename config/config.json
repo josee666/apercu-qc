@@ -100,16 +100,8 @@
         "url": "/ws/adnInternetV2.fcgi"
       },
       {
-        "title": "Données géographiques et administratives (BDGA)",
-        "url": "/ws/bdga.fcgi"
-      },
-      {
         "title": "Inventaire forestier",
         "url": "/ws/mffpecofor.fcgi"
-      },
-      {
-        "title": "Toutes les données",
-        "url": "/ws/igo_gouvouvert.fcgi"
       }
     ]
   }
