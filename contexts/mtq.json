@@ -356,6 +356,7 @@
                 "url": "/apis/ws/swtq",
                 "queryable": true,
                 "queryFormat": "htmlgml2",
+                "queryHtmlTarget": "iframe",
                 "params": {
                     "layers": "histo_stations_meteoroutieres_v2",
                     "feature_count": 3650,
@@ -373,6 +374,7 @@
                 "url": "/apis/ws/swtq",
                 "queryable": true,
                 "queryFormat": "htmlgml2",
+                "queryHtmlTarget": "iframe",
                 "params": {
                     "layers": "stations_meteoroutieres_v2",
                     "feature_count": 365
