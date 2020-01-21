@@ -47,6 +47,11 @@
         "sortDirection": "asc"
       },
       {
+        "title": "Économie",
+        "url": "/apis/wss/economie.fcgi",
+        "sortDirection": "asc"
+      },
+      {
         "title": "Éducation",
         "url": "/apis/wss/education.fcgi",
         "sortDirection": "asc"
