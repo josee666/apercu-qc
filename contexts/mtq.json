@@ -355,9 +355,9 @@
                 "optionsFromCapabilities": true,
                 "url": "/apis/ws/swtq",
                 "queryable": true,
-                "queryFormat": "json",
+                "queryFormat": "htmlgml2",
                 "params": {
-                    "layers": "histo_stations_meteoroutieres",
+                    "layers": "histo_stations_meteoroutieres_v2",
                     "feature_count": 3650,
                     "time": "2008-01-01/2019-10-31"
                 }
@@ -372,9 +372,9 @@
                 "optionsFromCapabilities": true,
                 "url": "/apis/ws/swtq",
                 "queryable": true,
-                "queryFormat": "json",
+                "queryFormat": "htmlgml2",
                 "params": {
-                    "layers": "stations_meteoroutieres",
+                    "layers": "stations_meteoroutieres_v2",
                     "feature_count": 365
                 }
             }
