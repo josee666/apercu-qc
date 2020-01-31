@@ -47,11 +47,6 @@
         "sortDirection": "asc"
       },
       {
-        "title": "Économie",
-        "url": "/apis/wss/economie.fcgi",
-        "sortDirection": "asc"
-      },
-      {
         "title": "Éducation",
         "url": "/apis/wss/education.fcgi",
         "sortDirection": "asc"
@@ -84,6 +79,11 @@
       {
         "title": "Société, culture et patrimoine",
         "url": "/apis/wss/societe.fcgi",
+        "sortDirection": "asc"
+      },
+      {
+        "title": "Tourisme et loisirs",
+        "url": "/apis/wss/tourisme.fcgi",
         "sortDirection": "asc"
       },
       {
