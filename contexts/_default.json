@@ -1,16 +1,5 @@
 {
   "uri": "_default",
   "base": "_base",
-  "layers": [],
-  "tools": [
-    {
-      "name": "mapDetails",
-      "options": {
-        "toggleLegendOnVisibilityChange": true,
-        "layerListControls": {
-          "excludeBaseLayers": false
-        }
-      }
-    }
-  ]
+  "layers": []
 }
