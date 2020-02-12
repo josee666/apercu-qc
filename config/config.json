@@ -10,7 +10,7 @@
   "importExport": {
     "url": "/apis/ogre"
   },
-  "routingSources": {
+  "directionsSources": {
     "osrm": {
       "url": "/services/itineraire/route/v1/driving/",
       "enabled": true
