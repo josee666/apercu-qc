@@ -358,7 +358,7 @@
                 "queryFormat": "htmlgml2",
                 "queryHtmlTarget": "iframe",
                 "params": {
-                    "layers": "histo_stations_meteoroutieres_v2",
+                    "layers": "histo_stations_meteoroutieres",
                     "feature_count": 3650,
                     "time": "2008-01-01/2019-10-31"
                 }
@@ -376,7 +376,7 @@
                 "queryFormat": "htmlgml2",
                 "queryHtmlTarget": "iframe",
                 "params": {
-                    "layers": "stations_meteoroutieres_v2",
+                    "layers": "stations_meteoroutieres",
                     "feature_count": 365
                 }
             }
