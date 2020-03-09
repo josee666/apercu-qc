@@ -42,7 +42,7 @@
         "sortDirection": "asc"
       },
       {
-        "title": "Aménagement du territoire",
+        "title": "Caractérisation du territoire",
         "url": "/apis/wss/amenagement.fcgi",
         "sortDirection": "asc"
       },
