@@ -9,7 +9,7 @@
         "url": "/ws/radarsat.fcgi",
         "attributions": "  © <a href='http://dromadaire-geo.com'>Dromadaire Géo-Innovations inc.</a>",
         "params": {
-          "layers": "S1_ROUGE_09_MARS_2020,S1_MONTREAL_09_MARS_2020,R2_YAMASKA_11_MARS_2020,S1_STFRANCOIS_11_MARS_2020,S1_CHAUDIERE_11_MARS_2020,S1_BECANCOUR_11_MARS_2020,",
+          "layers": "S1_ROUGE_09_MARS_2020,S1_MONTREAL_09_MARS_2020,R2_YAMASKA_11_MARS_2020,S1_STFRANCOIS_11_MARS_2020,S1_CHAUDIERE_11_MARS_2020,S1_BECANCOUR_11_MARS_2020",
           "version": "1.3.0"
         },
         "type": "wms"
