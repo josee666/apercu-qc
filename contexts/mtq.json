@@ -512,7 +512,7 @@
                     { "alias": "Direction", "name": "direction", "excludeFromOgcFilters": true },
                     { "alias": "Municipalité", "name": "municipalite" },
                     { "alias": "Durée", "name": "duree" , "excludeFromOgcFilters": true },
-                    { "alias": "Cause", "name": "cause", "excludeFromOgcFilters": true },
+                    { "alias": "Cause", "name": "cause", "excludeFromOgcFilters": false },
                     { "alias": "Consequence", "name": "consequence", "excludeFromOgcFilters": true },
                     { "alias": "Detour", "name": "detour", "excludeFromOgcFilters": true },
                     { "alias": "Regions", "name": "regions", "excludeFromOgcFilters": true },
