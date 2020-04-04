@@ -6,18 +6,14 @@
     {
       "title": "Municipalités touchées depuis le 2 avril 2020",
       "sourceOptions": {
-        "url": "/ws/inondation2019.fcgi",
+        "url": "/ws/inondation2020.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "vg_observation_inondation_14avril2019_mun_tout_v",
+          "layers": "vg_observation_inondation_02avril2020_mun_tout_v",
           "version": "1.3.0"
         },
         "type": "wms"
-      },
-      "metadata": {
-        "extern": true,
-        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/be4221e0-3d69-41f2-a42d-44f12c10cb85"
       }
     },
     {
@@ -39,10 +35,6 @@
           "style": "calendar"
         },
         "timeFilterable": true
-      },
-      "metadata": {
-        "extern": true,
-        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/be4221e0-3d69-41f2-a42d-44f12c10cb85"
       }
     },
     {
@@ -64,10 +56,6 @@
           "style": "calendar"
         },
         "timeFilterable": true
-      },
-      "metadata": {
-        "extern": true,
-        "url": "https://www.donneesquebec.ca/recherche/fr/dataset/cartographie-des-inondations-printemps-2019/resource/be4221e0-3d69-41f2-a42d-44f12c10cb85"
       }
     },
     {
