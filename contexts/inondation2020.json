@@ -3,6 +3,19 @@
   "title": "Inondation 2020",
   "base": "_base",
   "layers": [
+  	{
+      "title": "Image sentinel - Inondation Chaudière 04 avril 2020",
+      "sourceOptions": {
+        "url": "/apis/wss/historiquesc.fcgi",
+        "queryable": true,
+        "queryFormat": "gml2",
+        "params": {
+          "layers": "s1_inondation_chaudiere_04_avril_2020",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
     {
       "title": "Municipalités touchées depuis le 2 avril 2020",
       "sourceOptions": {
@@ -46,19 +59,6 @@
         "queryFormat": "gml2",
         "params": {
           "layers": "MTQ_511_P",
-          "version": "1.3.0"
-        },
-        "type": "wms"
-      }
-    },
-	{
-      "title": "Image sentinel - Inondation Chaudière 04 avril 2020",
-      "sourceOptions": {
-        "url": "/apis/wss/historiquesc.fcgi",
-        "queryable": true,
-        "queryFormat": "gml2",
-        "params": {
-          "layers": "s1_inondation_chaudiere_04_avril_2020",
           "version": "1.3.0"
         },
         "type": "wms"
