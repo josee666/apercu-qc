@@ -6,7 +6,7 @@
     {
       "title": "Municipalités touchées depuis le 2 avril 2020",
       "sourceOptions": {
-        "url": "/ws/inondation2020.fcgi",
+        "url": "/apis/wss/inondation2020.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
@@ -19,7 +19,7 @@
     {
       "title": "Événements d'inondation depuis le 2 avril 2020",
       "sourceOptions": {
-        "url": "/ws/inondation2020.fcgi",
+        "url": "/apis/wss/inondation2020.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
