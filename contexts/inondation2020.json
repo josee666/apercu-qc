@@ -6,11 +6,11 @@
     {
       "title": "Municipalités touchées depuis le 2 avril 2020",
       "sourceOptions": {
-        "url": "/ws/inondation2020.fcgi",
+        "url": "/apis/wss/historiquesc.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "vg_observation_inondation_02avril2020_mun_tout_v",
+          "layers": "vg_observation_inondation_2avril2020_mun_tout_v",
           "version": "1.3.0"
         },
         "type": "wms"
@@ -19,11 +19,11 @@
     {
       "title": "Événements d'inondation depuis le 2 avril 2020",
       "sourceOptions": {
-        "url": "/ws/inondation2020.fcgi",
+        "url": "/apis/wss/historiquesc.fcgi",
         "queryable": true,
         "queryFormat": "gml2",
         "params": {
-          "layers": "vg_observation_v_inondation_wmst",
+          "layers": "vg_observation_v_inondation_2avril2020_wmst",
           "version": "1.3.0"
         },
         "type": "wms",
