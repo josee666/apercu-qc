@@ -8,7 +8,7 @@
         "url": "/apis/wss/historiquesc.fcgi",
         "optionsFromCapabilities": true,
         "params": {
-          "layers": "s2_inondation_lacstpierre_08_avril_2020",
+          "layers": "20200408_inondations_lacstpierre_sentinel2",
           "version": "1.3.0"
         },
         "type": "wms"
@@ -30,7 +30,7 @@
         "url": "/apis/wss/historiquesc.fcgi",
         "optionsFromCapabilities": true,
         "params": {
-          "layers": "s1_inondation_chaudiere_04_avril_2020",
+          "layers": "20200404_glace_chaudiere_Sentinel1",
           "version": "1.3.0"
         },
         "type": "wms"
