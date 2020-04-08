@@ -8,6 +8,17 @@
         "url": "/apis/wss/historiquesc.fcgi",
         "optionsFromCapabilities": true,
         "params": {
+          "layers": "s2_inondation_lacstpierre_08_avril_2020",
+          "version": "1.3.0"
+        },
+        "type": "wms"
+      }
+    },
+    {
+      "sourceOptions": {
+        "url": "/apis/wss/historiquesc.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
           "layers": "vg_observation_inondation_2avril2020_mun_tout_v",
           "version": "1.3.0"
         },
