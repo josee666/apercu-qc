@@ -979,6 +979,7 @@
                     "allowedOperatorsType": "basicnumeric"
                 },
                 "sourceFields": [
+                    { "alias": "No section de trafic", "name": "numsectntr", "values": [""] },
                     { "alias": "Débit journalier moyen annuel ", "name": "Djma", "values": [""] },
                     { "alias": "Débit journalier moyen estival ", "name": "Djme", "values": [""] },
                     { "alias": "Débit journalier moyen hivernal ", "name": "Djmh", "values": [""] },
@@ -988,7 +989,9 @@
                     { "alias": "des début sous-route ", "name": "DebutRoute", "values": [""] },
                     { "alias": "des fin sous-route ", "name": "FinRoute", "values": [""] },
                     { "alias": "RTSS début ", "name": "RtssDebut", "values": ["Ex: 00005-01-010-000D"] },
-                    { "alias": "RTSS fin ", "name": "RtssFin", "values": ["Ex: 00005-01-010-000D"] }
+                    { "alias": "Chaînage début ", "name": "changdebut", "values": [""] },
+                    { "alias": "RTSS fin ", "name": "RtssFin", "values": ["Ex: 00005-01-010-000D"] },
+                    { "alias": "Chaînage fin ", "name": "changfin", "values": [""] }
                 ]
             }
         },
