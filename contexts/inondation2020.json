@@ -68,6 +68,7 @@
       }
     },
     {
+    "visible": false,
       "sourceOptions": {
         "url": "/apis/wss/historiquesc.fcgi",
         "optionsFromCapabilities": true,
@@ -78,6 +79,18 @@
         "type": "wms"
       }
     },
+    {
+	"visible": true,
+	"sourceOptions": {
+        "url": "/apis/wss/historiquesc.fcgi",
+        "optionsFromCapabilities": true,
+        "params": {
+        "layers": "Inon2020_EauLibre_20200420154911_LacSaintPierre_Sentinel1",
+        "version": "1.3.0"
+		},
+	"type": "wms"
+	}
+},
     {
       "sourceOptions": {
         "url": "/apis/wss/historiquesc.fcgi",
