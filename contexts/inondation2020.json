@@ -4,6 +4,7 @@
   "base": "_base",
   "layers": [
     {
+    "visible": false,
       "sourceOptions": {
         "url": "/apis/wss/historiquesc.fcgi",
         "optionsFromCapabilities": true,
@@ -19,7 +20,7 @@
         "url": "/apis/wss/historiquesc.fcgi",
         "optionsFromCapabilities": true,
         "params": {
-          "layers": "20200420_inondations_lacstpierre_sentinel2",
+          "layers": "20200420154911UTC_inondations_lacstpierre_sentinel2",
           "version": "1.3.0"
         },
         "type": "wms"
@@ -30,7 +31,7 @@
         "url": "/apis/wss/historiquesc.fcgi",
         "optionsFromCapabilities": true,
         "params": {
-          "layers": "20200420_inondations_grandmontreal_sentinel2",
+          "layers": "20200420154911UTC_inondations_grandmontreal_sentinel2",
           "version": "1.3.0"
         },
         "type": "wms"
