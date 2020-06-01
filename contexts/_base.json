@@ -65,66 +65,72 @@
     }
   ],
   "toolbar": [
-   "searchResults",
-   "contextManager",
-   "mapTools",
-   "measurer",
-   "directions",
-   "catalog",
-   "importExport",
-   "print",
-   "shareMap",
-   "about"
- ],
- "tools": [
-   {
-     "name": "searchResults",
-     "options": {
-       "focusFirst": false
-     }
-   },
-   {
-     "name": "contextManager"
-   },
-  {
-     "name": "about"
-   },
-   {
-     "name": "mapTools",
-     "options": {
-       "toggleLegendOnVisibilityChange": true,
-       "layerListControls": {
-         "excludeBaseLayers": true
-       }
-     }
-   },
-   {
-     "name": "shareMap",
-     "options": {
-       "hasShareMapButton": false,
-       "hasCopyLinkButton": true
-     }
-   },
-   {
-     "name": "measurer"
-   },
-   {
-     "name": "directions"
-   },
-   {
-     "name": "catalog"
-   },
-   {
-     "name": "catalogBrowser",
-     "options": {
-       "toggleCollapsedGroup": false
-     }
-   },
-   {
-     "name": "importExport"
-   },
-   {
-     "name": "print"
-   }
- ]
+    "searchResults",
+    "contextManager",
+    "mapTools",
+    "measurer",
+    "directions",
+    "catalog",
+    "importExport",
+    "print",
+    "shareMap",
+    "about"
+  ],
+  "tools": [
+    {
+      "name": "searchResults",
+      "options": {
+        "focusFirst": false
+      }
+    },
+    {
+      "name": "contextManager"
+    },
+    {
+      "name": "about"
+    },
+    {
+      "name": "mapTools",
+      "options": {
+        "toggleLegendOnVisibilityChange": true,
+        "layerListControls": {
+          "excludeBaseLayers": true
+        }
+      }
+    },
+    {
+      "name": "shareMap",
+      "options": {
+        "hasShareMapButton": false,
+        "hasCopyLinkButton": true
+      }
+    },
+    {
+      "name": "measurer"
+    },
+    {
+      "name": "directions"
+    },
+    {
+      "name": "catalog"
+    },
+    {
+      "name": "catalogBrowser",
+      "options": {
+        "toggleCollapsedGroup": false
+      }
+    },
+    {
+      "name": "importExport"
+    },
+    {
+      "name": "print"
+    },
+    {
+      "name": "activeTimeFilter"
+    },
+    {
+      "name": "activeOgcFilter"
+    }
+  ]
 }
