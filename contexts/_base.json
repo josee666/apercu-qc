@@ -67,7 +67,7 @@
   "toolbar": [
    "searchResults",
    "contextManager",
-   "mapDetails",
+   "mapTools",
    "measurer",
    "directions",
    "catalog",
@@ -90,7 +90,7 @@
      "name": "about"
    },
    {
-     "name": "mapDetails",
+     "name": "mapTools",
      "options": {
        "toggleLegendOnVisibilityChange": true,
        "layerListControls": {

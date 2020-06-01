@@ -1134,7 +1134,7 @@
     "toolbar": [
         "searchResults",
         "contextManager",
-        "mapDetails",
+        "mapTools",
         "measurer",
         "directions",
         "catalog",
@@ -1160,7 +1160,7 @@
             }
         },
         {
-            "name": "mapDetails",
+            "name": "mapTools",
             "title": "Couches",
             "options": {
                 "expandLegendOfVisibleLayers": true,
