@@ -35,6 +35,7 @@ copie:
 synchro_dev:
   stage: deploy
   when: manual
+  allow_failure: false
   script:
     - "ssh synchrogitlab@spssogl97d \"sh ~/bin/synchro_envgitlab.sh ${ARCHIVE_NAME} /srv/www/geomatique/apps/${CI_PROJECT_PATH} ${CI_COMMIT_REF_NAME} config\""
   only:
