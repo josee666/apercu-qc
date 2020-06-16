@@ -30,13 +30,30 @@ copie:
     name: ${CI_COMMIT_REF_NAME}-${CI_PROJECT_PATH_SLUG}
     when: on_success
     expire_in: 1 week
-
-synchro:
+    
+synchro_dev:
   stage: deploy
+  when: manual
   script:
     - "ssh synchrogitlab@spssogl97d \"sh ~/bin/synchro_envgitlab.sh ${ARCHIVE_NAME} /srv/www/geomatique/apps/${CI_PROJECT_PATH} ${CI_COMMIT_REF_NAME} config\""
   only:
     - dev
+  environment: ${CI_COMMIT_REF_NAME}
+  artifacts:
+    paths:
+        - ${ARCHIVE_NAME}.tar.gz
+    name: ${CI_COMMIT_REF_NAME}-${CI_PROJECT_PATH_SLUG}
+    when: on_success
+    expire_in: 1 week
+  dependencies:
+    - copie
+
+synchro_preprod:
+  stage: deploy
+  script:
+    - "ssh synchrogitlab@spssogl97d \"sh ~/bin/synchro_envgitlab.sh ${ARCHIVE_NAME} /srv/www/geomatique/apps/${CI_PROJECT_PATH} dev config\""
+    - "ssh synchrogitlab@spssogl97d \"sh ~/bin/synchro_envgitlab.sh ${ARCHIVE_NAME} /srv/www/geomatique/apps/${CI_PROJECT_PATH} preprod config\""
+  only:
     - preprod
   environment: ${CI_COMMIT_REF_NAME}
   artifacts:
